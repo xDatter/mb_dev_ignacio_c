@@ -296,12 +296,12 @@ section div
 	margin-bottom: 0;
 
 }
-.cDesc p:first-child
+#pDescripcion1
 {
 	width: 1%;
 	flex-grow: 1;
 }
-.cDesc p:last-child
+#pDescripcion2
 {
 	width: 50%;
 	flex-grow: 3;
