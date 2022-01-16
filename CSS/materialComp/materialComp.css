@@ -104,7 +104,7 @@ ul li {
 #control
 {
 	position: absolute;
-    width: 90vw;
+    width: 95vw;
     display: flex;
 	left: 50px;
 }
@@ -113,8 +113,7 @@ ul li {
 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    align-items: flex-end;
 }
 .cFlexA
 {
@@ -151,18 +150,64 @@ section div
 }
 
 /* --------------------------Nav info izq */
-.section1
-{    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    order: 50;
+.section1, .section1a
+{
+	position: absolute;
+	display: flex;
+	/* overflow: hidden;     */
+	flex-wrap: wrap;
+	max-width: 25vw;
     flex-grow: 1;
-    width: 1px;
-
+	transition: 1s;
+	opacity: 100%;
 }
 
-.cNavImg
+.section1
+{
+	order: 55;
+	z-index: 100;
+    flex-direction: column;
+	min-width: 40vw;
+	min-height: 70vh;
+	top: 10vh;
+	/* outline: blue solid 3px; */
+}
+.section1a
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 25vw;
+	padding-left: 20vw;
+	background: #fff;
+	z-index: 10;
+	order: 50;
+	min-width: 60vw;
+	min-height: 90vh;
+	/* outline: blue solid 4px;	 */
+	border: none;
+	box-shadow: 2px 2px 20px #aaa;
+	color: green;
+}
+#pDescripcion1
+{
+	width: 1%;
+	flex-grow: 1;
+}
+.cont_description
+{
+	width: 100%;
+	min-height: 500px;
+	overflow-y: auto;
+	flex-grow: 3;
+}
+#pDescripcion2
+{
+	text-align: justify;
+	font-size: 90%;
+}
+
+.cNavImg2
 {
 	display: flex;
 	justify-content: center;
@@ -172,7 +217,7 @@ section div
 	flex-grow: 5;
 
 }
-.cNavImg img
+.cNavImg2 img
 {
 	max-width: 100%;
 	border-radius: 5px;
@@ -180,37 +225,38 @@ section div
 	width: 50%;
 }
 
-.cNavImg i
+.cNavImg1
 {
-	font-size: 200px;
 	position: absolute;
-	top: 15%;
-	opacity: 5%;
+	z-index: 100;
+	font-size: 200px;
+	top: 0;
+	opacity: 100%;
+	outline: red solid 4px;
 }
 
 .cNav
 {
 	display: flex;
-    width	: 100%;
+    width	: 40%;
 	flex-grow: 1;
-    margin-top: 5px;
+    margin-top: 20px;
 	flex-wrap: wrap;
 }
-.cNav:last-child
+.boxInfo
 {
-	margin: 0 0 100px;
-	text-align: justify;
+	display: flex;
+	flex-wrap: wrap;
 }
-
 .cNavCreator
 {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
     min-width	: 100%;
 	flex-grow: 1;	
 	padding: 0;
 	font-weight: bold;
-	margin: 0 0 50px;
 }
 .cNavCreator div
 {
@@ -253,24 +299,26 @@ section div
 
 .cNavInfo
 {
+	display: block;
+	flex-wrap: wrap;
     background-color: #142743;
     color: white;
     border-radius: 5px;
     flex-grow: 1;
     min-width: 100%;
+	min-height: 40vh;
     border-radius: 10px 10px 0% 100% / 10px 10px 0% 20%;
     padding: 18px 10px;
-	min-height: 70vh;
 	padding: 10px 20px;
 	font-size: 120%;
 }
 .cNombretool
 {
 	font-weight: bold;
-	margin-top: 20%;
+	margin-top: 10px;
 }
 
-/* -------------------------- descripcion seccion 2 */
+/* -------------------------- descripcion section 2 */
 .section2
 {
     order: 100;
@@ -283,35 +331,6 @@ section div
 	/* outline: blue solid 4px; */
 }
 
-.cDesc:first-child
-{
-	display: flex;
-	width: 100%;
-	min-height: 8vh;
-	max-height: 18vh;
-	margin-top: 0;
-	border: none;
-	box-shadow: 2px 2px 20px #aaa;
-	flex-grow: 0;
-	margin-bottom: 0;
-
-}
-#pDescripcion1
-{
-	width: 1%;
-	flex-grow: 1;
-}
-#pDescripcion2
-{
-	width: 50%;
-	flex-grow: 3;
-	text-align: justify;
-	min-height: 1em;
-	max-height: 6em;
-	font-size: 90%;
-	overflow-y: scroll;
-
-}
 #div_iframe
 {
 	min-height: 60vh;
@@ -323,9 +342,7 @@ section div
 }
 
 
-
-
-/* -----------------btn_back------------------------- */
+/* -----------------btn------------------------- */
 
 .btn_style
 {
@@ -452,7 +469,7 @@ section div
 	}
 	#control
 	{
-		width: 90vw;
+		width: 95vw;
 		left: 5vw;
 	}
 
@@ -476,7 +493,7 @@ section div
 	}
 	#control
 	{
-		width: 90vw;
+		width: 95vw;
 		left: 5vw;
 	}
 

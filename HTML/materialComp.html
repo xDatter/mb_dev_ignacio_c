@@ -13,8 +13,8 @@
 <link rel="shortcut icon" href="https://smartview.masterbase.com/v1/6022f78d59c09800120e6815/favicon.10ce9fed.ico" type="image/x-icon">
 
 
-<!-- <link rel="stylesheet" href="../CSS/materialComp/materialComp.css"> -->
-<link rel="stylesheet" href="https://xdatter.github.io/mb_dev_ignacio_c/CSS/materialComp/materialComp.css">
+<link rel="stylesheet" href="../CSS/materialComp/materialComp.css">
+<!-- <link rel="stylesheet" href="https://xdatter.github.io/mb_dev_ignacio_c/CSS/materialComp/materialComp.css"> -->
 
 </head>
 <body>
@@ -23,15 +23,17 @@
 <div>
   <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
 </div>
-
+<div class="col-md-8 gy-5 cNavImg1"> 
+  <i class="fab fa-leanpub"></i>
+</div>
 
 <div id="control" class="cFlex">
 <!-- ------------- Agregado un div #control para mejorar el acceso y las vistas -->
   <div class="container">
-    <section class="section1">
+    <section class="section1" onmouseenter="on()" onmouseleave="on()">
       <div class="row table-wrap cFlexA">
 
-        <div class="cNavInfo">
+        <div class="cNavInfo" >
 
           <div>
             <!-- <p class="cNombretool">#!MB.data.texts.tool.name!#</p> -->
@@ -51,53 +53,52 @@
             
           </div>
 
-          <div class="col-md-8 gy-5 cNavImg"> 
-            <i class="fab fa-leanpub"></i>
-          </div>
+          <div class="boxInfo">
 
-          <div class="col-md-3 cNav"> 
-            <div>
-              <i class="far fa-calendar-check"></i>
-              <p>Documento</p>
+       
+            <div class="col-md-3 cNav"> 
+              <div>
+                <i class="far fa-calendar-check"></i>
+                <p>Documento</p>
+              </div>
+              <!-- <p> #!MB.data.texts.tool.estado!# </p> -->
+              <p> Guía</p>
             </div>
-            <!-- <p> #!MB.data.texts.tool.estado!# </p> -->
-            <p> Guía</p>
-          </div>
 
-          <div class="col-md-3 cNav"> 
-            <div>
-              <i class="far fa-calendar-check"></i>
-              <p>Estado</p>
+            <div class="col-md-3 cNav"> 
+              <div>
+                <i class="far fa-calendar-check"></i>
+                <p>Estado</p>
+              </div>
+              <!-- <p> #!MB.data.texts.tool.estado!# </p> -->
+              <p> Disponible T</p>
             </div>
-            <!-- <p> #!MB.data.texts.tool.estado!# </p> -->
-            <p> Disponible T</p>
-          </div>
 
-          <!-- #!#if MB.data.texts.tool.sku !# -->
-          <div class="col-md-3 cNav"> 
-            <div>
-              <i class="fas fa-qrcode"></i>
-              <p>SKU </p>
+            <!-- #!#if MB.data.texts.tool.sku !# -->
+            <div class="col-md-3 cNav"> 
+              <div>
+                <i class="fas fa-qrcode"></i>
+                <p>SKU </p>
+              </div>
+              <!-- <p> #!MB.data.texts.tool.sku!# </p> -->
+              <p> 10110101 </p>
             </div>
-            <!-- <p> #!MB.data.texts.tool.sku!# </p> -->
-            <p> 10110101 </p>
-          </div>
-          <!-- #! else !#
-          #!/ if !# -->
-          
-          <div class="col-md-3 cNav"> 
-            <div>
-              <i class="fas fa-edit"></i>
-              <p>Versión </p>
+            <!-- #! else !#
+            #!/ if !# -->
+            
+            <div class="col-md-3 cNav"> 
+              <div>
+                <i class="fas fa-edit"></i>
+                <p>Versión </p>
+              </div>
+              <!-- <p> #!MB.data.texts.tool.version!# </p> -->
+              <p> 1.2121.2121</p>
             </div>
-            <!-- <p> #!MB.data.texts.tool.version!# </p> -->
-            <p> 1.2121.2121</p>
           </div>
-
         </div>
 
-        <div class="cNavImg"> 
-            #!#if  MB.data.texts.tool.iconoMBSel!# 
+        <div class="cNavImg2"> 
+            <!-- #!#if  MB.data.texts.tool.iconoMBSel!# 
               <img src=" #! MB.data.texts.tool.iconoMBSel !# "> 
               #! else !#
                 #!#if  MB.data.texts.tool.urlIconoCreador!# 
@@ -105,24 +106,26 @@
                 #! else !# 
                   <img src=" #! MB.data.texts.tool.iconoCreadorSel !# "> 
               #!/ if !#
-            #!/ if !#
+            #!/ if !# -->
 
-
+          <img src="https://images.wallpaperscraft.com/image/single/girl_umbrella_anime_141010_1920x1080.jpg" alt="">
         </div>
-
-
       </div>
+    </section>
+
+    <section class="section1a row table-wrap cDesc">
+      <div class="cont_description">
+        <p id="pDescripcion1">Descripción</p>
+        <p id="pDescripcion2">#!MB.data.texts.tool.description!#</p>
+    </div>
     </section>
 
     <section class="section2">
 
-      <div class="row table-wrap cDesc">
-          <p id="pDescripcion1">Descripción</p>
-          <p id="pDescripcion2">#!MB.data.texts.tool.description!#</p>
-          </p>
-      </div>
+
       <div class="row table-wrap cDesc" id="div_iframe">
-        <embed src= "#!MB.data.texts.tool.manual.[0].content!#" width="100%" type="application/pdf">
+        <!-- <embed src= "#!MB.data.texts.tool.manual.[0].content!#" width="100%" type="application/pdf"> -->
+        <embed src= "https://images.wallpaperscraft.com/image/single/girl_umbrella_anime_141010_1920x1080.jpg" type="application/pdf">
 
       </div>
     </section>
