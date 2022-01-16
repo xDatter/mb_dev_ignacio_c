@@ -312,9 +312,8 @@ section div
 	overflow-y: scroll;
 
 }
-.cDesc:last-child
+#div_iframe
 {
-	/* outline: green solid 3px; */
 	min-height: 60vh;
 	width: 100%;
 	margin-bottom: 0;
