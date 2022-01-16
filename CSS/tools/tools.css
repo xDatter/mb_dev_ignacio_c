@@ -1,0 +1,220 @@
+*
+{
+    box-sizing: border-box !important;
+
+}
+
+:root {
+	font-size: 110%;
+}
+body {
+	font-size: 0.7em;
+	background: #f0f2f5;
+	color: #212529;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #243b55;
+}
+a {
+	color: #17a2b8;
+	text-decoration: none;
+}
+a:hover {
+	color: #17a2b8;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+ul li {
+	padding: 3px;
+}
+.table-wrap {
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #dee2e6;
+	padding: 20px;
+	margin: 10px 0;
+}
+.table-wrap2 {
+	border-radius: 10px;
+	border: 1px solid #dee2e6;
+	padding: 10px 20px;
+	margin: 10px 0;
+}
+.table-wrap3 {
+	border-top: 1px solid #dee2e6;
+	padding: 5px 0px;
+	margin: 25px 0 0 0;
+}
+#my-chart.column {
+	height: 400px;
+	max-width: 700px;
+	margin: 0 auto;
+ --labels-size: 4rem;
+ --heading-size: 3rem;
+}
+.data {
+	font-weight: bold;
+	padding: 5px;
+}
+#my-chart caption {
+	font-size: 20px;
+	color: #000;
+}
+.hide {
+	display: none;
+}
+.ratings {
+	text-align: center;
+}
+.product-rating {
+	font-size: 36px
+}
+.stars i {
+	font-size: 18px;
+	color: #17a2b8
+}
+.rating-text {
+	margin-top: 10px
+}
+.star-rating {
+	line-height: 24px;
+	font-size: 18px;
+}
+.star-rating .fa-star {
+	color: #f9c908;
+}
+.btn-primary {
+	background: #243b55;
+	border-color: #1a2b3e;
+	font-size: 1em;
+}
+.btn-primary:hover {
+	background: #17a2b8;
+	border-color: #0f8699;
+}
+.btn-outline-primary {
+	color: #243b55;
+	border-color: #1a2b3e;
+	font-size: 1em;
+}
+.btn-outline-primary:hover {
+	background: #17a2b8;
+	border-color: #0f8699;
+}
+.tag {
+	background: #F5F5F5;
+	border-radius: 5px;
+	border: 1px solid #D9D9D9;
+	color: #333;
+	padding: 2px 10px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 400;
+	margin: 3px;
+	font-size: 12px;
+}
+
+/* ----------------------------- Estilo adicional*/
+
+#control
+{
+    width: 90vw;
+    display: flex;
+}
+
+.cFlex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.cFlexA
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1px;
+    flex-grow: 1;
+    min-width: 100%;
+    padding: 0;
+    background: linear-gradient(to bottom, transparent, #fff);
+    border: 0;
+    box-shadow: 2px 2px 20px #aaa;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+
+/* --------------------------Nav info izq */
+.section2
+{    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order: 50;
+    flex-grow: 1;
+    width: 1px;
+
+}
+
+.cNombreSolucion
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cNavImg
+{
+    max-width: 100%;
+    margin: 10px;
+}
+.cNav
+{
+    flex-basis: 100%;
+    margin-top: 5px;
+}
+.cNavInfo
+{
+    background-color: #142743;
+    color: white;
+    border-radius: 10px;
+    flex-grow: 1;
+    min-width: 100%;
+    border-radius: 10px 10px 0% 100% / 10px 10px 0% 20%;
+    padding: 18px 10px;
+}
+
+/* -------------------------- descripcion */
+.section3
+{
+    order: 100;
+    flex-grow: 3;
+    width: 1px;
+}
+
+.section3>div
+{
+    margin: 0 auto 10px;
+}
+.section3>div:last-child
+{
+    margin-bottom: 0;
+}
+
+.cDesc
+{
+    border: none;
+    box-shadow: 2px 2px 20px #aaa;
+}
+section
+{
+    margin: 10px 10px;
+}
