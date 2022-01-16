@@ -19,80 +19,85 @@
 </head>
 <body>
 <!-- --------- Seccion de botones o elementos absolute--------- -->
-  <div>
-    <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
-  </div>
+
+<div>
+  <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
+</div>
+
+
 <div id="control" class="cFlex">
 <!-- ------------- Agregado un div #control para mejorar el acceso y las vistas -->
   <div class="container">
-
-
-
     <section class="section1">
       <div class="row table-wrap cFlexA">
 
         <div class="cNavInfo">
 
           <div>
-            <p class="cNombretool">#!MB.data.texts.tool.name!#</p>
-            <!-- <p class="cNombretool">Testing Titulo Nombre Tool</p> -->
+            <!-- <p class="cNombretool">#!MB.data.texts.tool.name!#</p> -->
+            <p class="cNombretool">Mat comp título</p>
           </div>
           <div class="col-md-2 cNavCreator"> 
-            <div>
-              <p>Identity </p> 
-              <p>#!	MB.data.texts.tool.identity !#</p>
-              <!-- <p>dev.igdatter.tool.Name</p> -->
-            </div>
+
             <div>
               <p>Creador </p>
-              #!#if MB.data.texts.tool.creator !#
+              <!-- #!#if MB.data.texts.tool.creator !#
               <p>#!MB.data.texts.tool.creator!#</p>
               #! else !#
               <p>#!MB.data.texts.tool.creatorMB!#</p>
-              #!/ if !#
-              <!-- <p>Dev Ignacio Cárdenas Galvarini </p> -->
+              #!/ if !# -->
+              <p>Dev Ignacio Cárdenas Galvarini </p>
             </div>
             
           </div>
 
           <div class="col-md-8 gy-5 cNavImg"> 
-            
-            <i class="fal fa-tools"></i>
+            <i class="fab fa-leanpub"></i>
           </div>
 
           <div class="col-md-3 cNav"> 
+            <div>
+              <i class="far fa-calendar-check"></i>
+              <p>Documento</p>
+            </div>
+            <!-- <p> #!MB.data.texts.tool.estado!# </p> -->
+            <p> Guía</p>
+          </div>
 
+          <div class="col-md-3 cNav"> 
             <div>
               <i class="far fa-calendar-check"></i>
               <p>Estado</p>
             </div>
-            <p> #!MB.data.texts.tool.estado!# </p>
-            <!-- <p> Activo</p> -->
+            <!-- <p> #!MB.data.texts.tool.estado!# </p> -->
+            <p> Disponible T</p>
           </div>
-          #!#if MB.data.texts.tool.sku !#
+
+          <!-- #!#if MB.data.texts.tool.sku !# -->
           <div class="col-md-3 cNav"> 
             <div>
               <i class="fas fa-qrcode"></i>
               <p>SKU </p>
             </div>
-            <p> #!MB.data.texts.tool.sku!# </p>
-            <!-- <p> 10110101 </p> -->
+            <!-- <p> #!MB.data.texts.tool.sku!# </p> -->
+            <p> 10110101 </p>
           </div>
-          #! else !#
-          #!/ if !#
+          <!-- #! else !#
+          #!/ if !# -->
           
           <div class="col-md-3 cNav"> 
             <div>
               <i class="fas fa-edit"></i>
               <p>Versión </p>
             </div>
-            <p> #!MB.data.texts.tool.version!# </p>
-            <!-- <p> 1.2121.2121</p> -->
+            <!-- <p> #!MB.data.texts.tool.version!# </p> -->
+            <p> 1.2121.2121</p>
           </div>
+
         </div>
 
         <div class="cNavImg"> 
-            #!#if  MB.data.texts.tool.iconoMBSel!# 
+            <!-- #!#if  MB.data.texts.tool.iconoMBSel!# 
               <img src=" #! MB.data.texts.tool.iconoMBSel !# "> 
               #! else !#
                 #!#if  MB.data.texts.tool.urlIconoCreador!# 
@@ -100,7 +105,10 @@
                 #! else !# 
                   <img src=" #! MB.data.texts.tool.iconoCreadorSel !# "> 
               #!/ if !#
-            #!/ if !#
+            #!/ if !# -->
+            <!-- <img src="../../generalFile/img/pngtest1.png">  -->
+            <img src="https://images.wallpaperscraft.com/image/single/vinyl_record_record_player_139973_320x480.jpg"> 
+
 
         </div>
 
@@ -111,97 +119,18 @@
     <section class="section2">
 
       <div class="row table-wrap cDesc">
-        <i class="far fa-list-alt"></i>
-        <div class="col-md-11">
-          <h6>Descripción</h6>
-          <span></span>
-          <p>#!MB.data.texts.tool.description!#</p>
-          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel necessitatibus incidunt fuga, asperiores magnam quis sed possimus architecto ea. Nisi obcaecati enim id sapiente, corrupti est consectetur blanditiis fugit! Ad a illum delectus hic deleniti vel sapiente pariatur. Provident sapiente voluptas et dolor dolorum voluptates dolorem soluta illo in. Consequatur!</p> -->
-        </div>
+          <p>Descripción</p>
+          <!-- <p>#!MB.data.texts.tool.description!#</p> -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis modi autem ipsam exercitationem laudantium cum eos alias sunt excepturi facere aliquid similique officiis dicta fuga nesciunt, animi laboriosam nihil qui, eligendi nisi quas totam! Natus, sapiente quas at dignissimos sed accusantium ab facere tempora quaerat id cupiditate nam possimus, ut illum incidunt obcaecati. Similique rem autem rerum soluta magni facilis quos, provident ad possimus placeat odio fugit ex illum libero doloremque error facere dignissimos debitis aliquam beatae. Cupiditate iste quas, quae, veniam illum magni, iure ut voluptas impedit error facere doloremque necessitatibus amet nihil molestiae illo distinctio ad? Deserunt non dolores ipsam quo eaque delectus incidunt magni quam minus nulla eligendi harum alias facere perspiciatis dignissimos cupiditate quia, minima molestiae? Quam, et delectus libero magni praesentium cum ab perspiciatis tempora unde. Nobis officiis, consectetur nulla in accusamus inventore deserunt vero incidunt fugiat dolor eius animi rem quae ut eaque voluptatum reprehenderit assumenda consequuntur voluptatibus aspernatur voluptatem! Cum sint sunt culpa minus natus, distinctio maxime delectus expedita sed nostrum similique officia error, ea beatae est nisi reiciendis explicabo amet ducimus aspernatur blanditiis nihil? Doloribus, culpa amet numquam harum perferendis, libero ipsum in voluptas cum nihil molestias iste nesciunt accusamus tempora accusantium! Minus temporibus ratione voluptatem esse fugit iure distinctio odio recusandae ipsam in? Impedit consectetur quibusdam excepturi, cupiditate dolorum id numquam odit molestiae cumque a molestias commodi, suscipit eveniet, voluptatibus voluptates vero eaque sit voluptatem quasi architecto. Ducimus at aliquid, non tempore odio impedit vero pariatur, a sequi quia officia repellat magni perferendis saepe dolores, beatae possimus omnis facilis dolor explicabo aperiam quod neque numquam. Laudantium sapiente saepe dolore dolorum nulla velit illo labore accusamus magnam fuga possimus, iusto officiis consequatur non aliquid nobis est suscipit reprehenderit praesentium maxime voluptas enim necessitatibus dolores magni? Similique aliquid necessitatibus soluta sint iste esse, repudiandae possimus minima quasi aspernatur culpa libero id accusantium optio fugiat eos blanditiis non, sed nobis itaque. Praesentium asperiores facere officiis quam assumenda amet! Alias qui beatae obcaecati exercitationem corporis, perferendis nam sunt minima, suscipit esse eos sequi iste provident. Vero ex id commodi mollitia nostrum similique sed, nam, sapiente deleniti quo omnis optio? Necessitatibus similique totam aliquid possimus nihil, laboriosam nemo excepturi vitae nisi, iure earum tenetur dolore culpa eveniet dolorem nam delectus. Nemo earum assumenda tenetur accusamus ab, placeat enim at nulla repellat. Quia repellat eaque id ipsam fugit voluptatibus laborum porro illum corporis officiis aliquid quasi rerum, vel veniam labore aliquam unde iste in distinctio corrupti placeat voluptate cum delectus. Quam sint id voluptas similique? Ut aut excepturi consectetur reprehenderit accusantium. Ab pariatur sed nisi. Ratione iste itaque animi praesentium nostrum, nemo soluta recusandae inventore debitis illum voluptas nisi! Maiores rem quos asperiores. Doloribus veniam labore itaque sapiente! Eos cumque expedita sapiente possimus harum molestiae iusto accusantium ipsa earum, voluptatibus cupiditate odit minus, obcaecati nesciunt. Debitis officia, ad distinctio expedita assumenda, maiores amet, eius dolorum unde obcaecati accusantium aspernatur temporibus aliquam perspiciatis adipisci tempora blanditiis dolorem. Accusamus hic totam tempore? Dolor quas dolores sit libero totam sapiente amet animi id numquam voluptates, necessitatibus laborum maiores dolore illo explicabo voluptate, cumque ducimus. Voluptatem dolorem suscipit asperiores nisi veniam commodi possimus tempore voluptates repellendus, reprehenderit, placeat molestiae sequi, vel error modi porro a libero similique quaerat aperiam corrupti eum fugit officia blanditiis. Itaque illo minus quod est sapiente repudiandae ab cumque tempore distinctio adipisci placeat, dolor harum fugiat id tempora consequatur expedita possimus quibusdam atque eos nemo voluptatem! Facere, debitis, nisi, libero provident vel fuga magnam explicabo ipsa placeat eaque deserunt alias pariatur nihil velit consequuntur ullam? Magni saepe magnam vero, labore quia pariatur laudantium voluptates commodi. Ea ut ducimus molestias tenetur tempora harum eius quia laborum quidem sequi maiores accusamus, praesentium architecto rerum cum vel. Dolorem aperiam, sunt rem doloribus consectetur natus omnis mollitia ipsum eveniet repellendus. Libero tempora quis harum veniam ab aspernatur adipisci velit nostrum commodi necessitatibus est veritatis, maiores numquam officia repellendus! Quidem similique enim sequi laborum ex asperiores dolorum alias impedit vero distinctio sapiente facere ullam, ipsam quod quae culpa ipsum perspiciatis odit iste eum! Quam rerum facere, perferendis eius consequatur laudantium sunt nemo deserunt explicabo mollitia adipisci accusamus ipsa totam, saepe modi nostrum harum dicta laboriosam minima. Hic autem possimus, distinctio dolore debitis magni temporibus aliquid consectetur error vero expedita asperiores ratione deserunt soluta sint beatae consequuntur, velit reiciendis fugit perspiciatis. Praesentium porro animi neque consequatur vel? Neque quis blanditiis atque dolores saepe in vitae iusto voluptatem aperiam suscipit non perferendis ab laboriosam aliquid adipisci, eius, unde sequi temporibus quas veniam ducimus! Nobis sint voluptatem id beatae, quod quisquam, et dolorum fugit expedita consectetur ex nisi quos perferendis dicta architecto, assumenda distinctio magnam ipsa a culpa quam dolor? Harum nisi veritatis blanditiis corrupti, in vitae sapiente nostrum obcaecati pariatur mollitia excepturi dolorum? Amet ad, vero accusantium quasi autem nulla nobis fugit eligendi quae exercitationem at tempore esse quis ex ullam molestias! Doloremque odio quibusdam fugit incidunt, consequatur autem, fuga, voluptatem deleniti facere ratione dolor? Nisi quas unde porro ipsa impedit, sit veritatis animi suscipit distinctio consequatur odio repudiandae recusandae consequuntur tempore excepturi ad quia necessitatibus repellendus. Provident repellat, nisi ea tempora quaerat reiciendis sint maiores ducimus, aut eligendi error, fugiat modi. Inventore, non accusantium. Corrupti, ut architecto mollitia nobis tempora qui? Voluptate veniam harum neque, possimus quasi repellendus qui accusamus deleniti, odit ducimus nemo id at officiis quam assumenda dolor dolore ipsam fugit modi numquam ipsum, error eum voluptatum. Omnis dolore obcaecati et, architecto tempore nobis voluptatem eaque quasi, at ratione est debitis, nulla dicta. Maiores, nesciunt deleniti autem atque, perferendis animi officia, nostrum inventore numquam rerum sequi? Minima ratione hic officia sint, fugiat nemo ex, dicta, nesciunt laborum illo ullam error. Hic quidem necessitatibus alias et, quod eius officia doloremque magni perferendis mollitia asperiores corporis temporibus ad quo. Atque placeat rem consequatur fugiat temporibus nemo officiis laboriosam. Cupiditate voluptatibus obcaecati consequatur officia nam ad necessitatibus eaque modi consequuntur suscipit reiciendis assumenda, unde nulla fugit ducimus iure molestias at perspiciatis doloribus pariatur. Dolorem ex architecto explicabo quos sed amet similique reiciendis commodi? Eum!
+          </p>
       </div>
 
       <div class="row table-wrap cDesc">
-        <i class="fas fa-chart-line"></i>  
-        <div class="col-md-11">
-          <h6>Caso de uso</h6>
-          <span></span>
-          <p>#!MB.data.texts.tool.casoUso!#</p>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo voluptas nam, consequuntur repellat omnis. Laudantium modi quis ipsum iusto praesentium fuga, excepturi quia, exercitationem dolorem aspernatur eligendi itaque consequatur fugiat illum! Animi facere aspernatur, sit error illum facilis minima. Magni soluta aliquid porro cumque accusantium optio temporibus nostrum a ab unde quo qui dolore alias incidunt, ad tempore dolorum veniam, eveniet fuga facere? Incidunt blanditiis, veniam possimus minima laboriosam, eum delectus aspernatur ullam adipisci sapiente suscipit amet dolorum. Fugiat odio est hic vitae recusandae aspernatur. Veritatis incidunt, modi vitae cumque natus possimus? Earum ad aliquid aliquam facilis non maiores. </p> -->
-        </div>
-      </div> 
-
-      <div class="row table-wrap cDesc">
-        <i class="fas fa-chart-line"></i>
-        <div class="col-md-11">
-          <h6>Caso propuesta</h6>
-          <span></span>
-          <p>#!MB.data.texts.tool.casoUsoPropuesta!#</p>
-          <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptate eligendi mollitia natus distinctio repudiandae, dolores in, nulla deleniti debitis velit vel voluptatem nobis nemo harum quidem veritatis ab laborum eveniet recusandae veniam fugit totam blanditiis. Repudiandae, officia! Totam tenetur illum voluptatem officia dolore quas porro nemo doloremque aliquam hic fugit molestias facilis, est blanditiis voluptatum? Ex maxime eum velit magnam rerum, sit vitae culpa nisi ipsa tenetur praesentium corporis, enim ipsam eligendi quisquam excepturi quidem ab ullam nobis, at deserunt aspernatur consequuntur. Voluptas expedita numquam facilis ducimus aspernatur explicabo accusamus molestiae placeat dignissimos qui. Et animi nisi commodi magnam.</p> -->
-        </div>
-      </div> 
-
-      <div class="row table-wrap cDesc">
-        <i class="far fa-file-alt"></i>
-        <div class="col-md-11">
-          <h6>Manual</h6>
-          <span></span>
-          <div>
-            #!#if  MB.data.texts.tool.manual!# 
-            <a href="#! MB.data.texts.tool.manual.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Manual principal</a>
-            <p>#! MB.data.texts.tool.manual.[0].name !#</p>
-            #! else !#
-            <a href="#" class="btn btn-primary btn-sm" role="button">Manual placeholder</a>
-            <p> Aquí debería haber algo, ups !</p>
-            #!/ if !#
-
-            #!#if  MB.data.texts.tool.manual_a1!# 
-            <a href="#!MB.data.texts.tool.manual_a1.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Complemento 1</a>
-            <p>#! MB.data.texts.tool.manual_a1.[0].name !#</p>
-            #! else !#
-            #!/ if !#
-
-            #!#if  MB.data.texts.tool.manual_a2!# 
-            <a href="#!MB.data.texts.tool.manual_a2.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Complemento 2</a>
-            <p>#! MB.data.texts.tool.manual_a2.[0].name !#</p>
-            #! else !#
-            #!/ if !#
-
-          </div>
-        </div>
-      </div> 
-
-      <div class="row table-wrap cDesc">
-        <i class="far fa-file-code"></i>
-        <div class="col-md-11">
-          <h6>Estructura Json</h6>
-          <span></span>
-          <div>
-            #!#if  MB.data.texts.tool.json!# 
-            <a href="#! MB.data.texts.tool.json.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Json principal</a>
-            <p>#! MB.data.texts.tool.json.[0].name !#</p>
-            #! else !#
-            <a href="#" class="btn btn-primary btn-sm" role="button">Json placeholder</a>
-            <p> Aquí debería haber algo, ups !</p>
-            #!/ if !#
-
-            #!#if  MB.data.texts.tool.json_a1!# 
-            <a href="#!MB.data.texts.tool.json_a1.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Complemento 1</a>
-            <p>#! MB.data.texts.tool.json_a1.[0].name !#</p>
-            #! else !#
-            #!/ if !#
-
-            #!#if  MB.data.texts.tool.json_a2!# 
-            <a href="#!MB.data.texts.tool.json_a2.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Complemento 2</a>
-            <p>#! MB.data.texts.tool.json_a2.[0].name !#</p>
-            #! else !#
-            #!/ if !#
-
-          </div>
-        </div>
-      </div> 
-
+        <iframe src="" frameborder="0">hola</iframe>
+      </div>
     </section>
-    
+
+
   </div>
 
 </div>
@@ -212,6 +141,7 @@
 <script>
   document.write('<a href="' + document.referrer + '" class="btn_back btn_style" >Volver</a>');
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../JS/materialComp/materialComp.js"></script>
 
 </body>
