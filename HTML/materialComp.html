@@ -23,14 +23,15 @@
 <div>
   <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
 </div>
-<div class="col-md-8 gy-5 cNavImg1"> 
-  <i class="fab fa-leanpub"></i>
+
+<div> 
+  <button id="toggleClass" class="btn_cNavImg1 btn_style" onclick="toggleClass()"></button>
 </div>
 
 <div id="control" class="cFlex">
 <!-- ------------- Agregado un div #control para mejorar el acceso y las vistas -->
   <div class="container">
-    <section class="section1" onmouseenter="on()" onmouseleave="on()">
+    <section class="section1">
       <div class="row table-wrap cFlexA">
 
         <div class="cNavInfo" >
@@ -116,12 +117,13 @@
     <section class="section1a row table-wrap cDesc">
       <div class="cont_description">
         <p id="pDescripcion1">Descripción</p>
-        <p id="pDescripcion2">#!MB.data.texts.tool.description!#</p>
+        <!-- <p id="pDescripcion2">#!MB.data.texts.tool.description!#</p> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elitiis!</p>
     </div>
     </section>
 
     <section class="section2">
-
+      <!-- <div class="fullcover"></div> -->
 
       <div class="row table-wrap cDesc" id="div_iframe">
         <!-- <embed src= "#!MB.data.texts.tool.manual.[0].content!#" width="100%" type="application/pdf"> -->
