@@ -443,8 +443,6 @@ section div
 .MAqNLXLFR4WUfBoXHoCFQ.header-widget
 {
 	transition: .5s;
-	position: absolute !important;
-	z-index: 990 !important;
 }
 .MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
 {
@@ -454,8 +452,6 @@ section div
 {
 	transition: .5s;
 	opacity: 100%;
-	position: absolute !important;
-	z-index: 990 !important;
 
 }
 .mbui-layout-header.layout-header.off
