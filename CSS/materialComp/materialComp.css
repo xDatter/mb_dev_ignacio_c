@@ -345,7 +345,7 @@ section div
 .fullcover
 {
 	position: absolute;
-	z-index: 980;
+	z-index: 80;
 	width: 100vw;
 	height: 100vh;
 	background: linear-gradient(to right, transparent 0%, #f0f2f5 10% 100%);
