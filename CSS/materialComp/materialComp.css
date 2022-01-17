@@ -424,6 +424,7 @@ section div
 	top: 60vh;
 	background: #a00;
 	width: 20vw;
+	height: 100px;
 	transition: .5s;
 }
 .btn_cNavImg1:hover
@@ -436,6 +437,7 @@ section div
 	top: 60vh;
 	background: #a00;
 	width: 10vw;
+	height: 60px;
 }
 
 .btn_cNavImg1::before
