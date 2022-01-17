@@ -340,7 +340,14 @@ section div
 	border: none;
 	box-shadow: 2px 2px 20px #aaa;
 	flex-grow: 3;
+	top: -64px;
+	transition: .5s;
 }
+#div_iframe.on
+{
+	top: 0;
+}
+
 
 .fullcover
 {

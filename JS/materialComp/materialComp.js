@@ -5,4 +5,5 @@ function toggleClass(){
     $(".section1a").toggleClass("off");
     $(".MAqNLXLFR4WUfBoXHoCFQ.header-widget").toggleClass("off");
     $(".mbui-layout-header.layout-header").toggleClass("off");
+    $("#div_iframe").toggleClass("on");
 }
