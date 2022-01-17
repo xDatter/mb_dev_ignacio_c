@@ -440,7 +440,7 @@ section div
 	content: "Información";
 }
 
-.MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
+.MAqNLXLFR4WUfBoXHoCFQ.header-widget
 {
 	transition: .5s;
 }
@@ -448,7 +448,18 @@ section div
 {
 	min-height: 0vh;
 }
+.mbui-layout-header.layout-header
+{
+	transition: .5s;
+	opacity: 100%;
 
+}
+.mbui-layout-header.layout-header.off
+{
+	height: 0vh;
+	opacity: 0;
+	visibility: hidden;
+}
 
 
 
