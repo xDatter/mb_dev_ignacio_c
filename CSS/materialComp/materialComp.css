@@ -346,7 +346,7 @@ section div
 	/* z-index: 990; */
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, transparent 10%, #eee);
+	background: linear-gradient(to right, transparent 0%, #f0f2f5 10% 100%);
 	opacity: 70%;
 	visibility: visible;
 	margin: 0;
