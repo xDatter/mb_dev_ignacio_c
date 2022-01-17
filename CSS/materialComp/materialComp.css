@@ -442,14 +442,14 @@ section div
 
 .mbui-layout-header.layout-header
 {
-	transition: .5s;
+	transition: .3s;
 	opacity: 100%;
 	height: 64px !important;
 	top: 0;
 }
 .mbui-layout-header.layout-header.off
 {
-	transition: .3s;
+	transition: .5s;
 	height: 0 !important;
 	opacity: 0;
 	top: -5vh;
