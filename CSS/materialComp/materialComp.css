@@ -332,9 +332,9 @@ section div
 
 #div_iframe
 {
-	min-height: 60vh;
-	width: 100%;
-	margin-bottom: 0;
+	min-height: 90vh;
+	width: 90%;
+	margin: 0 0 0 5vw;
 	border: none;
 	box-shadow: 2px 2px 20px #aaa;
 	flex-grow: 3;
@@ -343,16 +343,27 @@ section div
 .fullcover
 {
 	position: absolute;
-	z-index: 1;
+	/* z-index: 990; */
 	width: 100vw;
 	height: 100vh;
-	background: #000;
-	background: linear-gradient(to right, transparent 10%, #ddd);
-	opacity: 50%;
+	background: linear-gradient(to right, transparent 10%, #eee);
+	opacity: 70%;
 	visibility: visible;
 	margin: 0;
 	top: 0 ;
 	left: 0 ;
+	transition: 1.5s;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.fullcover.off
+{
+	visibility: hidden;
+	opacity: 0%;
+	transition: 1.5s;
+
+
 }
 /* -----------------btn------------------------- */
 
@@ -423,10 +434,7 @@ section div
 {
 	content: "Información";
 }
-.btn_cNavImg1.on
-{
-	width: 85px;
-}
+
 
 
 
@@ -453,6 +461,30 @@ section div
 		width: 60px;
 		height: 40px;
 	}
+	.btn_cNavImg1
+	{
+		top: 60vh;
+		background: #a00;
+		width: 20vw;
+		opacity: 100%;
+		transition: .5s;
+	}
+	.btn_cNavImg1.off
+	{
+		top: 60vh;
+		background: #142743;
+		width: 10vw;
+		opacity: 100%;
+	}
+	
+	.btn_cNavImg1::before
+	{
+		content: "Ver PDF";
+	}
+	.btn_cNavImg1.off::before
+	{
+		content: "Información";
+	}
 
 }
 @media only screen and (max-width: 800px) {
@@ -468,6 +500,30 @@ section div
 	{
 		width: 50px;
 		height: 25px;
+	}
+	.btn_cNavImg1
+	{
+		top: 60vh;
+		background: #a00;
+		width: 20vw;
+		opacity: 100%;
+		transition: .5s;
+	}
+	.btn_cNavImg1.off
+	{
+		top: 60vh;
+		background: #142743;
+		width: 10vw;
+		opacity: 100%;
+	}
+	
+	.btn_cNavImg1::before
+	{
+		content: "Ver PDF";
+	}
+	.btn_cNavImg1.off::before
+	{
+		content: "Información";
 	}
 
 
@@ -491,6 +547,30 @@ section div
 		width: 100px;
 		height: 90px;
 	}
+	.btn_cNavImg1
+	{
+		top: 50vh;
+		background: #a00;
+		width: 20vw;
+		opacity: 100%;
+		transition: .5s;
+	}
+	.btn_cNavImg1.off
+	{
+		top: 50vh;
+		background: #142743;
+		width: 10vw;
+		opacity: 100%;
+	}
+	
+	.btn_cNavImg1::before
+	{
+		content: "Ver PDF";
+	}
+	.btn_cNavImg1.off::before
+	{
+		content: "Información";
+	}
   }
 @media only screen and (min-width: 2200px) {
 
@@ -509,5 +589,29 @@ section div
 	{
 		width: 150px;
 		height: 130px;
+	}
+	.btn_cNavImg1
+	{
+		top: 50vh;
+		background: #a00;
+		width: 20vw;
+		opacity: 100%;
+		transition: .5s;
+	}
+	.btn_cNavImg1.off
+	{
+		top: 50vh;
+		background: #142743;
+		width: 10vw;
+		opacity: 100%;
+	}
+	
+	.btn_cNavImg1::before
+	{
+		content: "Ver PDF";
+	}
+	.btn_cNavImg1.off::before
+	{
+		content: "Información";
 	}
   }
