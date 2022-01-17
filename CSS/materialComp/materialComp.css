@@ -415,15 +415,18 @@ section div
 	top: 50vh;
 	background: #a00;
 	width: 20vw;
-	opacity: 100%;
 	transition: .5s;
 }
+.btn_cNavImg1:hover
+{
+	background: #f44;
+}
+
 .btn_cNavImg1.off
 {
 	top: 50vh;
-	background: #142743;
+	background: #a00;
 	width: 10vw;
-	opacity: 100%;
 }
 
 .btn_cNavImg1::before
