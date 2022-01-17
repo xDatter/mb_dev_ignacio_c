@@ -444,6 +444,7 @@ section div
 {
 	transition: .5s;
 	position: absolute !important;
+	z-index: 990;
 }
 .MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
 {
@@ -454,6 +455,7 @@ section div
 	transition: .5s;
 	opacity: 100%;
 	position: absolute !important;
+	z-index: 990;
 
 }
 .mbui-layout-header.layout-header.off
