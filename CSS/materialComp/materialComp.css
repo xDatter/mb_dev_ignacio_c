@@ -352,7 +352,7 @@ section div
 	margin: 0;
 	top: 0 ;
 	left: 0 ;
-	transition: 1.5s;
+	transition: 1s;
 }
 ::-webkit-scrollbar {
 	display: none;
@@ -361,7 +361,7 @@ section div
 {
 	visibility: hidden;
 	opacity: 0%;
-	transition: 1.5s;
+	transition: .2s;
 
 
 }
@@ -383,7 +383,7 @@ section div
 	border-right: solid 2px #0007;
 	border-radius: 0 15px 15px 25px / 0 15px 15px 45px ;
 	text-shadow: #000 0px 0px 1px;
-	transition: .1s;
+	transition: .5s;
 	box-shadow: #000 2px 2px 2px;
 }
 
