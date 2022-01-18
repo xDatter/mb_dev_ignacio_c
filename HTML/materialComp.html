@@ -62,7 +62,7 @@
                 <i class="far fa-calendar-check"></i>
                 <p>Documento</p>
               </div>
-              <p> #!MB.data.texts.tool.estado!# </p>
+              <p> #!MB.data.texts.tool.docType!# </p>
               <!-- <p> Guía</p> -->
             </div>
 
@@ -74,18 +74,6 @@
               <p> #!MB.data.texts.tool.estado!# </p>
               <!-- <p> Disponible T</p> -->
             </div>
-
-            #!#if MB.data.texts.tool.sku !#
-            <div class="col-md-3 cNav"> 
-              <div>
-                <i class="fas fa-qrcode"></i>
-                <p>SKU </p>
-              </div>
-              <p> #!MB.data.texts.tool.sku!# </p>
-              <!-- <p> 10110101 </p> -->
-            </div>
-            #! else !#
-            #!/ if !#
             
             <div class="col-md-3 cNav"> 
               <div>
@@ -126,8 +114,7 @@
       <div class="fullcover"></div>
 
       <div class="row table-wrap" id="div_iframe">
-        <embed src= "#!MB.data.texts.tool.manual.[0].content!#" width="100%" type="application/pdf">
-        <!-- <embed src= "https://images.wallpaperscraft.com/image/single/girl_umbrella_anime_141010_1920x1080.jpg" type="application/pdf"> -->
+        <embed src= "#!MB.data.texts.tool.documentation.[0].content!#" width="100%" type="application/pdf">
 
       </div>
     </section>
