@@ -242,7 +242,7 @@ section div
 	border-radius: 5px;
 	margin: 10px 0;
 	max-height: 30vh;
-	max-width: 50%;
+	max-width: 35%;
 
 }
 .imgshadow
@@ -252,7 +252,7 @@ section div
 	margin: 10px 0;
 	opacity: .4;
 	max-height: calc( 30vh + 5px );
-	max-width: calc( 50% + 5px );
+	max-width: calc( 35% + 5px );
 	filter: contrast(0);
 	filter: brightness(0);
 }
@@ -269,7 +269,7 @@ section div
 {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 30px 0 0 0;
+	margin: 20px 0 10px 0;
 
 }
 .cNavCreator
@@ -341,7 +341,7 @@ section div
 	font-weight: bold;
 	font-size: 220%;
 	line-height: 2em;
-    margin-top: 50px;
+    margin-top: 30px;
 	margin-bottom: 5px;
 
 }
