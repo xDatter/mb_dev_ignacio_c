@@ -251,8 +251,8 @@ section div
 	z-index: 0;
 	margin: 10px 0;
 	opacity: .4;
-	max-height: calc( 30vh + 5px );
-	max-width: calc( 35% + 5px );
+	max-height: calc( 30vh + 2px );
+	max-width: calc( 35% + 2px );
 	filter: contrast(0);
 	filter: brightness(0);
 }
