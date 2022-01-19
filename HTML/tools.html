@@ -13,18 +13,19 @@
 <link rel="shortcut icon" href="https://smartview.masterbase.com/v1/6022f78d59c09800120e6815/favicon.10ce9fed.ico" type="image/x-icon">
 
 
-<link rel="stylesheet" href="../CSS/tools/tools.css">
-<!-- <link rel="stylesheet" href="https://xdatter.github.io/request/css/tools.css"> -->
+<!-- <link rel="stylesheet" href="../CSS/tools/tools.css"> -->
+<link rel="stylesheet" href="https://xdatter.github.io/request/css/tools.css">
 
 </head>
 <body>
+  <div>
+    <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
+  </div>
 <div id="control" class="cFlex">
 <!-- ------------- Agregado un div #control para mejorar el acceso y las vistas -->
   <div class="container">
 
-    <div>
-      <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
-    </div>
+
 
     <section class="section2">
       <div class="row table-wrap cFlexA">
@@ -58,15 +59,6 @@
             <i class="fal fa-tools"></i>
           </div>
 
-          <div class="col-md-3 cNav"> 
-
-            <div>
-              <i class="far fa-calendar-check"></i>
-              <p>Estado</p>
-            </div>
-            <p> #!MB.data.texts.tool.estado!# </p>
-            <!-- <p> Activo</p> -->
-          </div>
           #!#if MB.data.texts.tool.sku !#
           <div class="col-md-3 cNav"> 
             <div>
@@ -144,23 +136,20 @@
           <h6>Manual</h6>
           <span></span>
           <div>
-            #!#if  MB.data.texts.tool.manual!# 
-            <a href="#! MB.data.texts.tool.manual.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Manual principal</a>
-            <p>#! MB.data.texts.tool.manual.[0].name !#</p>
-            #! else !#
-            <a href="#" class="btn btn-primary btn-sm" role="button">Manual placeholder</a>
-            <p> Aquí debería haber algo, ups !</p>
-            #!/ if !#
+            #!#if  MB.data.texts.tool.manual.[0].tituloManual!# 
+            <a href="#! MB.data.texts.tool.manual.[0].pdfManual.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button" title="#!MB.data.texts.tool.manual.[0].pdfManual.[0].name!#">#! MB.data.texts.tool.manual.[0].tituloManual !#</a>
+                #! else !#
+                <a href="#" class="btn btn-primary btn-sm" role="button">Manual placeholder</a>
+                <p> Aquí debería haber algo, ups !</p>
+                #!/ if !#
 
-            #!#if  MB.data.texts.tool.manual_a1!# 
-            <a href="#!MB.data.texts.tool.manual_a1.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Complemento 1</a>
-            <p>#! MB.data.texts.tool.manual_a1.[0].name !#</p>
+            #!#if  MB.data.texts.tool.manual.[1].tituloManual!# 
+            <a href="#! MB.data.texts.tool.manual.[1].pdfManual.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button" title="#!MB.data.texts.tool.manual.[1].pdfManual.[0].name!#">#! MB.data.texts.tool.manual.[1].tituloManual !#</a>
             #! else !#
             #!/ if !#
 
-            #!#if  MB.data.texts.tool.manual_a2!# 
-            <a href="#!MB.data.texts.tool.manual_a2.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Complemento 2</a>
-            <p>#! MB.data.texts.tool.manual_a2.[0].name !#</p>
+            #!#if  MB.data.texts.tool.manual.[2].tituloManual!# 
+            <a href="#! MB.data.texts.tool.manual.[2].pdfManual.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button" title="#!MB.data.texts.tool.manual.[2].pdfManual.[0].name!#">#! MB.data.texts.tool.manual.[2].tituloManual !#</a>
             #! else !#
             #!/ if !#
 
@@ -174,23 +163,19 @@
           <h6>Estructura Json</h6>
           <span></span>
           <div>
-            #!#if  MB.data.texts.tool.json!# 
-            <a href="#! MB.data.texts.tool.json.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Json principal</a>
-            <p>#! MB.data.texts.tool.json.[0].name !#</p>
+            #!#if  MB.data.texts.tool.json.[0].tituloJson!# 
+            <a href="#! MB.data.texts.tool.json.[0].pdfJson.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button" title="#! MB.data.texts.tool.json.[0].pdfJson.[0].name!#">#! MB.data.texts.tool.json.[0].tituloJson!#</a>
             #! else !#
             <a href="#" class="btn btn-primary btn-sm" role="button">Json placeholder</a>
             <p> Aquí debería haber algo, ups !</p>
             #!/ if !#
 
-            #!#if  MB.data.texts.tool.json_a1!# 
-            <a href="#!MB.data.texts.tool.json_a1.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Complemento 1</a>
-            <p>#! MB.data.texts.tool.json_a1.[0].name !#</p>
-            #! else !#
+            #!#if  MB.data.texts.tool.json.[1].tituloJson!# 
+            <a href="#! MB.data.texts.tool.json.[1].pdfJson.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button" title="#! MB.data.texts.tool.json.[1].pdfJson.[0].name!#">#! MB.data.texts.tool.json.[1].tituloJson!#</a>
             #!/ if !#
 
-            #!#if  MB.data.texts.tool.json_a2!# 
-            <a href="#!MB.data.texts.tool.json_a2.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button">Complemento 2</a>
-            <p>#! MB.data.texts.tool.json_a2.[0].name !#</p>
+            #!#if  MB.data.texts.tool.json.[2].tituloJson!# 
+            <a href="#! MB.data.texts.tool.json.[2].pdfJson.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button" title="#! MB.data.texts.tool.json.[2].pdfJson.[0].name!#">#! MB.data.texts.tool.json.[2].tituloJson!#</a>
             #! else !#
             #!/ if !#
 
