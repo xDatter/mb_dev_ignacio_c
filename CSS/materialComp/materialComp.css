@@ -227,12 +227,34 @@ section div
 	flex-grow: 5;
 
 }
-.cNavImg2 img
+.imgbase
 {
-	max-width: 70%;
 	border-radius: 5px;
 	margin: 10px 0;
-	width: 30%;
+	opacity: 0;
+	height: 30vh;
+
+}
+.imgup
+{
+	position: absolute;
+	z-index: 1;
+	border-radius: 5px;
+	margin: 10px 0;
+	max-height: 30vh;
+	max-width: 50%;
+
+}
+.imgshadow
+{
+	position: absolute;
+	z-index: 0;
+	margin: 10px 0;
+	opacity: .4;
+	max-height: calc( 30vh + 5px );
+	max-width: calc( 50% + 5px );
+	filter: contrast(0);
+	filter: brightness(0);
 }
 
 .cNav
@@ -247,6 +269,8 @@ section div
 {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 30px 0 0 0;
+
 }
 .cNavCreator
 {
@@ -311,13 +335,13 @@ section div
     border-radius: 10px 10px 0% 100% / 10px 10px 0% 20%;
     padding: 18px 10px;
 	padding: 10px 20px;
-	font-size: 120%;
 }
 .cNombretool
 {
 	font-weight: bold;
-	margin-top: 10px;
-	font-size: 200%;
+	font-size: 220%;
+	line-height: 2em;
+    margin-top: 50px;
 	margin-bottom: 5px;
 
 }

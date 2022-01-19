@@ -80,17 +80,20 @@
         </div>
 
         <div class="cNavImg2"> 
+          <img class="imgbase" src="#"> 
             #!#if  MB.data.texts.tool.iconoMBSel!# 
-              <img src=" #! MB.data.texts.tool.iconoMBSel !# "> 
+              <img class="imgup" src=" #! MB.data.texts.tool.iconoMBSel !# "> 
+              <img class="imgshadow" src=" #! MB.data.texts.tool.iconoMBSel !# "> 
               #! else !#
                 #!#if  MB.data.texts.tool.urlIconoCreador!# 
-                  <img src=" #! MB.data.texts.tool.urlIconoCreador.[0].content !# "> 
+                  <img class="imgup" src=" #! MB.data.texts.tool.urlIconoCreador.[0].content !# "> 
+                  <img class="imgshadow" src=" #! MB.data.texts.tool.urlIconoCreador.[0].content !# "> 
                 #! else !# 
-                  <img src=" #! MB.data.texts.tool.iconoCreadorSel !# "> 
+                  <img class="imgup" src=" #! MB.data.texts.tool.iconoCreadorSel !# "> 
+                  <img class="imgshadow" src=" #! MB.data.texts.tool.iconoCreadorSel !# "> 
               #!/ if !#
             #!/ if !#
 
-          <!-- <img src="https://images.wallpaperscraft.com/image/single/girl_umbrella_anime_141010_1920x1080.jpg" alt=""> -->
         </div>
       </div>
     </section>
