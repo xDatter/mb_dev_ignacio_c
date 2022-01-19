@@ -254,13 +254,15 @@ section div
 	flex-direction: column;
 	justify-content: space-between;
     min-width	: 100%;
-	flex-grow: 1;	
+	flex-grow: 1;
+	margin-top: 10px;	
 	padding: 0;
 	font-weight: bold;
 }
 .cNavCreator div
 {
 	display: flex;
+	font-size: 150%;
 }
 .cNavCreator p, .cNav p
 {
@@ -315,7 +317,20 @@ section div
 {
 	font-weight: bold;
 	margin-top: 10px;
+	font-size: 200%;
+	margin-bottom: 5px;
+
 }
+.cNombretoolLine
+{
+	content: "";
+	position: absolute;
+	width: 90%;
+	height: 2px;
+	background: linear-gradient(to right, #17a2b8 , transparent 90%);
+	border-radius: 5px;
+}
+
 
 /* -------------------------- descripcion section 2 */
 .section2
