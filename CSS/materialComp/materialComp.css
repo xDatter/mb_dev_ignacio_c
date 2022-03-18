@@ -357,7 +357,6 @@ section>div
 	border: none;
 	box-shadow: 2px 2px 20px #aaa;
 	flex-grow: 3;
-	transition: .5s;
 }
 
 .fullcover
