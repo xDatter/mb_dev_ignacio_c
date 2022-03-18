@@ -331,12 +331,13 @@ section>div
 .section2
 {
     order: 100;
-    flex-grow: 3;
-    width: 1px;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	flex-direction: column;
+    flex-grow: 3;
+    width: 1px;
+	top: -64px;
 }
 
 #div_iframe
@@ -425,6 +426,10 @@ section>div
 	top: 50;
 	opacity: 0;
 	visibility: collapse;
+}
+.section2.off
+{
+	top: 0;
 }
 .btn_cNavImg1.off
 {
