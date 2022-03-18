@@ -338,6 +338,8 @@ section>div
     flex-grow: 3;
     width: 1px;
 	top: -64px;
+	overflow: hidden;
+	transition: .5s;
 }
 
 #div_iframe
@@ -358,8 +360,7 @@ section>div
 	position: absolute;
 	z-index: 80;
 	width: 100vw;
-	/* height: calc( 100vh - 64px ); */
-	height: 100vh;
+	height: calc( 100vh - 64px );
 	background: #f0f2f5dd;
 	opacity: 100%;
 	visibility: visible;
@@ -429,6 +430,7 @@ section>div
 }
 .section2.off
 {
+	overflow: visible;
 	top: 0;
 }
 .btn_cNavImg1.off
