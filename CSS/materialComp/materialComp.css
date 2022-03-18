@@ -465,8 +465,9 @@ section>div
 	max-height: 64px;
 	min-height: 64px;
 	opacity: 100%;
+	visibility: visible;
 	top: 0;
-	transition: .3s;
+	transition: opacity .3s, visibility .3s;
 }
 .mbui-layout-header.layout-header.off
 {
@@ -474,7 +475,7 @@ section>div
 	top: -5vh;
 	opacity: 0;
 	visibility: hidden;
-	transition: .4s;
+	transition: opacity .4s, visibility .4s;
 
 }
 .MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
@@ -483,7 +484,7 @@ section>div
 	max-height: 0px;
 	opacity: 0;
 	visibility: hidden;
-	transition: .4s;
+	transition: opacity .4s, visibility .4s;
 
 }
 
