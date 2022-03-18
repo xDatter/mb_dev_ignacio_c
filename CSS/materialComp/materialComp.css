@@ -462,6 +462,7 @@ section>div
 {
 	min-height: 0px;
 	max-height: 0px;
+	opacity: 0;
 	visibility: collapse;
 }
 
