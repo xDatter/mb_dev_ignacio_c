@@ -342,6 +342,7 @@ section>div
 #div_iframe
 {
 	min-height: 100vh;
+	max-height: 100vh;
 	width: 80vw;
 	margin: auto;
 	padding: 1px auto !important;
@@ -440,7 +441,7 @@ section>div
 }
 
 /* ------------clases mb ------------------------- */
-.mbui-layout-header.layout-header
+.mbui-layout-header.layout-header, .MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
 {
 	transition: .3s;
 	opacity: 100%;
@@ -455,7 +456,10 @@ section>div
 	top: -5vh;
 	visibility: hidden;
 }
-
+.MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
+{
+	min-height: 0px;
+}
 
 
 /* ----------------Responsive Desing-------------- */
