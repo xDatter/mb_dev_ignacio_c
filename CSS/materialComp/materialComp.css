@@ -349,7 +349,7 @@ section>div
 	min-height: 100vh;
 	max-height: 100vh;
 	width: 80vw;
-	overflow: visible;
+	overflow: scroll;
 	margin: auto;
 	padding: 1px auto !important;
 	border: none;
@@ -433,7 +433,7 @@ section>div
 }
 .section2.off
 {
-	overflow: visible;
+	overflow: scroll;
 	height: auto;
 	top: 0;
 }
