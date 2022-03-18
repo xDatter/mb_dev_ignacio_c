@@ -348,6 +348,7 @@ section>div
 	min-height: 100vh;
 	max-height: 100vh;
 	width: 80vw;
+	overflow: visible;
 	margin: auto;
 	padding: 1px auto !important;
 	border: none;
@@ -434,6 +435,10 @@ section>div
 	overflow: visible;
 	height: auto;
 	top: 0;
+}
+#div_iframe.off
+{
+	overflow: hidden;
 }
 .btn_cNavImg1.off
 {
