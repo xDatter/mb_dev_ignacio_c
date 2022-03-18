@@ -476,7 +476,8 @@ section>div
 	top: -5vh;
 	opacity: 0;
 	visibility: hidden;
-	transition: .4s;
+	transition: .3s;
+	transition: visibility .4s;
 
 }
 .MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
@@ -485,7 +486,8 @@ section>div
 	max-height: 0px;
 	opacity: 0;
 	visibility: hidden;
-	transition: .4s;
+	transition: .3s;
+	transition: visibility .4s;
 
 }
 
