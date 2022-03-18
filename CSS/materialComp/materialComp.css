@@ -371,7 +371,7 @@ section>div
 	margin: 0;
 	top: 0 ;
 	left: 0 ;
-	transition: 1s;
+	transition: .2s;
 }
 ::-webkit-scrollbar {
 	display: none;
@@ -381,7 +381,7 @@ section>div
 	visibility: hidden;
 	display: none;
 	opacity: 0%;
-	transition: .2s;
+	transition: 1s;
 }
 /* -----------------btn------------------------- */
 
@@ -467,21 +467,26 @@ section>div
 	opacity: 100%;
 	top: 0;
 	transition: .3s;
+	transition: visibility .4s;
 }
 .mbui-layout-header.layout-header.off
 {
 	transition: .5s;
 	height: 0 !important;
-	opacity: 0;
 	top: -5vh;
+	opacity: 0;
 	visibility: hidden;
+	transition: .4s;
+
 }
 .MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
 {
 	min-height: 0px;
 	max-height: 0px;
 	opacity: 0;
-	visibility: collapse;
+	visibility: hidden;
+	transition: .4s;
+
 }
 
 
