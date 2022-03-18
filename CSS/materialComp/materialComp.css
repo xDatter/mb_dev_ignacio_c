@@ -461,6 +461,8 @@ section>div
 .MAqNLXLFR4WUfBoXHoCFQ.header-widget.off
 {
 	min-height: 0px;
+	max-height: 0px;
+	visibility: collapse;
 }
 
 
