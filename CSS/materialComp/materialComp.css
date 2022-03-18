@@ -330,6 +330,7 @@ section>div
 /* -------------------------- descripcion section 2 */
 .section2
 {
+	position: absolute;
     order: 100;
 	display: flex;
 	flex-direction: column;
@@ -438,7 +439,7 @@ section>div
 }
 #div_iframe.off
 {
-	overflow: hidden;
+	overflow: scroll;
 }
 .btn_cNavImg1.off
 {
