@@ -1,6 +1,7 @@
 function toggleClass(){
     $(".fullcover").toggleClass("off");
     $("#toggleClass").toggleClass("off");
+    $("#div_iframe").toggleClass("off");
     $(".btn_back").toggleClass("off");
     $(".section1").toggleClass("off");
     $(".section2").toggleClass("off");
