@@ -3,6 +3,7 @@
     box-sizing: border-box !important;
 	font-size: 16px;
 	font-family: sans-serif, Tahoma, Verdana ;
+	border: none;
 
 }
 *::selection
@@ -28,13 +29,10 @@ ul li {
 }
 .table-wrap {
 	background: #fff;
-	border-radius: 5px;
-	border: 1px solid #dee2e6;
 	padding: 20px;
 	margin: 10px 0;
 }
 .table-wrap2 {
-	border-radius: 10px;
 	border: 1px solid #dee2e6;
 	padding: 10px 20px;
 	margin: 10px 0;
@@ -88,7 +86,6 @@ ul li {
 }
 .tag {
 	background: #F5F5F5;
-	border-radius: 5px;
 	border: 1px solid #D9D9D9;
 	color: #333;
 	padding: 2px 10px;
@@ -103,9 +100,8 @@ ul li {
 #control
 {
 	position: absolute;
-    width: 95vw;
+    width: 100vw;
     display: flex;
-	left: 50px;
 }
 
 .cFlex
@@ -125,7 +121,6 @@ ul li {
     padding: 0;
     background: linear-gradient(to bottom, transparent 50px, #fff 20px);
     border: 0;
-	border-radius: 5px;
     box-shadow: 2px 2px 20px #aaa;
 
 }
@@ -134,167 +129,78 @@ ul li {
 {
     display: flex;
     flex-wrap: wrap;
-    min-width: 100%;
+	justify-content: center;
+	align-items: center;
+    min-width: 100vw;
 }
 
 section
 {
-    margin: 10px 10px;
 	display: flex;
 	flex-direction: column;
+	min-width: 100%;
 }
-section div
+section>div
 {
 	flex-grow: 1;
 }
 
 /* --------------------------Nav info izq */
-.section1, .section1a
-{
-	position: absolute;
-	display: flex;
-	/* overflow: hidden;     */
-	flex-wrap: wrap;
-	max-width: 25vw;
-    flex-grow: 1;
-	transition: .5s;
-	opacity: 100%;
-}
-
 .section1
 {
+	position: absolute;
 	order: 55;
 	z-index: 100;
-    flex-direction: column;
-	min-width: 40vw;
-	min-height: 60vh;
+	flex-wrap: wrap;
+    flex-grow: 1;
+	min-width: 96vw;
+	max-width: 96vw;
+	min-height: 30vh;
+	max-height: 70vh;
+	overflow: hidden;
 	top: 8vh;
-	left: 5vw;
-	/* outline: blue solid 3px; */
+	box-shadow: 2px 2px 20px #142743;
+	opacity: 100%;
+	visibility: visible;
+	transition: opacity .5s, visibility .6s;
 }
-.section1a
+
+.cNombretool
 {
-	order: 50;
-	z-index: 90;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 15vh;
-	left: 30vw;
-	padding-left: 20vw;
-	background: #fff;
-	min-width: 60vw;
-	min-height: 50vh;
-	border: none;
-	box-shadow: 2px 2px 20px #aaa;
-}
-.section1.off, .section1a.off
-{
-	opacity: 0%;
-	left: -5vw;
-	visibility: hidden;
-}
-#pDescripcion1
-{
-	width: 1%;
-	flex-grow: 1;
 	font-weight: bold;
-}
-.cont_description
-{
-	width: 100%;
-	padding: 0 50px 0 0;
-	flex-grow: 3;
 	text-align: justify;
-	max-height: 50vh;
-	overflow-y: auto;
-}
-#pDescripcion2
-{
-	text-align: justify;
-	font-size: 105%;
-}
-
-.cNavImg2
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    min-width: 10%;
-    margin: 10px auto;
-	flex-grow: 5;
+	font-size: 160%;
+	line-height: 1em;
+    margin-top: 30px;
+	margin-bottom: 10px;
 
 }
-.imgbase
+.cNombretoolLine
 {
-	border-radius: 5px;
-	margin: 10px 0;
-	opacity: 0;
-	height: 30vh;
-
-}
-.imgup
-{
+	content: "";
 	position: absolute;
-	z-index: 1;
-	border-radius: 5px;
-	margin: 10px 0;
-	max-height: 30vh;
-	max-width: 35%;
-
+	width: 90%;
+	left: 5%;
+	height: 1px;
+	background: #17a2b877;
 }
-.imgshadow
-{
-	position: absolute;
-	z-index: 0;
-	margin: 10px 0;
-	opacity: .4;
-	max-height: calc( 30vh + 2px );
-	max-width: calc( 35% + 2px );
-	filter: contrast(0);
-	filter: brightness(0);
-}
-
 .cNav
 {
 	display: flex;
-    width	: 40%;
+    width	: 20%;
 	flex-grow: 1;
     margin-top: 20px;
 	flex-wrap: wrap;
 }
+
+/* esto es creator doctype y version */
 .boxInfo
 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 20px 0 10px 0;
+}
 
-}
-.cNavCreator
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-    min-width	: 100%;
-	flex-grow: 1;
-	margin-top: 10px;	
-	padding: 0;
-	font-weight: bold;
-}
-.cNavCreator div
-{
-	display: flex;
-	font-size: 150%;
-}
-.cNavCreator p, .cNav p
-{
-	margin: 0;
-}
-.cNavCreator p:nth-child(even)
-{
-	margin: 0 0 0 10px;
-	color: #ccc;
-}
 .cNav p
 {
 	margin: 0 3vw;
@@ -310,7 +216,7 @@ section div
 .cNav div
 {
 	display: flex;
-    min-width	: 100%;
+    min-width: 100%;
 	flex-grow: 1;	
 	padding: 0;
 	font-weight: bold;
@@ -321,39 +227,106 @@ section div
 	color: #ccc;
 }
 
+/* Esto es el fondo de la parte azul */
 .cNavInfo
 {
 	display: block;
 	flex-wrap: wrap;
     background-color: #142743;
     color: white;
-    border-radius: 5px;
     flex-grow: 1;
-	min-height: 40vh;
-    border-radius: 10px 10px 0% 100% / 10px 10px 0% 20%;
+	min-height: 25vh;
     padding: 18px 10px;
-	padding: 10px 20px;
+	width: 100%;
 }
-.cNombretool
+
+/* Esto es la parte blanca justo abajo */
+.cDesc
 {
-	font-weight: bold;
-	font-size: 220%;
-	line-height: 2em;
-    margin-top: 30px;
-	margin-bottom: 5px;
+	/* outline: olivedrab solid 4px; */
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 30vh;
+	max-height: 40vh;
+}
+
+.cNavImg2
+{
+	display: flex;
+	justify-self: center;
+	align-self: flex-start;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
+	min-height: 30vh;
+	flex-grow: 1;
+
 
 }
-.cNombretoolLine
+.imgbase
 {
-	content: "";
+	margin: 10px 0;
+	opacity: 0;
+	width: 1px;
+
+
+}
+.imgup
+{
 	position: absolute;
-	width: 90%;
-	height: 2px;
-	background: linear-gradient(to right, #17a2b8 , transparent 90%);
-	border-radius: 5px;
+	z-index: 1;
+	margin: 10px 0;
+	max-height: 20vh;
+	max-width: 10vw;
+
+
+}
+.imgshadow
+{
+	position: absolute;
+	z-index: 0;
+	margin: 10px 0;
+	opacity: .4;
+	max-height: calc( 20vh + 2px );
+	max-width: calc( 10vw + 2px );
+	filter: contrast(0);
+	filter: brightness(0);
 }
 
+/* contendedor descripcion */
+.cont_description
+{
+	display: flex;
+	justify-content: space-between;
+	align-self: flex-start;
+	flex-direction: column;
+	width: 20%;
+	min-height: 50%;
+	margin: 20px 0 0 0;
+	flex-grow: 5;
+	text-align: justify;
+	max-height: 50vh;
+	overflow-y: auto;
 
+}
+#pDescripcion1
+{
+	width: 1%;
+	flex-grow: 1;
+	font-weight: bold;
+
+
+}
+
+#pDescripcion2
+{
+	text-align: justify;
+	font-size: 105%;
+
+}
 /* -------------------------- descripcion section 2 */
 .section2
 {
@@ -368,9 +341,9 @@ section div
 
 #div_iframe
 {
-	min-height: 95vh;
-	width: 90%;
-	margin: -60px 0 0 5vw;
+	min-height: 100vh;
+	width: 80vw;
+	margin: auto;
 	padding: 1px auto !important;
 	border: none;
 	box-shadow: 2px 2px 20px #aaa;
@@ -383,9 +356,10 @@ section div
 	position: absolute;
 	z-index: 80;
 	width: 100vw;
-	height: calc( 100vh - 64px );
-	background: linear-gradient(to right, transparent 0%, #f0f2f5 10% 100%);
-	opacity: 90%;
+	/* height: calc( 100vh - 64px ); */
+	height: 100vh;
+	background: #f0f2f5dd;
+	opacity: 100%;
 	visibility: visible;
 	margin: 0;
 	top: 0 ;
@@ -414,69 +388,58 @@ section div
 	align-items: center;
 	z-index: 1000;
 	height: 60px;
-	left: -3px;
+	width: 120px;
+	bottom: 50px;
 	text-decoration: none;
-	width: 85px;
-	border-right: solid 2px #0007;
-	border-radius: 0 15px 15px 25px / 0 15px 15px 45px ;
-	text-shadow: #000 0px 0px 1px;
 	transition: .5s;
-	box-shadow: #000 2px 2px 2px;
 }
-
-
 .btn_style:hover
 {
-	color: #fff;
-	border-right: solid 2px #0009;
-	text-shadow: #142743 -1px 1px 5px,
-					#14274377 -3px 3px 5px;
-	box-shadow: #142743 2px 2px 2px;
-	background: #63e3ff;
-
+	background: #53d3dd;
+	outline: green solid 2px;
+	text-shadow: 1px 1px 5px black;
 }
 .btn_back
 {
-	top: 20vh;
+	color: #fff;
+	left: calc( 50% - 160px );
 	background: #0b8a9e;
 }
-
-.btn_mb
-{
-	top: 30vh;
-	background: #142743;
-}
-
 .btn_cNavImg1
 {
-	top: 60vh;
 	background: #a00;
-	width: 20vw;
-	height: 100px;
-	transition: .5s;
+	left: calc( 50% + 40px );
 }
 .btn_cNavImg1:hover
 {
 	background: #f44;
 }
-
-.btn_cNavImg1.off
-{
-	top: 60vh;
-	background: #a00;
-	width: 10vw;
-	height: 60px;
-}
-
 .btn_cNavImg1::before
 {
 	content: "Ver PDF";
 }
-.btn_cNavImg1.off::before
+/* -------------------clases off -------------------------- */
+.section1.off
 {
-	content: "Información";
+	top: 50;
+	opacity: 0;
+	visibility: collapse;
+}
+.btn_cNavImg1.off
+{
+	left: calc( 100% - 120px);
 }
 
+.btn_cNavImg1.off::before
+{
+	content: "Volver";
+}
+.btn_back.off
+{
+	left: 0;
+}
+
+/* ------------clases mb ------------------------- */
 .mbui-layout-header.layout-header
 {
 	transition: .3s;
@@ -505,170 +468,13 @@ section div
 
 @media only screen and (max-width: 1150px) {
 
-  	*
-	{
-		font-size: 12px;
-	}
-	#control
-	{
-		width: 95vw;
-	}
-	.btn_style
-	{
-		width: 60px;
-		height: 40px;
-	}
-	.btn_cNavImg1
-	{
-		top: 60vh;
-		background: #a00;
-		width: 20vw;
-		opacity: 100%;
-		transition: .5s;
-	}
-	.btn_cNavImg1.off
-	{
-		top: 60vh;
-		background: #142743;
-		width: 10vw;
-		opacity: 100%;
-	}
-	
-	.btn_cNavImg1::before
-	{
-		content: "Ver PDF";
-	}
-	.btn_cNavImg1.off::before
-	{
-		content: "Información";
-	}
-
 }
 @media only screen and (max-width: 800px) {
-	*
-	{
-		font-size: 10px;
-	}
-	#control
-	{
-		width: 95vw;
-	}
-	.btn_style
-	{
-		width: 50px;
-		height: 25px;
-	}
-	.btn_cNavImg1
-	{
-		top: 60vh;
-		background: #a00;
-		width: 20vw;
-		opacity: 100%;
-		transition: .5s;
-	}
-	.btn_cNavImg1.off
-	{
-		top: 60vh;
-		background: #142743;
-		width: 10vw;
-		opacity: 100%;
-	}
-	
-	.btn_cNavImg1::before
-	{
-		content: "Ver PDF";
-	}
-	.btn_cNavImg1.off::before
-	{
-		content: "Información";
-	}
-
 
 }
 @media only screen and (min-width: 1700px) {
 
-	*
-	{
-		font-size: 18px;
-
-	}
-	#control
-	{
-		width: 95vw;
-		left: 5vw;
-	}
-
-
-	.btn_style
-	{
-		width: 100px;
-		height: 90px;
-	}
-	.btn_cNavImg1
-	{
-		top: 60vh;
-		background: #a00;
-		width: 20vw;
-		opacity: 100%;
-		transition: .5s;
-	}
-	.btn_cNavImg1.off
-	{
-		top: 60vh;
-		background: #142743;
-		width: 10vw;
-		opacity: 100%;
-	}
-	
-	.btn_cNavImg1::before
-	{
-		content: "Ver PDF";
-	}
-	.btn_cNavImg1.off::before
-	{
-		content: "Información";
-	}
-  }
+}
 @media only screen and (min-width: 2200px) {
 
-	*
-	{
-		font-size: 25px;
-	}
-	#control
-	{
-		width: 95vw;
-		left: 5vw;
-	}
-
-
-	.btn_style
-	{
-		width: 150px;
-		height: 130px;
-	}
-	.btn_cNavImg1
-	{
-		top: 60vh;
-		background: #a00;
-		width: 20vw;
-		opacity: 100%;
-		transition: .5s;
-	}
-	.btn_cNavImg1.off
-	{
-		top: 60vh;
-		background: #142743;
-		width: 10vw;
-		opacity: 100%;
-	}
-	
-	.btn_cNavImg1::before
-	{
-		content: "Ver PDF";
-	}
-	.btn_cNavImg1.off::before
-	{
-		content: "Información";
-	}
-  }
+}
