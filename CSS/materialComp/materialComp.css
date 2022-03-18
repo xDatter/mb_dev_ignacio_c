@@ -398,8 +398,8 @@ section>div
 }
 .btn_style:hover
 {
+	color: #fff;
 	background: #53d3dd;
-	outline: green solid 2px;
 	text-shadow: 1px 1px 5px black;
 }
 .btn_back
