@@ -346,9 +346,11 @@ section>div
 
 #div_iframe
 {
+	position: relative;
 	min-height: 100vh;
 	max-height: 100vh;
 	width: 80vw;
+	top: 0;
 	overflow: scroll;
 	margin: auto;
 	padding: 1px auto !important;
@@ -439,6 +441,8 @@ section>div
 }
 #div_iframe.off
 {
+	position: absolute;
+	top: -64px;
 	overflow: scroll;
 }
 .btn_cNavImg1.off
