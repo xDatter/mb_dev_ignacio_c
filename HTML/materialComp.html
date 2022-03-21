@@ -13,8 +13,8 @@
 <link rel="shortcut icon" href="https://smartview.masterbase.com/v1/6022f78d59c09800120e6815/favicon.10ce9fed.ico" type="image/x-icon">
 
 
-<!-- <link rel="stylesheet" href="https://xdatter.github.io/mb_dev_ignacio_c/CSS/materialComp/materialComp.css"> -->
-<link rel="stylesheet" href="../CSS/materialComp/materialComp.css">
+<link rel="stylesheet" href="https://xdatter.github.io/mb_dev_ignacio_c/CSS/materialComp/materialComp.css">
+<!-- <link rel="stylesheet" href="../CSS/materialComp/materialComp.css"> -->
 
 </head>
 <body>
@@ -106,7 +106,10 @@
       <div class="fullcover"></div>
 
       <div class="row table-wrap" id="div_iframe">
-        <div id="adobe-dc-view" style="width: 100%;"></div>
+        <!-- <div id="adobe-dc-view" style="width: 100%;"></div> -->
+          <div id="adobe-dc-view" style="width: 100%;" class="ViewSDK_parentRelativeHeight ViewSDK_hideOverflow">
+            <iframe  id="iframe-adobe-dc-view" allowfullscreen="allowfullscreen" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
       </div>
     </section>
 
