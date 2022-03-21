@@ -338,7 +338,7 @@ section>div
 	align-items: center;
     flex-grow: 3;
     width: 1px;
-	height: calc( 100vh - 64px );
+	/* height: calc( 100vh - 64px ); */
 	top: 0;
 	overflow: hidden;
 	transition: .5s;
@@ -365,7 +365,7 @@ section>div
 	z-index: 80;
 	width: 100vw;
 	height: calc( 100vh - 64px );
-	background: #f0f2f5dd;
+	background: #f0f2f5;
 	opacity: 100%;
 	visibility: visible;
 	margin: 0;
@@ -434,8 +434,6 @@ section>div
 }
 .section2.off
 {
-	overflow: scroll;
-	height: auto;
 	top: 0;
 }
 #div_iframe.off
