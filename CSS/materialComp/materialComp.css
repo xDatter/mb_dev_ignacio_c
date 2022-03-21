@@ -167,8 +167,9 @@ section>div
 
 .cNombretool
 {
+	padding: 0 20px;
+    text-align: center;
 	font-weight: bold;
-	text-align: justify;
 	font-size: 160%;
 	line-height: 1em;
     margin-top: 30px;
@@ -196,6 +197,7 @@ section>div
 /* esto es creator doctype y version */
 .boxInfo
 {
+	padding: 0 0 0 60px;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 20px 0 10px 0;
@@ -323,6 +325,7 @@ section>div
 
 #pDescripcion2
 {
+	padding: 0 60px 0 0;
 	text-align: justify;
 	font-size: 105%;
 
