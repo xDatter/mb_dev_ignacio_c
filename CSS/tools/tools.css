@@ -30,13 +30,11 @@ ul li {
 }
 .table-wrap {
 	background: #fff;
-	border-radius: 5px;
 	border: 1px solid #dee2e6;
 	padding: 20px;
 	margin: 10px 0;
 }
 .table-wrap2 {
-	border-radius: 10px;
 	border: 1px solid #dee2e6;
 	padding: 10px 20px;
 	margin: 10px 0;
@@ -93,7 +91,6 @@ ul li {
 
 .tag {
 	background: #F5F5F5;
-	border-radius: 5px;
 	border: 1px solid #D9D9D9;
 	color: #333;
 	padding: 2px 10px;
@@ -133,7 +130,6 @@ ul li {
     padding: 0;
     background: linear-gradient(to bottom, transparent 50px, #fff 20px);
     border: 0;
-	border-radius: 5px;
     box-shadow: 2px 2px 20px #aaa;
 
 }
@@ -170,7 +166,6 @@ ul li {
 .cNavImg img
 {
 	max-width: 100%;
-	border-radius: 5px;
 	margin: 10px 0;
 	width: 50%;
 }
@@ -244,10 +239,8 @@ ul li {
 {
     background-color: #142743;
     color: white;
-    border-radius: 5px;
     flex-grow: 1;
     min-width: 100%;
-    border-radius: 10px 10px 0% 100% / 10px 10px 0% 20%;
     padding: 18px 10px;
 	min-height: 70vh;
 	padding: 10px 20px;
@@ -284,6 +277,8 @@ ul li {
 	font-size: 5em;
 	margin-top: 20px;
 	width: 1px;
+	/* outline: solid red 3px; */
+
 }
 .section3 div:nth-child(3) i, .section3 div:nth-child(2) i
 {
@@ -350,14 +345,13 @@ section div
 	flex-grow: 1;
 }
 
-
 .section3 span::before
 {
 	content: "";
 	position: absolute;
 	width: 40%;
-	height: 2px;
-	background: linear-gradient(to right,#0f8699, transparent);
+	height: 1px;
+	background: #0f8699;
 }
 
 .section3 h6
@@ -381,7 +375,6 @@ section div
 	text-decoration: none;
 	width: 85px;
 	border-right: solid 2px #0007;
-	border-radius: 0 15px 15px 25px / 0 15px 15px 45px ;
 	text-shadow: #000 0px 0px 1px;
 	transition: .1s;
 	box-shadow: #000 2px 2px 2px;
@@ -420,96 +413,13 @@ section div
 
 @media only screen and (max-width: 1150px) {
 
-  	*
-	{
-		font-size: 12px;
-	}
-	#control
-	{
-		width: 90vw;
-	}
-	.btn_style
-	{
-		width: 60px;
-		height: 40px;
-	}
-	.cNavImg i
-	{
-		font-size: 150px;
-		top: 15%;
-		opacity: 5%;
-	}
 }
 @media only screen and (max-width: 800px) {
-	*
-	{
-		font-size: 10px;
-	}
-	#control
-	{
-		width: 90vw;
-	}
-	.btn_style
-	{
-		width: 50px;
-		height: 25px;
-	}
-	.cNavImg i
-	{
-		font-size: 100px;
-		top: 15%;
-		opacity: 5%;
-	}
 
 }
 @media only screen and (min-width: 1700px) {
 
-	*
-	{
-		font-size: 18px;
-
-	}
-	#control
-	{
-		width: 90vw;
-		left: 5vw;
-	}
-
-	.cNavImg i
-	{
-		font-size: 300px;
-		top: 15%;
-		opacity: 5%;
-	}
-	.btn_style
-	{
-		width: 100px;
-		height: 90px;
-	}
   }
 @media only screen and (min-width: 2200px) {
 
-	*
-	{
-		font-size: 25px;
-
-
-	}
-	#control
-	{
-		width: 90vw;
-		left: 5vw;
-	}
-
-	.cNavImg i
-	{
-		font-size: 500px;
-		top: 15%;
-		opacity: 5%;
-	}
-	.btn_style
-	{
-		width: 150px;
-		height: 130px;
-	}
   }

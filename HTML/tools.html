@@ -8,22 +8,25 @@
 <!-- Bootstrap CSS -->
 <link href="https://unpkg.com/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
-<script src="https://kit.fontawesome.com/ff13f47a46.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/89c3de8e17.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
 <link rel="shortcut icon" href="https://smartview.masterbase.com/v1/6022f78d59c09800120e6815/favicon.10ce9fed.ico" type="image/x-icon">
 
 
 <!-- <link rel="stylesheet" href="../CSS/tools/tools.css"> -->
 <link rel="stylesheet" href="https://xdatter.github.io/request/css/tools.css">
-<!-- <link rel="stylesheet" href="http://muker.cl/mb_dev_ignacio_c/TOOLS/css/tools.css"> -->
 
 </head>
 <body>
+  <!-- ------------------------- apartado para botones y referencias ------------------------ -->
+  <!-- Aqui reemplazar el link a cada grid de tools segun corresponda -->
+  <a href="https://gridform.masterbase.com/v2/61b7aeb315b31c0018377e14" class="btn_back btn_style" >Volver</a>
+
   <div>
     <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
   </div>
-<div id="control" class="cFlex">
-<!-- ------------- Agregado un div #control para mejorar el acceso y las vistas -->
+  <!-- ------------- Agregado un div #control para mejorar el acceso y las vistas -->
+  <div id="control" class="cFlex">
   <div class="container">
 
 
@@ -35,13 +38,11 @@
 
           <div>
             <p class="cNombretool">#!MB.data.texts.tool.name!#</p>
-            <!-- <p class="cNombretool">Testing Titulo Nombre Tool</p> -->
           </div>
           <div class="col-md-2 cNavCreator"> 
             <div>
               <p>Identity </p> 
               <p>#!	MB.data.texts.tool.identity !#</p>
-              <!-- <p>dev.igdatter.tool.Name</p> -->
             </div>
             <div>
               <p>Creador </p>
@@ -50,14 +51,12 @@
               #! else !#
               <p>#!MB.data.texts.tool.creatorMB!#</p>
               #!/ if !#
-              <!-- <p>Dev Ignacio Cárdenas Galvarini </p> -->
             </div>
             
           </div>
 
-          <div class="col-md-8 gy-5 cNavImg"> 
-            
-            <i class="fal fa-tools"></i>
+          <div class="col-md-8 gy-5 cNavImg">  
+            <i class="fa-light fa-screwdriver-wrench"></i>
           </div>
 
           #!#if MB.data.texts.tool.sku !#
@@ -102,17 +101,16 @@
     <section class="section3">
 
       <div class="row table-wrap cDesc">
-        <i class="far fa-list-alt"></i>
-        <div class="col-md-11">
-          <h6>Descripción</h6>
+        <i class="fa-thin fa-file-lines"></i>
+        <div>          
+        <h6>Descripción</h6>
           <span></span>
           <p>#!MB.data.texts.tool.description!#</p>
-          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel necessitatibus incidunt fuga, asperiores magnam quis sed possimus architecto ea. Nisi obcaecati enim id sapiente, corrupti est consectetur blanditiis fugit! Ad a illum delectus hic deleniti vel sapiente pariatur. Provident sapiente voluptas et dolor dolorum voluptates dolorem soluta illo in. Consequatur!</p> -->
         </div>
       </div>
 
       <div class="row table-wrap cDesc">
-        <i class="fas fa-chart-line"></i>  
+        <i class="fa-thin fa-chart-column"></i>  
         <div class="col-md-11">
           <h6>Caso de uso</h6>
           <span></span>
@@ -122,7 +120,7 @@
       </div> 
 
       <div class="row table-wrap cDesc">
-        <i class="fas fa-chart-line"></i>
+        <i class="fa-thin fa-chart-line"></i>
         <div class="col-md-11">
           <h6>Caso propuesta</h6>
           <span></span>
@@ -132,7 +130,7 @@
       </div> 
 
       <div class="row table-wrap cDesc">
-        <i class="far fa-file-alt"></i>
+        <i class="fa-thin fa-file-lines"></i>
         <div class="col-md-11">
           <h6>Manual</h6>
           <span></span>
@@ -159,7 +157,7 @@
       </div> 
 
       <div class="row table-wrap cDesc">
-        <i class="far fa-file-code"></i>
+        <i class="fa-thin fa-file-code"></i>
         <div class="col-md-11">
           <h6>Estructura Json</h6>
           <span></span>
@@ -193,9 +191,7 @@
 
 <!-- Option 1: Bootstrap Bundle with Popper --> 
 <script src="https://unpkg.com/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
-<script>
-  document.write('<a href="' + document.referrer + '" class="btn_back btn_style" >Volver</a>');
-</script>
+
 
 </body>
 </html>
