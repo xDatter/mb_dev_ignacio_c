@@ -148,7 +148,7 @@ section>div
 /* --------------------------Nav info izq */
 .section1
 {
-	position: absolute;
+	position: fixed;
 	order: 55;
 	z-index: 100;
 	flex-wrap: wrap;
@@ -347,10 +347,7 @@ section>div
 #div_iframe
 {
 	position: absolute;
-	min-height: 100vh;
-	max-height: 100vh;
 	width: 80vw;
-	top: -64px;
 	overflow: scroll;
 	margin: auto;
 	padding: 1px auto !important;
@@ -361,11 +358,11 @@ section>div
 
 .fullcover
 {
-	position: absolute;
-	z-index: 80;
+	position: fixed;
+	z-index: 0;
 	width: 100vw;
-	height: calc( 100vh - 64px );
-	background: #f0f2f5;
+	height: 100vh;
+	background: #f0f2f5dd;
 	opacity: 100%;
 	visibility: visible;
 	margin: 0;
@@ -373,9 +370,9 @@ section>div
 	left: 0 ;
 	transition: .3s;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
 	display: none;
-} */
+}
 .fullcover.off
 {
 	visibility: hidden;
@@ -387,7 +384,7 @@ section>div
 
 .btn_style
 {
-	position: absolute;
+	position: fixed;
 	color: #fff;
 	font-weight: bold;
 	display: flex;
@@ -439,8 +436,6 @@ section>div
 #div_iframe.off
 {
 	position: relative;
-	top: 0px;
-	overflow: scroll;
 }
 .btn_cNavImg1.off
 {
