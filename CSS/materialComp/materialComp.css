@@ -582,8 +582,8 @@ section>div
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	min-height: 30vh;
-	max-height: 40vh;
+    min-height: 45vh;
+    max-height: 45vh;
 
 }
 
