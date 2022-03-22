@@ -535,14 +535,14 @@ section>div
 	margin: 10px auto ;
 	min-height: 5vh;
 	max-height: 20vh;
-	padding: 0 10px;
+	padding: 0;
 }
 
 .cNav
 {
 	width: 10px;
 	flex-grow: 1;
-
+	margin: 20px 60px 0 0;
 }
 .cNav div
 {
@@ -553,6 +553,7 @@ section>div
 .cNav p
 {
 	margin: 0 7vw;
+	font-size: 90%;
 }
 
 .cNav i
