@@ -357,7 +357,10 @@ section>div
 	box-shadow: 2px 2px 20px #aaa;
 	flex-grow: 3;
 }
-
+#div_iframe.off
+{
+	z-index: 0;
+}
 .fullcover
 {
 	position: fixed;
