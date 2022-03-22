@@ -375,9 +375,9 @@ section>div
 	left: 0 ;
 	transition: .3s;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
-}
+} */
 .fullcover.off
 {
 	visibility: hidden;
