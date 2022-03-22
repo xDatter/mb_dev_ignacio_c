@@ -418,7 +418,6 @@ section div
 {
 	position: absolute;
 	top: 7vh;
-	left: 0;
 	max-width: 99vw;
 	display: flex;
 	flex-wrap: wrap;
