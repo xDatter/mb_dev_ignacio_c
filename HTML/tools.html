@@ -20,13 +20,16 @@
 <body>
   <!-- ------------------------- apartado para botones y referencias ------------------------ -->
   <!-- Aqui reemplazar el link a cada grid de tools segun corresponda -->
-  <a href="https://gridform.masterbase.com/v2/61b7aeb315b31c0018377e14" class="btn_back btn_style" >Volver</a>
+  <div class="botones">
 
-  <div>
-    <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
+    <a href="https://gridform.masterbase.com/v2/61b7aeb315b31c0018377e14" class="btn_back btn_style" >Volver</a>
+  
+    <div>
+      <a href="https://masterbase.com" class="btn_mb btn_style" >Inicio</a>
+    </div>
   </div>
   <!-- ------------- Agregado un div #control para mejorar el acceso y las vistas -->
-  <div id="control" class="cFlex">
+  <div id="control" >
   <div class="container">
 
 
@@ -132,7 +135,7 @@
         <div class="col-md-11">
           <h6>Manual</h6>
           <span></span>
-          <div>
+          <div class="documentos">
             #!#if  MB.data.texts.tool.manual.[0].tituloManual!# 
             <a href="#! MB.data.texts.tool.manual.[0].pdfManual.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button" title="#!MB.data.texts.tool.manual.[0].pdfManual.[0].name!#">#! MB.data.texts.tool.manual.[0].tituloManual !#</a>
                 #! else !#
@@ -159,7 +162,7 @@
         <div class="col-md-11">
           <h6>Estructura Json</h6>
           <span></span>
-          <div>
+          <div class="documentos">
             #!#if  MB.data.texts.tool.json.[0].tituloJson!# 
             <a href="#! MB.data.texts.tool.json.[0].pdfJson.[0].content !#" target="_blank" class="btn btn-primary btn-sm" role="button" title="#! MB.data.texts.tool.json.[0].pdfJson.[0].name!#">#! MB.data.texts.tool.json.[0].tituloJson!#</a>
             #! else !#
