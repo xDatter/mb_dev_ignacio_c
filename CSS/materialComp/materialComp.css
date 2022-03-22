@@ -6,10 +6,10 @@
 	border: none;
 
 }
-*::selection
+/* *::selection
 {
 	display: none;
-}
+} */
 body {
 	background: #f0f2f5;
 	color: #212529;
@@ -102,14 +102,10 @@ ul li {
 	position: absolute;
     width: 100vw;
     display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
-.cFlex
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
 .cFlexA
 {
     display: flex;
@@ -131,7 +127,7 @@ ul li {
     flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 section
@@ -145,7 +141,7 @@ section>div
 	flex-grow: 1;
 }
 
-/* --------------------------Nav info izq */
+/* --------------------------Nav info Parte azul */
 .section1
 {
 	position: fixed;
@@ -153,8 +149,10 @@ section>div
 	z-index: 100;
 	flex-wrap: wrap;
     flex-grow: 1;
-	min-width: 96vw;
-	max-width: 96vw;
+	min-width: 100%;
+	max-width: 100%;
+	/* min-width: 96vw;
+	max-width: 96vw; */
 	min-height: 30vh;
 	max-height: 70vh;
 	overflow: hidden;
@@ -188,7 +186,8 @@ section>div
 .cNav
 {
 	display: flex;
-    width	: 20%;
+	width: 10px;
+    min-width	: 20%;
 	flex-grow: 1;
     margin-top: 20px;
 	flex-wrap: wrap;
@@ -229,7 +228,7 @@ section>div
 	color: #ccc;
 }
 
-/* Esto es el fondo de la parte azul */
+/* Esto es el solo el fondo de la parte azul */
 .cNavInfo
 {
 	display: block;
@@ -242,10 +241,9 @@ section>div
 	width: 100%;
 }
 
-/* Esto es la parte blanca justo abajo */
+/* Esto es la parte blanca toda la descripcion e imagen */
 .cDesc
 {
-	/* outline: olivedrab solid 4px; */
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -330,19 +328,19 @@ section>div
 	font-size: 105%;
 
 }
-/* -------------------------- descripcion section 2 */
+/* --------------------------  section 2 */
 .section2
 {
-	position: absolute;
     order: 100;
+	position: absolute;
+	top: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-    flex-grow: 3;
+    flex-grow: 1;
     width: 1px;
-	/* height: calc( 100vh - 64px ); */
-	top: 0;
+	min-height: 100vh;
 	overflow: hidden;
 	transition: .5s;
 }
@@ -350,6 +348,7 @@ section>div
 #div_iframe
 {
 	position: absolute;
+	z-index: -10;
 	width: 80vw;
 	overflow: scroll;
 	margin: auto;
@@ -381,7 +380,7 @@ section>div
 	visibility: hidden;
 	display: none;
 	opacity: 0%;
-	transition: 1s;
+	transition: 5s;
 }
 /* -----------------btn------------------------- */
 
@@ -416,6 +415,7 @@ section>div
 {
 	background: #a00;
 	left: calc( 50% + 40px );
+
 }
 .btn_cNavImg1:hover
 {
@@ -493,6 +493,255 @@ section>div
 
 @media only screen and (max-width: 1150px) {
 
+	#control
+{
+    width: 100vw;
+}
+
+.section1
+{
+	top: 7vh;
+	min-height: 10vh;
+	max-height: 70vh;
+	overflow: hidden;
+	box-shadow: 2px 2px 20px #142743;
+	opacity: 100%;
+	visibility: visible;
+	transition: opacity .5s, visibility .6s;
+}
+
+.cNombretool
+{
+	padding: 0 10px;
+    text-align: center;
+	font-weight: 600;
+	font-size: 160%;
+	line-height: 1em;
+    margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+.boxInfo
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	padding: auto 10px;
+	margin: 10px auto ;
+	min-height: 5vh;
+	max-height: 20vh;
+	padding: 0 10px;
+}
+
+.cNav
+{
+	width: 10px;
+	flex-grow: 1;
+
+}
+.cNav div
+{
+	display: flex;
+	flex-grow: 1;	
+	font-weight: normal;
+}
+.cNav p
+{
+	margin: 0 7vw;
+}
+
+.cNav i
+{
+	font-size: 1em;
+	margin: 5px 0 0 0;
+}
+
+/* Esto es el solo el fondo de la parte azul */
+.cNavInfo
+{
+	display: block;
+    background-color: #142743;
+    color: white;
+	min-height: 25vh;
+    padding: 10px 10px;
+	width: 100%;
+}
+
+/* Esto es la parte blanca toda la descripcion e imagen */
+.cDesc
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	min-height: 30vh;
+	max-height: 40vh;
+
+}
+
+.cNavImg2
+{
+	display: flex;
+	justify-self: center;
+	align-self: flex-start;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
+	min-height: 20vh;
+	flex-grow: 1;
+}
+.imgbase
+{
+	margin: 5px 0;
+	opacity: 1;
+	width: 1px;
+
+
+}
+.imgup
+{
+	position: absolute;
+	z-index: 2;
+	margin: 5px 0;
+	max-height: 20vh;
+	max-width: 10vw;
+
+
+}
+.imgshadow
+{
+	position: absolute;
+	z-index: 1;
+	margin: 5px 0;
+	opacity: .4;
+	max-height: calc( 20vh + 2px );
+	max-width: calc( 10vw + 2px );
+	filter: contrast(0);
+	filter: brightness(0);
+}
+
+/* contendedor descripcion */
+.cont_description
+{
+	display: flex;
+	align-self: flex-start;
+	justify-self: center;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 20%;
+	min-height: 25vh;
+	max-height: 30vh;
+	margin: 10px 10px 0 0;
+	flex-grow: 5;
+	text-align: justify;
+	overflow-y: auto;
+
+}
+#pDescripcion1
+{
+	width: 1%;
+	flex-grow: 1;
+	font-weight: 600;
+	min-height: 3vh;
+	margin-bottom: 5px;
+}
+
+#pDescripcion2
+{
+	padding: 0 60px 0 0;
+	text-align: justify;
+	font-size: 90%;
+	min-height: 22vh;
+}
+
+.section2
+{
+    min-width: 96vw;
+	min-height: 100vh;
+	overflow: hidden;
+	transition: .5s;
+
+}
+
+#div_iframe
+{
+	position: absolute;
+	width:100%;
+	padding: 0;
+}
+
+.btn_style
+{
+	position: fixed;
+	color: #fff;
+	font-weight: normal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	height: 60px;
+	width: 100px;
+	bottom: 50px;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.btn_back
+{
+	color: #fff;
+	left: calc( 50% - 150px );
+	background: #0b8a9e;
+}
+.btn_cNavImg1
+{
+	background: #a00;
+	left: calc( 50% + 50px );
+	justify-content: center;
+	transition: .5s;
+}
+
+.btn_cNavImg1.off
+{
+	left: calc( 100% - 60px);
+	justify-content: flex-start;
+	transition: 1.5s;
+}
+
+.btn_cNavImg1.off::before
+{
+	content: "Volver";
+}
+.btn_back.off
+{
+	left: -50px;
+	visibility: collapse;
+	opacity: 0;
+}
+
+	.MAqNLXLFR4WUfBoXHoCFQ.header-widget, .mbui-layout-header.layout-header
+	{
+		min-height: 5vh !important;
+		max-height: 5vh !important;
+		height: 5vh !important;
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		flex-wrap: nowrap !important;
+		padding: 0 !important;
+		margin: 0 auto !important;
+	}
+	.sc-bdvvtL.brbzit
+	{
+		display: flex !important;
+		flex-wrap: nowrap !important;
+		width: 100% !important;
+		justify-content: center !important;
+		align-items: center !important;
+	}
 }
 @media only screen and (max-width: 800px) {
 
