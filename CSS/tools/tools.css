@@ -409,10 +409,8 @@ section div
 /* los min sobrescriben min - entre mayor el valor, debe ir más abajo en cascada */
 
 
-@media only screen and (max-width: 1150px) {
 
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1150px) {
 
 #control
 {
@@ -455,24 +453,14 @@ section div
     flex-wrap: wrap;
     flex-direction: column;
 	min-width: 100%;
-	margin: 0 auto;
+	margin: 10px auto;
 }
-.cNavImg
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    min-width: 10%;
-    margin: 10px auto;
-	flex-grow: 5;
-	
-}
+
 
 .cNavImg img
 {
-	max-width: 100%;
-	margin: 10px 0;
-	width: 50%;
+	margin: 20px 0;
+	width: 20%;
 
 }
 .cNavImg i
@@ -489,12 +477,37 @@ section div
     color: white;
     flex-grow: 1;
     min-width: 100%;
-    padding: 18px 10px;
-	min-height: 70vh;
+	min-height: 30vh;
 	padding: 10px 20px;
 	font-size: 120%;
 
+}
+.cNombretool
+{
+	font-weight: 600;
+    margin-top: 5px;
+    font-size: 150%;
+    line-height: 1em;
+	margin: 30px auto;
+}
+.cNavCreator
+{
+	display: flex;
+	flex-direction: column;
+    min-width	: 100%;
+	flex-grow: 1;	
+	padding: 0;
+	font-weight: bold;
+	margin: 0 0 10px;
 
+}
+.section3 span::before
+{
+	content: "";
+	position: absolute;
+	width: 75%;
+	height: 1px;
+	background: #0f8699;
 }
 .section3 i
 {
