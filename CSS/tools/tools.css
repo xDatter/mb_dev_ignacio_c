@@ -417,7 +417,7 @@ section div
 #control
 {
 	position: absolute;
-	top: 70px;
+	top: 7vh;
 	left: 0;
 	max-width: 99vw;
 	display: flex;
