@@ -278,7 +278,7 @@ section>div
 	position: absolute;
 	z-index: 1;
 	margin: 10px 0;
-	max-height: 17vh;
+	max-height: 15vh;
 	max-width: 10vw;
 
 
@@ -289,7 +289,7 @@ section>div
 	z-index: 0;
 	margin: 10px 0;
 	opacity: .4;
-	max-height: calc( 17vh + 2px );
+	max-height: calc( 15vh + 2px );
 	max-width: calc( 10vw + 2px );
 	filter: contrast(0);
 	filter: brightness(0);
@@ -609,8 +609,8 @@ section>div
 	position: absolute;
 	z-index: 2;
 	margin: 5px 0;
-    max-height: 17vh;
-    max-width: 25vw;
+    max-height: 15vh;
+    max-width: 20vw;
 
 
 }
@@ -620,8 +620,8 @@ section>div
 	z-index: 1;
 	margin: 5px 0;
 	opacity: .4;
-	max-height: calc( 17vh + 2px );
-	max-width: calc( 25vw + 2px );
+	max-height: calc( 15vh + 2px );
+	max-width: calc( 20vw + 2px );
 	filter: contrast(0);
 	filter: brightness(0);
 }
