@@ -164,7 +164,7 @@ ul li {
 
 }
 
-.cNavImg i
+.cNavImg svg
 {
 	font-size: 200px;
 	position: absolute;
@@ -211,7 +211,7 @@ ul li {
 	margin: 0 3vw;
 }
 
-.cNav i
+.cNav svg
 {
 	position: absolute;
 	font-size: 20px !important;
@@ -268,7 +268,7 @@ ul li {
     margin-bottom: 0;
 }
 
-.section3 i
+.section3 svg
 {
 	position: absolute;
 	color: #243b55;
@@ -278,7 +278,7 @@ ul li {
 	/* outline: solid red 3px; */
 
 }
-.section3 div:nth-child(3) i, .section3 div:nth-child(2) i
+.section3 div:nth-child(3) svg, .section3 div:nth-child(2) svg
 {
 	font-size: 4.5em;
 }
@@ -465,7 +465,7 @@ section div
 	width: 20%;
 
 }
-.cNavImg i
+.cNavImg svg
 {
 	font-size: 200px;
 	position: absolute;
@@ -511,7 +511,7 @@ section div
 	height: 1px;
 	background: #0f8699;
 }
-.section3 i
+.section3 svg
 {
 display: none;
 
