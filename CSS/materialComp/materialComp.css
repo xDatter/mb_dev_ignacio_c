@@ -100,7 +100,7 @@ ul li {
 #control
 {
 	position: absolute;
-    width: 100vw;
+    width: 98vw;
     display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -498,7 +498,7 @@ section>div
 
 	#control
 {
-    width: 100vw;
+    width: 96vw;
 }
 
 .section1
