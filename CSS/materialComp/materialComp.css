@@ -289,8 +289,8 @@ section>div
 	z-index: 0;
 	margin: 10px 0;
 	opacity: .4;
-	max-height: calc( 15vh + 2px );
-	max-width: calc( 10vw + 2px );
+	max-height: calc( 15vh + 1px );
+	max-width: calc( 10vw + 1px );
 	filter: contrast(0);
 	filter: brightness(0);
 }
@@ -621,8 +621,8 @@ section>div
 	z-index: 1;
 	margin: 5px 0;
 	opacity: .4;
-	max-height: calc( 15vh + 2px );
-	max-width: calc( 20vw + 2px );
+	max-height: calc( 15vh + 1px );
+	max-width: calc( 20vw + 1px );
 	filter: contrast(0);
 	filter: brightness(0);
 }
