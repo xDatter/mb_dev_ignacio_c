@@ -144,15 +144,14 @@ section>div
 /* --------------------------Nav info Parte azul */
 .section1
 {
+	left: 2vw;
 	position: fixed;
 	order: 55;
 	z-index: 100;
 	flex-wrap: wrap;
     flex-grow: 1;
-	min-width: 100%;
-	max-width: 100%;
-	/* min-width: 96vw;
-	max-width: 96vw; */
+	min-width: 95%;
+	max-width: 95%;
 	min-height: 30vh;
 	max-height: 70vh;
 	overflow: hidden;
@@ -279,7 +278,7 @@ section>div
 	position: absolute;
 	z-index: 1;
 	margin: 10px 0;
-	max-height: 20vh;
+	max-height: 17vh;
 	max-width: 10vw;
 
 
@@ -290,7 +289,7 @@ section>div
 	z-index: 0;
 	margin: 10px 0;
 	opacity: .4;
-	max-height: calc( 20vh + 2px );
+	max-height: calc( 17vh + 2px );
 	max-width: calc( 10vw + 2px );
 	filter: contrast(0);
 	filter: brightness(0);
@@ -610,7 +609,7 @@ section>div
 	position: absolute;
 	z-index: 2;
 	margin: 5px 0;
-    max-height: 20vh;
+    max-height: 17vh;
     max-width: 25vw;
 
 
@@ -621,7 +620,7 @@ section>div
 	z-index: 1;
 	margin: 5px 0;
 	opacity: .4;
-	max-height: calc( 20vh + 2px );
+	max-height: calc( 17vh + 2px );
 	max-width: calc( 25vw + 2px );
 	filter: contrast(0);
 	filter: brightness(0);
@@ -664,7 +663,6 @@ section>div
 .section2
 {
     min-width: 96vw;
-	min-height: 100vh;
 	overflow: hidden;
 	transition: .5s;
 
