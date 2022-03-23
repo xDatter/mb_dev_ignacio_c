@@ -350,7 +350,7 @@ section>div
 	position: absolute;
 	z-index: -10;
 	width: 80vw;
-	overflow: scroll;
+	overflow: hidden;
 	margin: auto;
 	padding: 1px auto !important;
 	border: none;
