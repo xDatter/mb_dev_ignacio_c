@@ -476,10 +476,10 @@ section div
 }
 .cNavImg svg
 {
-	font-size: 200px;
-	position: absolute;
-	top: 15vh;
-	opacity: 3%;
+    font-size: 150px;
+    position: absolute;
+    top: 10vh;
+    opacity: 3%;
 
 }
 .cNavInfo
