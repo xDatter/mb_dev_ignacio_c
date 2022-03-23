@@ -340,7 +340,6 @@ section>div
 	align-items: center;
     flex-grow: 1;
     width: 1px;
-	min-height: 100vh;
 	overflow: hidden;
 	transition: .5s;
 }
