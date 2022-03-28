@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #eee;
+}
+
+#control 
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url("https://images.wallpaperscraft.com/image/single/desk_office_chair_design_meeting_80711_1080x1920.jpg") center center;
+    background-size: cover;
+}
+
+section
+{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.section1
+{
+    background: #dd41;
+}
+.section2
+{
+    background: #d4d1;
+}
