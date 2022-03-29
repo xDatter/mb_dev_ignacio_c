@@ -4,23 +4,68 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body
+#hola
 {
-    background: #eee;
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
 }
-
-#control 
+.cover
 {
-    width: 100%;
-    min-height: 100vh;
+    opacity: 0 ;
+    visibility: collapse ;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 0vh;
+    min-width: 0vw;
+    max-height: 0vh;
+    max-width: 0vw;
+}
+.cover.nolanding
+{
+    opacity: 1 ;
+    visibility: visible ;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+.cover.nolanding p
+{
+    text-align: center;
+    font-size: 50px;
+}
+#control.nolanding
+{
+    opacity: 0 ;
+    visibility: collapse ;
+    min-height: 0vh;
+    min-width: 0vw;
+    max-height: 0vh;
+    max-width: 0vw;
+}
+#control 
+{
+    z-index: 0;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    background: url("https://images.wallpaperscraft.com/image/single/desk_office_chair_design_meeting_80711_1080x1920.jpg") center center;
+    background: url("https://images.wallpaperscraft.com/image/single/desk_office_chair_design_meeting_80711_1080x1920.jpg") center center no-repeat fixed;
     background-size: cover;
+    width: 100%;
+    min-width: 0vw;
+    min-height: 200vh;
+    max-width: 100%;
+    max-height: auto;
 }
 
 section
@@ -28,15 +73,82 @@ section
     min-width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    overflow: hidden;
 }
 
 .section1
 {
-    background: #dd41;
+    outline: orange solid 3px;
 }
 .section2
 {
-    background: #d4d1;
+    outline: purple solid 3px;
 }
+
+/* -----------Section 1----------------- */
+.section1 header
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+    background: #fffd;
+    min-height: 20vh;
+    max-height: 20vh;
+
+}
+.section1.logo
+{
+    max-width: 350px;
+    margin: 20px auto 5px;
+
+}
+.section1 header .logo img
+{
+    width: 100%;
+}
+.section1 main
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 70vh;
+    max-height: 70vh;
+}
+.section1 main .marcoImg
+{
+    height: 100%;
+    overflow: hidden;
+}
+.section1 main .marcoImg img
+{
+    width: 100%;
+
+}
+/* ---------------------------- */
+
+/* -----------Section 2----------------- */
+
+/* ---------------------------- */
+
+
+
+
+
+/* ----------------Responsive Desing-------------- */
+
+/* para pantallas mas pequeñas usar max */
+/* para pantallas mas grandes usar min */
+/* los max sobrescriben max - entre menor el valor, debe ir más abajo en cascada */
+/* los min sobrescriben min - entre mayor el valor, debe ir más abajo en cascada */
+
+/* @media only screen and (max-width: 1150px) {
+
+
+} */
+
