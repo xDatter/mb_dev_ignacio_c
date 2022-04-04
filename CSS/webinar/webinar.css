@@ -10,7 +10,7 @@
 *::selection
 {
     color: #456789;
-    background: #fffd;
+    background: #eff;
     text-shadow: none;
 }
 #hola
@@ -280,8 +280,8 @@ section
 /* los max sobrescriben max - entre menor el valor, debe ir más abajo en cascada */
 /* los min sobrescriben min - entre mayor el valor, debe ir más abajo en cascada */
 
-/* @media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1150px) {
 
 
-} */
+}
 
