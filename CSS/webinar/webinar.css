@@ -109,19 +109,23 @@ section
     width: 100%;
     padding: 20px 0;
     background: #fff;
-    min-height: 20vh;
-    max-height: 20vh;
+    min-height: 13vh;
+    max-height: 13vh;
 
 }
-.section1.logo
+.logo
 {
     max-width: 350px;
     margin: 20px auto 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .section1 header .logo img
 {
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
 }
 .section1 main
 {
@@ -132,8 +136,8 @@ section
     align-items: flex-start;
     width: 100%;
     max-width: 100%;
-    min-height: 80vh;
-    max-height: 80vh;
+    min-height: 87vh;
+    max-height: 87vh;
 }
 .section1 main .contenidoTitulo
 {
@@ -152,13 +156,15 @@ section
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 50%;
-    min-width: 600px;
-    height: 75vh;
-    margin: auto 10px auto auto;
+    width: 35vw;
+    min-width: 400px;
+    height: 70vh;
+    margin: auto 8vw auto auto;
     overflow: hidden;
-    background: #fff9;
+    background: #fff4;
     border-radius: 10px;
+
+    /* outline: red solid 3px; */
 }
 .section1 main .marcoFormulario form
 {
