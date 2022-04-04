@@ -291,7 +291,7 @@ ul li {
 }
 .text-cont
 {
-	/* outline: purple dotted 3px; */
+	padding: 0 5vw;
 }
 
 .icon-cont svg
@@ -409,14 +409,6 @@ section div
 	top: 30vh;
 	background: #142743;
 }
-
-/* ----------------Responsive Desing-------------- */
-
-/* para pantallas mas pequeñas usar max */
-/* para pantallas mas grandes usar min */
-/* los max sobrescriben max - entre menor el valor, debe ir más abajo en cascada */
-/* los min sobrescriben min - entre mayor el valor, debe ir más abajo en cascada */
-
 
 
 @media only screen and (max-width: 1150px) {
@@ -586,9 +578,3 @@ display: none;
 
 }
 
-@media only screen and (min-width: 1700px) {
-
-  }
-@media only screen and (min-width: 2200px) {
-
-  }

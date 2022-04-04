@@ -92,14 +92,14 @@ section
     overflow: hidden;
 }
 
-.section1
+/* .section1
 {
-    /* outline: orange solid 3px; */
+    outline: orange solid 3px;
 }
 .section2
 {
-    /* outline: purple solid 3px; */
-}
+    outline: purple solid 3px;
+} */
 
 /* -----------Section 1----------------- */
 .section1 header
