@@ -92,14 +92,6 @@ section
     overflow: hidden;
 }
 
-/* .section1
-{
-    outline: orange solid 3px;
-}
-.section2
-{
-    outline: purple solid 3px;
-} */
 
 /* -----------Section 1----------------- */
 .section1 header
@@ -229,10 +221,7 @@ section
     text-align: justify;
     line-height: 1.5em;
 }
-.section2 main aside *
-{
-    /* outline: purple dotted 2px; */
-}
+
 .section2 main aside
 {
     width: 100%;
@@ -278,10 +267,178 @@ section
 /* para pantallas mas pequeñas usar max */
 /* para pantallas mas grandes usar min */
 /* los max sobrescriben max - entre menor el valor, debe ir más abajo en cascada */
-/* los min sobrescriben min - entre mayor el valor, debe ir más abajo en cascada */
+/* los min sobrescriben min - entre mayor el valor, debe ir más abajo en cascada 
+outline: red solid 3px;
+
+*/
 
 @media only screen and (max-width: 1150px) {
+    section
+    {
+        min-height: 150vh;
+        width: 100vw;
 
+    }
+    .section1 header
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0;
+        background: #fff;
+        min-height: 10vh;
+        max-height: 10vh;
+    
+    }
+    .logo
+    {
+        max-width: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* border: red solid 3px; */   
+    }
+    .section1 header .logo img
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .section1 main
+    {
+        background: url("../../Files/images/webinar\ edit.png") no-repeat top left;
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        min-height: 87vh;
+        max-height: 87vh;
+    }
+    .section1 main .contenidoTitulo
+    {
+        position: absolute;
+        top: calc( 40vh - 150px );
+        left: calc( 5vw + 5% + 10px );
+        width: 500px;
+        color: #fff;
+        text-align: center;
+        line-height: 1.1em;
+        text-shadow: #000 1px 1px 10px;
+        font-size: 40px;
+    }
+    .section1 main .marcoFormulario
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 35vw;
+        min-width: 400px;
+        height: 70vh;
+        margin: auto 8vw auto auto;
+        overflow: hidden;
+        background: #fff4;
+        border-radius: 10px;
+    }
+    .section1 main .marcoFormulario form
+    {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    
+    .section1 main .marcoFormulario div
+    {
+        width: 100%;
+        flex-grow: 1;
+    }
+    
+    .section1 main .marcoFormulario p
+    {
+        text-shadow: #fff 1px 1px 5px;
+        color: #555;
+    }
+    .section1 main .marcoFormulario input
+    {
+        background: #fff7;
+        border: none;
+        border-radius: 5px;
+        margin: 1px auto 20px;
+        padding: 0 10px;
+        width: 100%;
+        height: 2em;
+        line-height: 2em;
+        font-size: 1em;
+    }
+    
+    /* ---------------------------- */
+    
+    /* -----------Section 2----------------- */
+    .section2 main
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+    .section2 main .contenidoInformacion
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 3;
+        background: #fffa;
+        width: 100%;
+        height: 50vh;
+        padding: 50px 10px;
+    
+    }
+    .section2 main .contenidoInformacion p 
+    {
+        width: 40%;
+        flex-grow: 1;
+        padding: 0 50px;
+        text-align: justify;
+        line-height: 1.5em;
+    }
+    
+    .section2 main aside
+    {
+        width: 100%;
+        padding-left: 0vw;
+        height: 50vh;
+        flex-grow: 1;
+        background: #4198aadd;
+        filter: saturate(75%);
+    }
+    .section2 main aside ul
+    {
+        min-height: 50vh;
+        list-style: none;
+    }
+    .section2 main aside ul li
+    {
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 1px;
+        width: 100%;
+        padding: 20px 100px;
+        max-height: 5vh;
+    }
+    .section2 main aside div:first-child  p
+    {
+        font-size: 40px;
+        margin: 10px auto 20px;
+        font-weight: bold;
+        color: #fff;
+        padding: 20px;
+        text-align: left;
+    
+    }
 
 }
 
