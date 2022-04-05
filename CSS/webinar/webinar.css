@@ -151,7 +151,8 @@ section
     justify-content: space-evenly;
     width: 35vw;
     min-width: 400px;
-    height: 70vh;
+    min-height: 75vh;
+    max-height: 100vh;    
     margin: auto 8vw auto auto;
     overflow: hidden;
     background: #fff4;
