@@ -413,6 +413,11 @@ outline: red solid 3px;
         max-height: 70vh;
         list-style: none;
     }
+    .section2 main aside ul img
+    {
+        width: 15px;
+    }
+
     .section2 main aside ul li
     {
         color: #fff;
