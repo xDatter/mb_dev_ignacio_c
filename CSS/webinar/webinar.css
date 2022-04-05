@@ -435,7 +435,7 @@ outline: red solid 3px;
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 810px) {
     .section1 main .contenidoTitulo
     {
         font-size: 25px;
