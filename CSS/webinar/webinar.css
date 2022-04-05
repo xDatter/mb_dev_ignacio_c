@@ -453,11 +453,16 @@ outline: red solid 3px;
         font-size: 1.2em;
         letter-spacing: 1px;
         width: 100%;
-        padding: 1px 10px;
+        padding: 0 10px;
         height: 8vh;
         max-height: 8vh;
         text-align: left;
     }
+    .section2 main aside ul img
+    {
+        width: 10px;
+    }
+
     .section2 main aside div:first-child  p
     {
         font-size: 25px;
