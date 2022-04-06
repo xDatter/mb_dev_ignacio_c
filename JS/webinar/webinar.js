@@ -120,6 +120,13 @@ async function save() {
   const formChk = document.getElementById("formDetail");
   const urlTyp = document.getElementById("urlTyp");
 
+    // campo privacidad valor "on"    deb haber un off
+    // campo formName valor "webinar"
+    // campo nombreEbook adaptar a nombreWebinar igual al titulo
+    
+    // campo IDmail se genera solo por el aod
+    // campo Estado valor estadoFue se genera en el aod
+
   if (!formChk.checkValidity()) {
     document.getElementById("email-validate").innerHTML = emailChk.validationMessage;
     document.getElementById("nombre-validate").innerHTML = nombreChk.validationMessage;
