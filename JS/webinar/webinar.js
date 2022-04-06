@@ -14,7 +14,6 @@ function testers(){
 }
 
 
-estamosaqui();
 
 
 
@@ -68,9 +67,43 @@ async function cargar() {
     input2.setAttribute("name", "urlTyp" );
     input2.setAttribute("value", data.url);
     document.getElementById("formDetail").appendChild(input2);
+  }
 
+  async function loading(){
+    try {
+      let url = window.location.pathname;
+      let appId = url.split('/');
+      let pathname = appId[appId.length - 1]
 
+      const tName = document.getElementById("titulo");
+      const parrCont = document.getElementById("parr-cont");
+      const listaAprenda1 = document.getElementById("aprenda");
+
+      let parrafoFinal= document.createDocumentFragment();
+      let razonesFinal= document.createDocumentFragment();
+      const { data } = await functionOnDemand("detail", { pathname });
+      
+      tName.innerText = data.titulo;
+
+      Object.entries(data.parrafos).forEach(item => {
+        let nuevoP = document.createElement('p');
+        nuevoP.append(item[1].parrafo);
+        parrafoFinal.append(nuevoP);
+      });
+
+      Object.entries(data.aprenda).forEach(item => {
+        let nuevoLi = document.createElement('li');
+        nuevoLi.innerHTML = `<img src="https://cdn2.hubspot.net/hubfs/37780/check-5.png" alt="" ${item[1].aprenda} >` 
+        razonesFinal.append(nuevoLi);
+      });
+
+      parrCont.append(parrafoFinal);
+      listaAprenda1.append(razonesFinal);
+
+    } catch (error) {
+      console.log(error);
     }
+  }
     // ()
     ;
           
@@ -108,3 +141,10 @@ async function save() {
     }
   }
 }
+
+
+
+window.onload= function(){
+  estamosaqui();
+  loading();
+};
