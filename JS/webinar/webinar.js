@@ -1,5 +1,5 @@
 function estamosaqui(){
-    console.log("estamos aquí 3")
+    console.log("estamos aquí 4")
     console.log("Config Webinar 2022 para masterbase")
     $("#hola").click(testers);
 
@@ -84,6 +84,7 @@ async function cargar() {
       // el detail es la funcion que esta en el ondemand ojo! importante
       const { data } = await functionOnDemand("detail", { pathname });
       console.log(pathname);
+      console.log(data);
 
       tName.innerText = data.titulo;
 
