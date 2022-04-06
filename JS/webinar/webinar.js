@@ -1,5 +1,5 @@
 function estamosaqui(){
-    console.log("estamos aquí")
+    console.log("estamos aquí 2")
     console.log("Config Webinar 2022 para masterbase")
     $("#hola").click(testers);
 
@@ -88,13 +88,13 @@ async function cargar() {
 
       Object.entries(data.parrafos).forEach(item => {
         let nuevoP = document.createElement('p');
-        nuevoP.append(item[1].parrafo);
+        nuevoP.append(item[0].parrafo);
         parrafoFinal.append(nuevoP);
       });
 
       Object.entries(data.aprenda).forEach(item => {
         let nuevoLi = document.createElement('li');
-        nuevoLi.innerHTML = `<img src="https://cdn2.hubspot.net/hubfs/37780/check-5.png" alt="" ${item[1].aprenda} >` 
+        nuevoLi.innerHTML = `<img src="https://cdn2.hubspot.net/hubfs/37780/check-5.png" alt="" ${item[0].aprenda} >` 
         razonesFinal.append(nuevoLi);
       });
 
