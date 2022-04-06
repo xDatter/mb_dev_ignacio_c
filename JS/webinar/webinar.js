@@ -81,6 +81,7 @@ async function cargar() {
 
       let parrafoFinal= document.createDocumentFragment();
       let razonesFinal= document.createDocumentFragment();
+      // el detail es la funcion que esta en el ondemand ojo! importante
       const { data } = await functionOnDemand("detail", { pathname });
       
       tName.innerText = data.titulo;
@@ -131,9 +132,7 @@ async function save() {
 
       const values = Object.fromEntries(formData.entries()); // Se llama a la función AOD "save" y se le pasa el objecto con los valores.
 
-      const {data} = await functionOnDemand("save", {
-        data: values
-      });
+      const {data} = await functionOnDemand("save", {  data: values    });
       const typ = window.location.href = "https://publicsmartview.masterbase.com/v1/620324fe39671200181f9d8a/" + urlTyp.value;
       console.log("values", values, data);
     } catch (error) {
