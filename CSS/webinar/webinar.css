@@ -265,21 +265,25 @@ section
 }
 
 /* -------------------clases masterbase --------- */
+
 .mbui-layout-header.layout-header, .MAqNLXLFR4WUfBoXHoCFQ.header-widget
 {
-	height: 64px !important;
-	max-height: 64px;
-	min-height: 64px;
-	opacity: 100%;
+	height: 0 !important;
+	max-height: 0;
+	min-height: 0;
+	opacity: 0;
 	visibility: hidden;
+    display: none !important;
 	top: 0;
 }
 .mbui-layout-header.layout-header
 {
 	height: 0 !important;
-	top: -5vh;
+	top: -0;
 	opacity: 0;
 	visibility: hidden;
+    display: none !important;
+
 
 }
 .MAqNLXLFR4WUfBoXHoCFQ.header-widget
@@ -288,9 +292,20 @@ section
 	max-height: 0px;
 	opacity: 0;
 	visibility: hidden;
+    display: none !important;
+
 
 }
-
+.MAqNLXLFR4WUfBoXHoCFQ, .header-widget
+{
+    height: 0 !important;
+	max-height: 0;
+	min-height: 0;
+	opacity: 0;
+	visibility: hidden;
+    display: none !important;
+	top: 0;
+}
 
 
 
