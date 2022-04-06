@@ -264,8 +264,32 @@ section
 
 }
 
-/* ---------------------------- */
+/* -------------------clases masterbase --------- */
+.mbui-layout-header.layout-header, .MAqNLXLFR4WUfBoXHoCFQ.header-widget
+{
+	height: 64px !important;
+	max-height: 64px;
+	min-height: 64px;
+	opacity: 100%;
+	visibility: hidden;
+	top: 0;
+}
+.mbui-layout-header.layout-header
+{
+	height: 0 !important;
+	top: -5vh;
+	opacity: 0;
+	visibility: hidden;
 
+}
+.MAqNLXLFR4WUfBoXHoCFQ.header-widget
+{
+	min-height: 0px;
+	max-height: 0px;
+	opacity: 0;
+	visibility: hidden;
+
+}
 
 
 
