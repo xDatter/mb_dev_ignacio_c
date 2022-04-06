@@ -207,7 +207,7 @@ section
     width: 100%;
     max-width: 100%;
     min-height: 100vh;
-    max-height: 100vh;
+    /* max-height: 100vh; */
 }
 .section2 main .contenidoInformacion
 {
@@ -234,6 +234,7 @@ section
     width: 100%;
     padding-left: 100px;
     height: 50vh;
+    min-height: 50vh;
     flex-grow: 1;
     background: #4198aacc;
     filter: saturate(75%);
