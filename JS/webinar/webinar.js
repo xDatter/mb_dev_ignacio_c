@@ -33,6 +33,7 @@ async function loading(){
     let appId = url.split('/');
     let pathname = appId[appId.length - 1]
 
+    const docName= document.getElementById("docName");
     const tName = document.getElementById("titulo");
     const parrCont = document.getElementById("parr-cont");
     const listaAprenda1 = document.getElementById("aprenda");
@@ -44,6 +45,7 @@ async function loading(){
     console.log(pathname);
     console.log(data);
 
+    docName.innerText = data.info.titulo;
     tName.innerText = data.info.titulo;
 
     Object.entries(data.info.parrafos).forEach(item => {
