@@ -17,6 +17,7 @@ function testers(){
 
 
 
+
 // Por lógica, esta función se debe ejecutar después de que se settea el url, ya que se inicia separando las partes del url en arreglos
 async function cargar() {
 
