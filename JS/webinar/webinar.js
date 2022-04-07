@@ -44,15 +44,15 @@ async function loading(){
     console.log(pathname);
     console.log(data);
 
-    tName.innerText = data.titulo;
+    tName.innerText = data.info.titulo;
 
-    Object.entries(data.parrafos).forEach(item => {
+    Object.entries(data.info.parrafos).forEach(item => {
       let nuevoP = document.createElement('p');
       nuevoP.append(item[1].parrafo);
       parrafoFinal.append(nuevoP);
     });
 
-    Object.entries(data.aprenda).forEach(item => {
+    Object.entries(data.info.aprenda).forEach(item => {
       let nuevoLi = document.createElement('li');
       nuevoLi.innerHTML = `<img src="https://cdn2.hubspot.net/hubfs/37780/check-5.png" alt=""> ${item[1].aprenda}` 
       razonesFinal.append(nuevoLi);
