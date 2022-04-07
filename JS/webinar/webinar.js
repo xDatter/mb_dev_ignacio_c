@@ -11,6 +11,7 @@ function testers(){
     $("#control").toggleClass("nolanding");
     $(".cover").toggleClass("nolanding");
     
+    
 }
 
 
@@ -109,5 +110,10 @@ async function save() {
 
 window.onload= function(){
   estamosaqui();
+  $(".section1 .logo").click(function(){ 
+    // location.href="https://masterbase.com"; 
+    window.open("https://masterbase.com"); 
+    return false; 
+  });  
   loading();
 };
