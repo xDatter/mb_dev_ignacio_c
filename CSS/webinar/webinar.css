@@ -215,6 +215,7 @@ section
     max-width: 100%;
     min-height: 100vh;
     /* max-height: 100vh; */
+    opacity: 0;
     animation: aparecer ease 2s 2s;
 }
 .section2 main .contenidoInformacion
