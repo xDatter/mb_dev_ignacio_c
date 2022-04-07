@@ -14,7 +14,7 @@ function testers(){
 
 function enlace(){
   console.log("abrir enlace");
-  $(".section1 .logo").click(function(){ 
+  $(".logo").click(function(){ 
     // location.href="https://masterbase.com"; 
     window.open("https://masterbase.com"); 
     return false; 
@@ -117,4 +117,5 @@ async function save() {
 window.onload= function(){
   estamosaqui(); 
   loading();
+  enlace();
 };
