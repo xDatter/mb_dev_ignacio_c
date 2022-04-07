@@ -2,6 +2,7 @@ function estamosaqui(){
     console.log("estamos aquí 4")
     console.log("Config Webinar 2022 para masterbase")
     $("#hola").click(testers);
+    $("#guardar").click(save);
 
 }
 
@@ -10,6 +11,7 @@ function testers(){
     console.log("holap");
     $("#control").toggleClass("nolanding");
     $(".cover").toggleClass("nolanding"); 
+    
 }
 
 function enlace(){
@@ -21,27 +23,21 @@ function enlace(){
   }); 
 }
 
-
-
-
-
-// Por lógica, esta función se debe ejecutar después de que se settea el url, ya que se inicia separando las partes del url en arreglos
-
 async function loading(){
   try {
     let url = window.location.pathname;
     let appId = url.split('/');
     let pathname = appId[appId.length - 1]
 
-    const docName= document.getElementById("docName");
-    const tName = document.getElementById("titulo");
-    const parrCont = document.getElementById("parr-cont");
-    const listaAprenda1 = document.getElementById("aprenda");
+    let docName= document.getElementById("docName");
+    let tName = document.getElementById("titulo");
+    let parrCont = document.getElementById("parr-cont");
+    let listaAprenda1 = document.getElementById("aprenda");
 
     let parrafoFinal= document.createDocumentFragment();
     let razonesFinal= document.createDocumentFragment();
     // el detail es la funcion que esta en el ondemand ojo! importante
-    const { data } = await functionOnDemand("detail", { pathname });
+    let { data } = await functionOnDemand("detail", { pathname });
     console.log(pathname);
     console.log(data);
 
@@ -68,8 +64,31 @@ async function loading(){
   }
 };
      
+async function save(){
+  let formChk = document.getElementById("formDetail");
+  let urlTyp = document.getElementById("urlTyp");
 
-async function save() {
+  let formData = new FormData(formChk);   
+  let values = Object.fromEntries(formData.entries()); 
+
+  console.log(formData);
+  console.log(values);
+
+  try {
+    let {data} = await functionOnDemand("save", {  data: values });
+    // let typ = window.location.href = "https://publicsmartview.masterbase.com/v1/620324fe39671200181f9d8a/" + urlTyp.value;
+    console.log("values", values, data);
+   
+
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+// ---------------------------
+async function save2() {
   const emailChk = document.getElementById("email");
   const nombreChk = document.getElementById("nombre");
   const apellidoChk = document.getElementById("apellido");
@@ -77,6 +96,8 @@ async function save() {
   const empresaChk = document.getElementById("empresa");
   const proximacompraChk = document.getElementById("proximacompra");
   const formChk = document.getElementById("formDetail");
+
+  // campo oculto por settear
   const urlTyp = document.getElementById("urlTyp");
 
     // campo privacidad valor "on"    deb haber un off
