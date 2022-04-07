@@ -167,9 +167,20 @@ section
     max-height: 100vh;    
     margin: auto 8vw auto auto;
     overflow: hidden;
-    background: #fff4;
-    border: 2px #fff4 solid;
-    border-radius: 10px;
+    background: #0005;
+    border: 2px #0001 solid;
+    color: #fff;
+    border-radius: 5px;
+    transition: 3s;
+}
+.section1 main .marcoFormulario:hover
+{
+    background: #000a;
+    border: 2px #0009 solid;
+    color: #eee;
+    text-shadow: #888 1px 1px 5px;
+    transition: .2s;
+
 }
 .section1 main .marcoFormulario form
 {
@@ -187,12 +198,12 @@ section
 
 .section1 main .marcoFormulario p
 {
-    text-shadow: #fff 1px 1px 5px;
-    color: #555;
+    text-shadow:    #aaa 1px 1px 5px,
+                    #aaa -1px -1px 5px;
 }
 .section1 main .marcoFormulario input, .tipoInput
 {
-    background: #fff7;
+    background: #fffd;
     border: none;
     border-radius: 5px;
     margin: 5px auto 10px;
@@ -201,8 +212,25 @@ section
     height: 2em;
     line-height: 2em;
     font-size: 1em;
+    transition: .2s;
 }
-
+.section1 main .marcoFormulario input:hover, .tipoInput:hover
+{
+    background: #fffd;
+}
+.salvar
+{
+    background: #145;
+    color: #fff;
+    font-weight: bold;
+    height: 3em;
+    transition: .2s;
+}
+.salvar:hover
+{
+    background: #256;
+    text-shadow: #aaa 1px 1px 10px;
+}
 /* ---------------------------- */
 
 /* -----------Section 2----------------- */
