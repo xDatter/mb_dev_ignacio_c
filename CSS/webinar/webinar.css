@@ -611,6 +611,17 @@ outline: red solid 3px;
         text-align: left;
     
     }
+    @keyframes amortiguar
+{
+    0%
+    {
+        top: 40vh;
+    }
+    100%
+    {
+        top: 10vh;
+    }
+}
 
 }
 
@@ -693,4 +704,15 @@ outline: red solid 3px;
     
     }
 
+    @keyframes amortiguar
+{
+    0%
+    {
+        top: 40vh;
+    }
+    100%
+    {
+        top: 10vh;
+    }
+}
 }
