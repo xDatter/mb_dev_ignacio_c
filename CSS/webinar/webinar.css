@@ -154,32 +154,6 @@ section
     opacity: 0;
 
 }
-@keyframes amortiguar
-{
-    0%
-    {
-        top: 40vh;
-    }
-    100%
-    {
-        top: 20vh;
-    }
-}
-@keyframes aparecer
-{
-    0%
-    {
-        opacity: 0;
-    }
-    50%
-    {
-        opacity: 0;
-    }
-    100%
-    {
-        opacity: 1;
-    }
-}
 
 .section1 main .marcoFormulario
 {
@@ -241,6 +215,7 @@ section
     max-width: 100%;
     min-height: 100vh;
     /* max-height: 100vh; */
+    animation: aparecer ease 2s 2s;
 }
 .section2 main .contenidoInformacion
 {
@@ -396,6 +371,33 @@ section
         max-height: 0;
     }
 }
+@keyframes amortiguar
+{
+    0%
+    {
+        top: 40vh;
+    }
+    100%
+    {
+        top: 20vh;
+    }
+}
+@keyframes aparecer
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
 
 /* ----------------------------------------- */
 /* ----------------Responsive Desing-------------- */
