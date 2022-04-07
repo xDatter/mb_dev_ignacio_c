@@ -622,7 +622,6 @@ outline: red solid 3px;
     100%
     {
         top: 10vh;
-        color: red;
     }
 }
 
@@ -716,7 +715,6 @@ outline: red solid 3px;
     100%
     {
         top: 5vh;
-        color: purple;
     }
 }
 }
