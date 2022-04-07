@@ -137,9 +137,8 @@ section
 }
 .section1 main .contenidoTitulo
 {
-    /* outline: red solid 1px; */
     position: absolute;
-    top: calc( 40vh - 200px );
+    top: 0vh;
     left: 4vw;
     width: 500px;
     color: #fff;
@@ -147,7 +146,41 @@ section
     line-height: 1.1em;
     text-shadow: #000 1px 1px 10px;
     font-size: 40px;
+    animation: amortiguar ease forwards 2s 7s;
 }
+.section1 main .contenidoTitulo #titulo
+{
+    animation: aparecer ease forwards 2s 7s;
+    opacity: 0;
+
+}
+@keyframes amortiguar
+{
+    0%
+    {
+        top: 40vh;
+    }
+    100%
+    {
+        top: 10vh;
+    }
+}
+@keyframes aparecer
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
 .section1 main .marcoFormulario
 {
     display: flex;
@@ -182,7 +215,7 @@ section
     text-shadow: #fff 1px 1px 5px;
     color: #555;
 }
-.section1 main .marcoFormulario input
+.section1 main .marcoFormulario input, .tipoInput
 {
     background: #fff7;
     border: none;
@@ -310,6 +343,61 @@ section
 
 
 
+/* ----------------animaciones-------------- */
+.tituloCo
+{
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    opacity: 0;
+    display: block;
+    width: 100%;
+    animation: enfasis ease forwards 5s 2s;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes enfasis
+{
+    0%
+    {
+    }
+    20%
+    {
+        top: 14vh;
+        opacity: 1;
+        visibility: visible;
+    }
+    30%
+    {
+        top: 15vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    70%
+    {
+        top: 15vh;
+        opacity: 1;
+        visibility: visible;
+    }
+    80%
+    {
+        top: 14vh;
+        opacity: 1;
+        visibility: visible;
+    }
+    100%
+    {
+        top: 20vh;
+        opacity: 0;
+        display: none;
+        visibility: collapse;
+        max-height: 0;
+    }
+}
+
+/* ----------------------------------------- */
 /* ----------------Responsive Desing-------------- */
 
 /* para pantallas mas pequeñas usar max */
@@ -371,6 +459,45 @@ outline: red solid 3px;
         padding: 50px;
         font-size: 40px;
     }
+    @keyframes enfasis
+    {
+        0%
+        {
+        }
+        20%
+        {
+            top: 10vh;
+            opacity: 1;
+            visibility: visible;
+        }
+        30%
+        {
+            top: 11vh;
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        70%
+        {
+            top: 11vh;
+            opacity: 1;
+            visibility: visible;
+        }
+        80%
+        {
+            top: 10vh;
+            opacity: 1;
+            visibility: visible;
+        }
+        100%
+        {
+            top: 20vh;
+            opacity: 0;
+            display: none;
+            visibility: collapse;
+            max-height: 0;
+        }
+    }
     .section1 main .marcoFormulario
     {
         position: relative;
@@ -399,7 +526,7 @@ outline: red solid 3px;
     
     }
     
-    .section1 main .marcoFormulario input
+    .section1 main .marcoFormulario input, .tipoInput
     {
         background: #fffd;
         border: 1px solid #0008;
@@ -488,10 +615,50 @@ outline: red solid 3px;
     .section1 main .contenidoTitulo
     {
         font-size: 25px;
-        top: 5vh;
+        top: 0vh;
         padding: 20px;
     }
 
+    @keyframes enfasis
+    {
+        0%
+        {
+        }
+        20%
+        {
+            top: 12vh;
+            opacity: 1;
+            visibility: visible;
+        }
+        30%
+        {
+            top: 13vh;
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        70%
+        {
+            top: 13vh;
+            opacity: 1;
+            visibility: visible;
+        }
+        80%
+        {
+            top: 12vh;
+            opacity: 1;
+            visibility: visible;
+        }
+        100%
+        {
+            top: 20vh;
+            opacity: 0;
+            display: none;
+            visibility: collapse;
+            max-height: 0;
+        }
+    }
+    
     .section2 main aside
     {
     padding: 5px;    

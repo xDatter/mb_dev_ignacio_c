@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="../CSS/webinar/webinar.css"> -->
-    <link rel="stylesheet" href="https://xdatter.github.io/mb_dev_ignacio_c/CSS/webinar/webinar.css">
+    <link rel="stylesheet" href="../CSS/webinar/webinar.css">
+    <!-- <link rel="stylesheet" href="https://xdatter.github.io/mb_dev_ignacio_c/CSS/webinar/webinar.css"> -->
 
 </head>
 <body>
@@ -25,35 +25,73 @@
             <main>
                 <div class="contenidoTitulo">
                     <p id="titulo">las 9 razones para hacer un webinar</p>
+                    <p class="tituloCo">MasterBase,<br>un lugar para aprender</p> 
                 </div>
                 <div class="marcoFormulario">
-                    <form action="post">
+                    <form action="post" id="formDetail">
                         <div>
                             <p>Nombres</p>
-                            <input type="text">
+                            <input id="nombre" name="nombre" type="text" placeholder="Ej. Valentina Andrea" required>
                         </div>
                         <div>
                             <p>Apellidos</p>
-                            <input type="text">
+                            <input id="apellido" name="apellido" type="text" placeholder="Ej. Galvarini Muga " required>
                         </div>
                         <div>
-                            <p>Pais</p>
-                            <input type="text">
+                            <p>País</p>
+                            <select name="pais" id="pais" class="tipoInput" required >
+                                <option value="" style="color:#aaa" >Seleccionar</option>
+                                <option value="Alemania">Alemania</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Canadá">Canadá</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="España">España</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Inglaterra">Inglaterra</option>
+                                <option value="México">México</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="República Dominican">República Dominicana</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Polonia">Polonia</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Otro">Otro</option>
+                            </select>
                         </div>
                         <div>
                             <p>E-mail Empresa</p>
-                            <input type="text">
+                            <input id="email" name="email" type="email" placeholder="Ej. miempresa@dominio.com" required>
                         </div>
                         <div>
                             <p>Rol empresa</p>
-                            <input type="text">
+                            <input id="empresa" name="empresa" type="text" placeholder="Nombre o Razón Social" required>
                         </div>
                         <div>
                             <p>¿Estás considerando adquirir una plataforma de automatización de procesos?</p>
-                            <input type="">
+                            <select id="proximacompra" name="proximacompra" class="tipoInput" required>
+                                <option value="" style="color:#aaa" >Seleccionar</option>
+                                <option value="Inmediatamente">Inmediatamente</option>
+                                <option value="En los próximos 90 días">En los próximos 90 días</option>
+                                <option value="En más de 90 días">En más de 90 días</option>
+                                <option value="No">No</option>
+                                <option value="Soy cliente MasterBase®">Soy cliente MasterBase®</option>
+                            </select>
                         </div>
                         <div>
-                            <input type="submit" value="Inscribirse" disabled>
+                            <button class="tipoInput">Hola</button>
                         </div>
                     </form>
                 </div> 
@@ -97,8 +135,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="../JS/webinar/webinar.js"></script> -->
-    <script src="https://xdatter.github.io/mb_dev_ignacio_c/JS/webinar/webinar.js"></script>
+    <script src="../JS/webinar/webinar.js"></script>
+    <!-- <script src="https://xdatter.github.io/mb_dev_ignacio_c/JS/webinar/webinar.js"></script> -->
 
 </body>
 </html>
