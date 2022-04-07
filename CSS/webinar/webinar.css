@@ -215,6 +215,7 @@ section
     width: 100%;
     max-width: 100%;
     min-height: 100vh;
+    max-height: fit-content;
     opacity: 0;
     animation: aparecer ease forwards 2s 2s;
 }
@@ -225,6 +226,7 @@ section
     flex-grow: 3;
     background: #fffa;
     width: 100%;
+    min-height: 50vh;
     padding: 50px 150px;
 
 }
