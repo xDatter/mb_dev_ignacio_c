@@ -30,6 +30,7 @@ async function loading(){
     let pathname = appId[appId.length - 1]
     let urlTyp = document.getElementById("urlTyp");
     urlTyp.value = url;
+    console.log(urlTyp);
 
 
     let docName= document.getElementById("docName");
