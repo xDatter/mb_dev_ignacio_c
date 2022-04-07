@@ -413,7 +413,7 @@ outline: red solid 3px;
 
 */
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1060px) {
     section
     {
         min-height: fit-content;

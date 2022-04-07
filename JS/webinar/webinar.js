@@ -19,98 +19,47 @@ function testers(){
 
 
 // Por lógica, esta función se debe ejecutar después de que se settea el url, ya que se inicia separando las partes del url en arreglos
-async function cargar() {
 
-    const url = window.location.pathname;
-    console.log(url);
-    const appId = url.split('/');
-    const pathname = appId[appId.length - 1]
-    console.log(pathname);
+async function loading(){
+  try {
+    let url = window.location.pathname;
+    let appId = url.split('/');
+    let pathname = appId[appId.length - 1]
+
+    const tName = document.getElementById("titulo");
+    const parrCont = document.getElementById("parr-cont");
+    const listaAprenda1 = document.getElementById("aprenda");
+
+    let parrafoFinal= document.createDocumentFragment();
+    let razonesFinal= document.createDocumentFragment();
+    // el detail es la funcion que esta en el ondemand ojo! importante
     const { data } = await functionOnDemand("detail", { pathname });
-         
-    const strong = document.createElement('strong');
-    strong.innerText = data.titulo
-    document.getElementById("titulo").append(strong);
-    
-    Object.entries(data.parrafos).forEach(item => {
-        console.log(item[1].parrafo);
+    console.log(pathname);
+    console.log(data);
 
-        const parrCont = document.getElementById("parr-cont");
-        const parrDiv = document.createElement('div');
-        parrDiv.setAttribute("class", "col-sm-6");
-        const parrP = document.createElement('p');
-        parrP.setAttribute("class", "text-justify home-section-text");
-        parrP.append(item[1].parrafo);
-        parrDiv.append(parrP);
-        parrCont.append(parrDiv);
+    tName.innerText = data.titulo;
+
+    Object.entries(data.parrafos).forEach(item => {
+      let nuevoP = document.createElement('p');
+      nuevoP.append(item[1].parrafo);
+      parrafoFinal.append(nuevoP);
     });
 
     Object.entries(data.aprenda).forEach(item => {
-        console.log(item[1]);
-
-        const listaAprenda1 = document.getElementById("aprenda");
-        const listaAprenda1Item = document.createElement('li');
-        listaAprenda1Item.append(item[1].aprenda);
-        listaAprenda1.append(listaAprenda1Item);
+      let nuevoLi = document.createElement('li');
+      nuevoLi.innerHTML = `<img src="https://cdn2.hubspot.net/hubfs/37780/check-5.png" alt=""> ${item[1].aprenda}` 
+      razonesFinal.append(nuevoLi);
     });
-    
-    document.getElementById("icon").src = data.imagen; 
-    const input = document.createElement("input");
 
-    input.setAttribute("type", "hidden");
-    input.setAttribute("id", "nombreWebinar");
-    input.setAttribute("name", "nombreWebinar" );
-    input.setAttribute("value", data.titulo);
-    document.getElementById("formDetail").appendChild(input);
-    const input2 = document.createElement("input");
-    input2.setAttribute("type", "hidden");
-    input2.setAttribute("id", "urlTyp");
-    input2.setAttribute("name", "urlTyp" );
-    input2.setAttribute("value", data.url);
-    document.getElementById("formDetail").appendChild(input2);
+    parrCont.append(parrafoFinal);
+    listaAprenda1.append(razonesFinal);
+
+  } catch (error) {
+    console.log(error);
   }
+};
+     
 
-  async function loading(){
-    try {
-      let url = window.location.pathname;
-      let appId = url.split('/');
-      let pathname = appId[appId.length - 1]
-
-      const tName = document.getElementById("titulo");
-      const parrCont = document.getElementById("parr-cont");
-      const listaAprenda1 = document.getElementById("aprenda");
-
-      let parrafoFinal= document.createDocumentFragment();
-      let razonesFinal= document.createDocumentFragment();
-      // el detail es la funcion que esta en el ondemand ojo! importante
-      const { data } = await functionOnDemand("detail", { pathname });
-      console.log(pathname);
-      console.log(data);
-
-      tName.innerText = data.titulo;
-
-      Object.entries(data.parrafos).forEach(item => {
-        let nuevoP = document.createElement('p');
-        nuevoP.append(item[1].parrafo);
-        parrafoFinal.append(nuevoP);
-      });
-
-      Object.entries(data.aprenda).forEach(item => {
-        let nuevoLi = document.createElement('li');
-        nuevoLi.innerHTML = `<img src="https://cdn2.hubspot.net/hubfs/37780/check-5.png" alt=""> ${item[1].aprenda}` 
-        razonesFinal.append(nuevoLi);
-      });
-
-      parrCont.append(parrafoFinal);
-      listaAprenda1.append(razonesFinal);
-
-    } catch (error) {
-      console.log(error);
-    }
-  }
-    // ()
-    ;
-          
 async function save() {
   const emailChk = document.getElementById("email");
   const nombreChk = document.getElementById("nombre");
@@ -127,6 +76,9 @@ async function save() {
     
     // campo IDmail se genera solo por el aod
     // campo Estado valor estadoFue se genera en el aod
+
+
+    // idear forma de validar datos con el mismo aod o desde js, algun condicional o switch
 
   if (!formChk.checkValidity()) {
     document.getElementById("email-validate").innerHTML = emailChk.validationMessage;
@@ -145,7 +97,9 @@ async function save() {
       const {data} = await functionOnDemand("save", {  data: values    });
       const typ = window.location.href = "https://publicsmartview.masterbase.com/v1/620324fe39671200181f9d8a/" + urlTyp.value;
       console.log("values", values, data);
-    } catch (error) {
+    } 
+    
+    catch (error) {
       console.error(error);
     }
   }
