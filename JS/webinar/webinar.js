@@ -28,6 +28,9 @@ async function loading(){
     let url = window.location.pathname;
     let appId = url.split('/');
     let pathname = appId[appId.length - 1]
+    let urlTyp = document.getElementById("urlTyp");
+    urlTyp.value = url;
+
 
     let docName= document.getElementById("docName");
     let tName = document.getElementById("titulo");
@@ -58,6 +61,8 @@ async function loading(){
 
     parrCont.append(parrafoFinal);
     listaAprenda1.append(razonesFinal);
+    
+
 
   } catch (error) {
     console.log(error);
