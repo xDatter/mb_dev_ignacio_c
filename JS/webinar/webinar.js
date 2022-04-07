@@ -28,9 +28,9 @@ async function loading(){
     let url = window.location.pathname;
     let appId = url.split('/');
     let pathname = appId[appId.length - 1]
-    let urlTyp = document.getElementById("urlTyp");
-    urlTyp.value = url;
-    console.log(urlTyp);
+    // let urlTyp = document.getElementById("urlTyp");
+    // urlTyp.value = url;
+    // console.log(urlTyp);
 
 
     let docName= document.getElementById("docName");
