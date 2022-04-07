@@ -9,11 +9,17 @@ function testers(){
     
     console.log("holap");
     $("#control").toggleClass("nolanding");
-    $(".cover").toggleClass("nolanding");
-    
-    
+    $(".cover").toggleClass("nolanding"); 
 }
 
+function enlace(){
+  console.log("abrir enlace");
+  $(".section1 .logo").click(function(){ 
+    // location.href="https://masterbase.com"; 
+    window.open("https://masterbase.com"); 
+    return false; 
+  }); 
+}
 
 
 
@@ -109,11 +115,6 @@ async function save() {
 
 
 window.onload= function(){
-  estamosaqui();
-  $(".section1 .logo").click(function(){ 
-    // location.href="https://masterbase.com"; 
-    window.open("https://masterbase.com"); 
-    return false; 
-  });  
+  estamosaqui(); 
   loading();
 };
