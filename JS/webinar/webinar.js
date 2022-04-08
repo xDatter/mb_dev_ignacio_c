@@ -154,7 +154,6 @@ async function flujo(){
   console.log(data2);
 
 }
-flujo();
 
 window.onload= function(){
   arranque(); 
