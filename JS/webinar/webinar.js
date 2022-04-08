@@ -1,4 +1,4 @@
-// v0.2022.04.08 1835
+// v0.2022.04.08 1840
 
 function arranque(){
   $("#guardar").click(save);
