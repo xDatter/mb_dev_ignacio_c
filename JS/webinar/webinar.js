@@ -1,8 +1,5 @@
-function estamosaqui(){
-    console.log("estamos aquí 4")
-    console.log("Config Webinar 2022 para masterbase")
-    $("#hola").click(testers);
-    $("#guardar").click(save);
+function arranque(){
+    $("#guardar").click(camposRDS);
 
 }
 
@@ -14,13 +11,40 @@ function testers(){
     
 }
 
-function enlace(){
-  console.log("abrir enlace");
+function enlaces(){
   $(".logo").click(function(){ 
     // location.href="https://masterbase.com"; 
     window.open("https://masterbase.com"); 
     return false; 
   }); 
+
+}
+
+function camposRDS(){
+  let fragCampos = document.createDocumentFragment();
+  let campos = document.getElementById("formDetail");
+  let url = window.location.pathname;
+  let tName = document.getElementById("titulo");
+
+
+  let urlInput = document.createElement('input');
+  let nombreWebinarInput = document.createElement('input');
+
+
+  urlInput.setAttribute(`type`, `hidden`);
+  nombreWebinarInput.setAttribute(`type`, `hidden`);
+
+  urlInput.setAttribute(`value`, `${url}`);
+  nombreWebinarInput.setAttribute(`value`, `${tName}`);
+
+  fragCampos.append(urlInput);
+  fragCampos.append(nombreWebinarInput);
+
+  campos.appendChild(fragCampos);
+
+
+  save();
+
 }
 
 async function loading(){
@@ -28,10 +52,6 @@ async function loading(){
     let url = window.location.pathname;
     let appId = url.split('/');
     let pathname = appId[appId.length - 1]
-    // let urlTyp = document.getElementById("urlTyp");
-    // urlTyp.value = url;
-    // console.log(urlTyp);
-
 
     let docName= document.getElementById("docName");
     let tName = document.getElementById("titulo");
@@ -71,13 +91,14 @@ async function loading(){
 };
      
 async function save(){
-  let formChk = document.getElementById("formDetail");
+  // Estos campos colocarlos en inputs dentro del formulario para que se capturen con el resto
   let urlTyp = document.getElementById("urlTyp");
+
+  let formChk = document.getElementById("formDetail");
 
   let formData = new FormData(formChk);   
   let values = Object.fromEntries(formData.entries()); 
 
-  console.log(formData);
   console.log(values);
 
   try {
@@ -94,7 +115,7 @@ async function save(){
 
 
 // ---------------------------
-async function save2() {
+async function replicar() {
   const emailChk = document.getElementById("email");
   const nombreChk = document.getElementById("nombre");
   const apellidoChk = document.getElementById("apellido");
@@ -116,35 +137,28 @@ async function save2() {
 
     // idear forma de validar datos con el mismo aod o desde js, algun condicional o switch
 
-  if (!formChk.checkValidity()) {
-    document.getElementById("email-validate").innerHTML = emailChk.validationMessage;
-    document.getElementById("nombre-validate").innerHTML = nombreChk.validationMessage;
-    document.getElementById("apellido-validate").innerHTML = apellidoChk.validationMessage;
-    document.getElementById("pais-validate").innerHTML = paisChk.validationMessage;
-    document.getElementById("empresa-validate").innerHTML = empresaChk.validationMessage;
-    document.getElementById("proximacompra-validate").innerHTML = proximacompraChk.validationMessage;
-  } else {
-    try {
-      // Se crea un objecto FormData en base a el formulario de detalle
-      const formData = new FormData(document.getElementById("formDetail")); // Se obtienes todas las entradas(campos del formulario) desde el objeto formData y se convierten a una objecto key/value.
 
-      const values = Object.fromEntries(formData.entries()); // Se llama a la función AOD "save" y se le pasa el objecto con los valores.
-
-      const {data} = await functionOnDemand("save", {  data: values    });
       const typ = window.location.href = "https://publicsmartview.masterbase.com/v1/620324fe39671200181f9d8a/" + urlTyp.value;
       console.log("values", values, data);
-    } 
     
-    catch (error) {
-      console.error(error);
-    }
-  }
+
+  
 }
 
+async function flujo(){
+  let { data1 } = await functionOnDemand("detail", { pathname });
+  // let { data2 } = await functionOnDemand("save", {  data: values });
+  let { data2 } = await functionOnDemand("save", { data });
 
+  console.log(data1);
+  console.log(data2);
+
+}
+flujo();
 
 window.onload= function(){
-  estamosaqui(); 
+  arranque(); 
   loading();
-  enlace();
+  enlaces();
 };
+

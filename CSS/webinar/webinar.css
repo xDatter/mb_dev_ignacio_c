@@ -198,8 +198,8 @@ section
 
 .section1 main .marcoFormulario p
 {
-    text-shadow:    #aaa 1px 1px 5px,
-                    #aaa -1px -1px 5px;
+    text-shadow:    #000 1px 1px 5px,
+                    #000 -1px -1px 5px;
 }
 .section1 main .marcoFormulario input, .tipoInput
 {
@@ -217,6 +217,27 @@ section
 .section1 main .marcoFormulario input:hover, .tipoInput:hover
 {
     background: #fffd;
+}
+.privacidad
+{
+    display: flex;
+}
+.privacidad p
+{
+    flex-grow: 1;
+    display: block;
+    width: 500px;
+    text-align: left;
+}
+.privacidad p a
+{
+    text-decoration: none;
+    color: #5ab;
+}
+#privacidad
+{
+    max-width: 20px;
+    margin: 0px 30px 10px;
 }
 .salvar
 {
@@ -545,13 +566,9 @@ outline: red solid 3px;
         min-width: 90%;
         margin: 50px auto 30px;
         padding: 20px 1px 10px;
-        background: #fff7;
         transition: .5s;
     }
-    .section1 main .marcoFormulario:hover
-    {
-        background: #fffa;
-    }
+ 
     .section1 main .marcoFormulario form
     {
         width: 95%;
@@ -565,7 +582,19 @@ outline: red solid 3px;
         border: 1px solid #0008;
 
     }
-    
+    .salvar
+{
+    background: #145;
+    color: #fff;
+    font-weight: bold;
+    height: 3em;
+    transition: .2s;
+}
+.salvar:hover
+{
+    background: #256;
+    text-shadow: #aaa 1px 1px 10px;
+}
     /* ---------------------------- */
     
     /* -----------Section 2----------------- */
@@ -661,6 +690,19 @@ outline: red solid 3px;
         top: 0vh;
         padding: 20px;
     }
+    .salvar
+{
+    background: #145;
+    color: #fff;
+    font-weight: bold;
+    height: 3em;
+    transition: .2s;
+}
+.salvar:hover
+{
+    background: #256;
+    text-shadow: #aaa 1px 1px 10px;
+}
 
     @keyframes enfasis
     {
@@ -732,6 +774,7 @@ outline: red solid 3px;
         padding: 5px;
     
     }
+    
 
     @keyframes amortiguar
 {

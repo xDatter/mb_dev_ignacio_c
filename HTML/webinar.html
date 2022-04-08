@@ -30,9 +30,6 @@
                 </div>
                 <div class="marcoFormulario">
                     <form action="post" id="formDetail">
-                        <input id="urlTyp" type="text" value="">
-                        <input id="" type="hidden" value="">
-                        <input id="" type="hidden" value="">
                         <div>
                             <p>Nombres</p>
                             <input id="nombre" name="nombre" type="text" placeholder="Ej. Valentina Andrea" required>
@@ -93,6 +90,14 @@
                                 <option value="No">No</option>
                                 <option value="Soy cliente MasterBase®">Soy cliente MasterBase®</option>
                             </select>
+                        </div>
+                        <div class="privacidad">
+                            <input type="checkbox" id="privacidad" name="privacidad">
+                            <p>Acepto recibir información comercial de Masterbase® y su 
+                                <a href="https://www.es.masterbase.com/privacidad.html" target="_blank" class="privacidad-url">
+                                    <strong>Política de Privacidad</strong>
+                                </a>
+                            </p>
                         </div>
                         <div>
                             <button id="guardar" class="tipoInput salvar">Solicitar enlace</button>
