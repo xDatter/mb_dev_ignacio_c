@@ -1,16 +1,8 @@
+// v0.2022.04.08 1835
+
 function arranque(){
-    $("#guardar").click(camposRDS);
-
+  $("#guardar").click(save);
 }
-
-function testers(){
-    
-    console.log("holap");
-    $("#control").toggleClass("nolanding");
-    $(".cover").toggleClass("nolanding"); 
-    
-}
-
 function enlaces(){
   $(".logo").click(function(){ 
     // location.href="https://masterbase.com"; 
@@ -20,34 +12,10 @@ function enlaces(){
 
 }
 
-async function camposRDS(){
-  let fragCampos = document.createDocumentFragment();
-  let campos = document.getElementById("formDetail");
-  let tName = document.getElementById("titulo");
-  let url = window.location.pathname;
-
-
-  let urlInput = document.createElement('input');
-  let nombreWebinarInput = document.createElement('input');
-
-
-  urlInput.setAttribute(`type`, `hidden`);
-  nombreWebinarInput.setAttribute(`type`, `hidden`);
-
-  urlInput.setAttribute(`name`, `url`);
-  nombreWebinarInput.setAttribute(`name`, `nombrewebinar`);
-
-  urlInput.setAttribute(`value`, `${url}`);
-  nombreWebinarInput.setAttribute(`value`, `${tName}`);
-
-  fragCampos.append(urlInput);
-  fragCampos.append(nombreWebinarInput);
-
-  campos.appendChild(fragCampos);
-
-
-  save();
-
+function testers(){
+  console.log("holap");
+  $("#control").toggleClass("nolanding");
+  $(".cover").toggleClass("nolanding");    
 }
 
 async function loading(){
@@ -65,8 +33,6 @@ async function loading(){
     let razonesFinal= document.createDocumentFragment();
     // el detail es la funcion que esta en el ondemand ojo! importante
     let { data } = await functionOnDemand("detail", { pathname });
-    console.log(pathname);
-    console.log(data);
 
     docName.innerText = data.info.titulo;
     tName.innerText = data.info.titulo;
@@ -86,8 +52,6 @@ async function loading(){
     parrCont.append(parrafoFinal);
     listaAprenda1.append(razonesFinal);
     
-
-
   } catch (error) {
     console.log(error);
   }
@@ -98,10 +62,8 @@ async function loading(){
   let tName = tElement.innerText;
   let urlRDS = window.location.pathname;
 
-
   let urlInput = document.createElement('input');
   let nombreWebinarInput = document.createElement('input');
-
 
   urlInput.setAttribute(`type`, `hidden`);
   nombreWebinarInput.setAttribute(`type`, `hidden`);
@@ -112,6 +74,7 @@ async function loading(){
   urlInput.setAttribute(`id`, `url`);
   nombreWebinarInput.setAttribute(`id`, `nombreWebinar`);
 
+  // Modificar esta parte cuando haya cambio de dominio o similar, hacer pruebas con un console.log(urlRDS);
   urlInput.setAttribute(`value`, `https://publicsmartview.masterbase.com${urlRDS}`);
   nombreWebinarInput.setAttribute(`value`, `${tName}`);
 
@@ -122,66 +85,21 @@ async function loading(){
 };
      
 async function save(){
+  let recargar = window.location.pathname;
   let formChk = document.getElementById("formDetail");
-
   let formData = new FormData(formChk);   
   let values = Object.fromEntries(formData.entries()); 
-
-  console.log(values);
-
   try {
     let {data} = await functionOnDemand("save", {  data: values });
-    // let typ = window.location.href = "https://publicsmartview.masterbase.com/v1/620324fe39671200181f9d8a/" + urlTyp.value;
-    console.log("values", values, data);
-   
-
-
+    console.log(data);
   } catch (error) {
     console.log(error);
   }
-}
 
-
-// ---------------------------
-async function replicar() {
-  const emailChk = document.getElementById("email");
-  const nombreChk = document.getElementById("nombre");
-  const apellidoChk = document.getElementById("apellido");
-  const paisChk = document.getElementById("pais");
-  const empresaChk = document.getElementById("empresa");
-  const proximacompraChk = document.getElementById("proximacompra");
-  const formChk = document.getElementById("formDetail");
-
-  // campo oculto por settear
-  const urlTyp = document.getElementById("urlTyp");
-
-    // campo privacidad valor "on"    deb haber un off
-    // campo formName valor "webinar"
-    // campo nombreEbook adaptar a nombreWebinar igual al titulo
-    
-    // campo IDmail se genera solo por el aod
-    // campo Estado valor estadoFue se genera en el aod
-
-
-    // idear forma de validar datos con el mismo aod o desde js, algun condicional o switch
-
-
-      const typ = window.location.href = "https://publicsmartview.masterbase.com/v1/620324fe39671200181f9d8a/" + urlTyp.value;
-      console.log("values", values, data);
-    
-
-  
-}
-
-async function flujo(){
-  let { data1 } = await functionOnDemand("detail", { pathname });
-  // let { data2 } = await functionOnDemand("save", {  data: values });
-  let { data2 } = await functionOnDemand("save", { data });
-
-  console.log(data1);
-  console.log(data2);
+  location.href=`https://publicsmartview.masterbase.com${recargar}`;
 
 }
+
 
 window.onload= function(){
   arranque(); 
