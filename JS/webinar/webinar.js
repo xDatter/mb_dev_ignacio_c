@@ -1,4 +1,4 @@
-// v0.2022.04.08 1900
+// v0.2022.04.08 1905
 
 function arranque(){
   $("#guardar").click(save);
@@ -96,9 +96,14 @@ async function save(){
     console.log(error);
   }
 
-  location.href=`https://publicsmartview.masterbase.com${recargar}`;
+  setTimeout(() => {
+    console.log("1 Segundo esperado")
+    location.href=`https://publicsmartview.masterbase.com${recargar}`;
+  }, 3000);
 
 }
+
+
 
 
 window.onload= function(){
