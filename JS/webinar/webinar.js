@@ -20,7 +20,7 @@ function enlaces(){
 
 }
 
-function camposRDS(){
+async function camposRDS(){
   let fragCampos = document.createDocumentFragment();
   let campos = document.getElementById("formDetail");
   let tName = document.getElementById("titulo");
@@ -33,6 +33,9 @@ function camposRDS(){
 
   urlInput.setAttribute(`type`, `hidden`);
   nombreWebinarInput.setAttribute(`type`, `hidden`);
+
+  urlInput.setAttribute(`name`, `url`);
+  nombreWebinarInput.setAttribute(`name`, `nombrewebinar`);
 
   urlInput.setAttribute(`value`, `${url}`);
   nombreWebinarInput.setAttribute(`value`, `${tName}`);
@@ -88,12 +91,40 @@ async function loading(){
   } catch (error) {
     console.log(error);
   }
+
+  let fragCampos = document.createDocumentFragment();
+  let campos = document.getElementById("formDetail");
+  let tName = document.getElementById("titulo");
+  let url = window.location.pathname;
+
+
+  let urlInput = document.createElement('input');
+  let nombreWebinarInput = document.createElement('input');
+
+
+  urlInput.setAttribute(`type`, `hidden`);
+  nombreWebinarInput.setAttribute(`type`, `hidden`);
+
+  urlInput.setAttribute(`name`, `url`);
+  nombreWebinarInput.setAttribute(`name`, `nombrewebinar`);
+
+  urlInput.setAttribute(`value`, `${url}`);
+  nombreWebinarInput.setAttribute(`value`, `${tName}`);
+
+  fragCampos.append(urlInput);
+  fragCampos.append(nombreWebinarInput);
+
+  campos.appendChild(fragCampos);
+
+  console.log(campos);
+  console.log(tName);
+  console.log(url);
+  console.log(urlInput);
+  console.log(nombreWebinarInput);
+
 };
      
 async function save(){
-  // Estos campos colocarlos en inputs dentro del formulario para que se capturen con el resto
-  let urlTyp = document.getElementById("urlTyp");
-
   let formChk = document.getElementById("formDetail");
 
   let formData = new FormData(formChk);   
