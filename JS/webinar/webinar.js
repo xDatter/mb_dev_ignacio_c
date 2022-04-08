@@ -94,8 +94,9 @@ async function loading(){
 
   let fragCampos = document.createDocumentFragment();
   let campos = document.getElementById("formDetail");
-  let tName = document.getElementById("titulo");
-  let url = window.location.pathname;
+  let tElement = document.getElementById("titulo");
+  let tName = tElement.innerText;
+  let urlRDS = window.location.pathname;
 
 
   let urlInput = document.createElement('input');
@@ -106,22 +107,18 @@ async function loading(){
   nombreWebinarInput.setAttribute(`type`, `hidden`);
 
   urlInput.setAttribute(`name`, `url`);
-  nombreWebinarInput.setAttribute(`name`, `nombrewebinar`);
+  nombreWebinarInput.setAttribute(`name`, `nombreWebinar`);
 
-  urlInput.setAttribute(`value`, `${url}`);
+  urlInput.setAttribute(`id`, `url`);
+  nombreWebinarInput.setAttribute(`id`, `nombreWebinar`);
+
+  urlInput.setAttribute(`value`, `https://publicsmartview.masterbase.com${urlRDS}`);
   nombreWebinarInput.setAttribute(`value`, `${tName}`);
 
   fragCampos.append(urlInput);
   fragCampos.append(nombreWebinarInput);
 
   campos.appendChild(fragCampos);
-
-  console.log(campos);
-  console.log(tName);
-  console.log(url);
-  console.log(urlInput);
-  console.log(nombreWebinarInput);
-
 };
      
 async function save(){
