@@ -1,4 +1,4 @@
-// v0.2022.04.08 1845
+// v0.2022.04.08 1859
 
 function arranque(){
   $("#guardar").click(save);
@@ -98,6 +98,7 @@ async function save(){
 
   console.log(recargar);
   location.href=`https://publicsmartview.masterbase.com${recargar}`;
+  loading();
 
 }
 
