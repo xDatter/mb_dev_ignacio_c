@@ -96,6 +96,7 @@ async function save(){
     console.log(error);
   }
 
+  console.log(recargar);
   location.href=`https://publicsmartview.masterbase.com${recargar}`;
 
 }
