@@ -23,8 +23,8 @@ function enlaces(){
 function camposRDS(){
   let fragCampos = document.createDocumentFragment();
   let campos = document.getElementById("formDetail");
-  let url = window.location.pathname;
   let tName = document.getElementById("titulo");
+  let url = window.location.pathname;
 
 
   let urlInput = document.createElement('input');
