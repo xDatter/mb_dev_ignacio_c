@@ -1,4 +1,4 @@
-// v0.2022.04.08 2005
+// v0.2022.04.08 2012
 
 
 function testers(){
@@ -74,7 +74,6 @@ async function loading(){
 };
      
 async function save(){
-  let recargar = window.location.pathname;
   let formChk = document.getElementById("formDetail");
   let formData = new FormData(formChk);   
   let values = Object.fromEntries(formData.entries()); 
@@ -84,11 +83,6 @@ async function save(){
   } catch (error) {
     console.log(error);
   }
-
-  setTimeout(() => {
-    console.log("1 Segundo esperado")
-    location.href=`https://publicsmartview.masterbase.com${recargar}`;
-  }, 3000);
 
 }
 
@@ -108,7 +102,12 @@ function verificar(){
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor, complete todos los campos del formulario")
   }else{
+    let recargar = window.location.pathname;
     save()
+    setTimeout(() => {
+      console.log("1 Segundo esperado")
+      location.href=`https://publicsmartview.masterbase.com${recargar}`;
+    }, 3000);
   }
 
 }
