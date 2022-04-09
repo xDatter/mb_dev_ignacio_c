@@ -1,16 +1,5 @@
-// v0.2022.04.08 1905
+// v0.2022.04.08 2005
 
-function arranque(){
-  $("#guardar").click(save);
-}
-function enlaces(){
-  $(".logo").click(function(){ 
-    // location.href="https://masterbase.com"; 
-    window.open("https://masterbase.com"); 
-    return false; 
-  }); 
-
-}
 
 function testers(){
   console.log("holap");
@@ -103,7 +92,33 @@ async function save(){
 
 }
 
+function arranque(){
+  $("#guardar").click(verificar);
+}
 
+
+function verificar(){
+  let nombre = document.getElementById("nombre");
+  let apellido = document.getElementById("apellido");
+  let pais = document.getElementById("pais");
+  let email = document.getElementById("email");
+  let empresa = document.getElementById("empresa");
+  let proximacompra = document.getElementById("proximacompra");
+  
+  if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
+  }else{
+    save()
+  }
+
+}
+
+function enlaces(){
+  $(".logo").click(function(){ 
+    // location.href="https://masterbase.com"; 
+    window.open("https://masterbase.com"); 
+    return false; 
+  }); 
+}
 
 
 window.onload= function(){
