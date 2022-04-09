@@ -106,6 +106,7 @@ function verificar(){
   let proximacompra = document.getElementById("proximacompra");
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
+    alert("Por favor, complete todos los campos del formulario")
   }else{
     save()
   }
