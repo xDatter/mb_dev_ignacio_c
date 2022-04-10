@@ -480,6 +480,11 @@ outline: red solid 3px;
         min-height: fit-content;
         max-height: fit-content;
     }
+    .section1 header::selection
+    {
+        display: none;
+    }
+
     .logo
     {
         max-width: auto;
