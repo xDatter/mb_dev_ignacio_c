@@ -1,4 +1,4 @@
-// v0.2022.04.10 1743
+// v0.2022.04.10 1744
 
 function testers(){
   console.log("holap");
@@ -109,10 +109,10 @@ function verificar(){
     
     // save()
     console.log("3 Segundo esperado sin save()");
-    $("#control"),toggleClass("saving");
+    $("#control").toggleClass("saving");
     setTimeout(() => {
       console.log("Enviado");
-      $("#control"),toggleClass("saving");
+      $("#control").toggleClass("saving");
       console.log(recargar);
     }, 3000);
 
