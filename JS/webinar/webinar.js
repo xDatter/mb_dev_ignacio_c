@@ -1,4 +1,4 @@
-// v0.2022.04.10 1709
+// v0.2022.04.10 1739
 
 
 function testers(){
@@ -87,6 +87,9 @@ async function save(){
 }
 
 function arranque(){
+  $("#guardar").on("click",function(event){
+    event.preventDefault();
+ });
   $("#guardar").click(verificar);
 }
 
@@ -122,6 +125,7 @@ function enlaces(){
     window.open("https://masterbase.com"); 
     return false; 
   }); 
+
 }
 
 
