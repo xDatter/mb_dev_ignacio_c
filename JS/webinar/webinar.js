@@ -1,4 +1,4 @@
-const vsn = "// v0.2022.04.10 1751"
+const vsn = "// v0.2022.04.10 1752"
 
 function testers(){
   console.log("holap");
@@ -115,11 +115,11 @@ function verificar(){
     control.classList.toggle("saving");
     setTimeout(() => {
       console.log("Enviado");
+      setTimeout(() => {
+        location.href=`https://publicsmartview.masterbase.com${recargar}`;
+      }, 1000);
     }, 66000);
 
-    setTimeout(() => {
-      location.href=`https://publicsmartview.masterbase.com${recargar}`;
-    }, 1000);
   }
 
 }
