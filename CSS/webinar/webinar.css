@@ -17,7 +17,7 @@
 #control.saving
 {
 
-    animation: saving forwards ease 2s;
+    animation: saving forwards ease 3s;
 }
 @keyframes saving
 {
