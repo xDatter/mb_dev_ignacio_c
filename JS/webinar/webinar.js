@@ -1,4 +1,4 @@
-// v0.2022.04.10 1739
+// v0.2022.04.10 1740
 
 
 function testers(){
@@ -90,7 +90,7 @@ function arranque(){
   $("#guardar").on("click",function(event){
     event.preventDefault();
  });
-  $("#guardar").click(verificar);
+  // $("#guardar").click(verificar);
 }
 
 
