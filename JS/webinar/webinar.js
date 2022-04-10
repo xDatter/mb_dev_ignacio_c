@@ -1,4 +1,4 @@
-const vsn = "// v0.2022.04.10 1754"
+const vsn = "// v0.2022.04.10 1922"
 
 function testers(){
   console.log("holap");
@@ -63,6 +63,7 @@ async function loading(){
   nombreWebinarInput.setAttribute(`id`, `nombreWebinar`);
 
   // Modificar esta parte cuando haya cambio de dominio o similar, hacer pruebas con un console.log(urlRDS);
+  // verificar igualmente la ln 114 de recarga
   urlInput.setAttribute(`value`, `https://publicsmartview.masterbase.com${urlRDS}`);
   nombreWebinarInput.setAttribute(`value`, `${tName}`);
 
@@ -102,29 +103,22 @@ function verificar(){
   let proximacompra = document.getElementById("proximacompra");
   let control = document.getElementById("control");
   let recargar = window.location.pathname; // pueden cambiar este valor por otro url para redireccionar
-  // se debe cambiar el location.href del setTimeout ln 118 
+  // se debe cambiar el location.href del setTimeout ln 114 
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
-    alert("Por favor, complete todos los campos del formulario");
-    console.log();
-
+    alert("Por favor complete el formulario");
   }else{
-    
-    // save()
-    console.log("3 Segundo esperado sin save()");
+    save()
     control.classList.toggle("saving");
-    console.log("Enviado");
     setTimeout(() => {
         location.href=`https://publicsmartview.masterbase.com${recargar}`;
     }, 3500);
-
   }
 
 }
 
 function enlaces(){
   $(".logo").click(function(){ 
-    // location.href="https://masterbase.com"; 
     window.open("https://masterbase.com"); 
     return false; 
   }); 
