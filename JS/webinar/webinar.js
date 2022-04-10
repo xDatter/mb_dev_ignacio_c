@@ -1,4 +1,4 @@
-// v0.2022.04.10 1744
+const vsn = "// v0.2022.04.10 1744"
 
 function testers(){
   console.log("holap");
@@ -104,11 +104,13 @@ function verificar(){
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor, complete todos los campos del formulario")
+    console.log(vsn)
 
   }else{
     
     // save()
     console.log("3 Segundo esperado sin save()");
+    console.log(vsn)
     $("#control").toggleClass("saving");
     setTimeout(() => {
       console.log("Enviado");
