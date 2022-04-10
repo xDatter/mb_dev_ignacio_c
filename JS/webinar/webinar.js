@@ -1,5 +1,4 @@
-// v0.2022.04.10 1742
-
+// v0.2022.04.10 1743
 
 function testers(){
   console.log("holap");
@@ -110,11 +109,16 @@ function verificar(){
     
     // save()
     console.log("3 Segundo esperado sin save()");
+    $("#control"),toggleClass("saving");
     setTimeout(() => {
       console.log("Enviado");
+      $("#control"),toggleClass("saving");
       console.log(recargar);
-      location.href=`https://publicsmartview.masterbase.com${recargar}`;
     }, 3000);
+
+    setTimeout(() => {
+      location.href=`https://publicsmartview.masterbase.com${recargar}`;
+    }, 1000);
   }
 
 }
