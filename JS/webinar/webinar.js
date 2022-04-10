@@ -1,4 +1,4 @@
-const vsn = "// v0.2022.04.10 1746"
+const vsn = "// v0.2022.04.10 1747"
 
 function testers(){
   console.log("holap");
@@ -89,7 +89,7 @@ function arranque(){
   $("#guardar").click(function(event){
     event.preventDefault();
  });
-  $("#guardar").click(verificar());
+  $("#guardar").click(verificar);
 }
 
 
@@ -101,7 +101,6 @@ function verificar(){
   let empresa = document.getElementById("empresa");
   let proximacompra = document.getElementById("proximacompra");
   let recargar = window.location.pathname;
-  console.log(this.vsn)
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor, complete todos los campos del formulario");
