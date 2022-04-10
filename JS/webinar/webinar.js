@@ -102,7 +102,7 @@ function verificar(){
   let proximacompra = document.getElementById("proximacompra");
   let control = document.getElementById("control");
   let recargar = window.location.pathname; // pueden cambiar este valor por otro url para redireccionar
-  // se debe cambiar el location.href del segundo setTimeout ln 122 
+  // se debe cambiar el location.href del segundo setTimeout ln 121 
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor, complete todos los campos del formulario");
@@ -115,7 +115,6 @@ function verificar(){
     control.classList.toggle("saving");
     setTimeout(() => {
       console.log("Enviado");
-      control.classList.toggle("saving");
     }, 3000);
 
     setTimeout(() => {

@@ -27,7 +27,7 @@
     }
     100%
     {
-        filter: grayscale(1);
+        filter: brightness(110%) grayscale(50%);
     }
 }
 
