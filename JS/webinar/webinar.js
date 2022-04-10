@@ -1,4 +1,4 @@
-const vsn = "// v0.2022.04.10 1745"
+const vsn = "// v0.2022.04.10 1746"
 
 function testers(){
   console.log("holap");
@@ -85,15 +85,15 @@ async function save(){
 
 }
 
-function arranque(Vvsn){
+function arranque(){
   $("#guardar").click(function(event){
     event.preventDefault();
  });
-  $("#guardar").click(verificar(Vvsn));
+  $("#guardar").click(verificar());
 }
 
 
-function verificar(Vvsn){
+function verificar(){
   let nombre = document.getElementById("nombre");
   let apellido = document.getElementById("apellido");
   let pais = document.getElementById("pais");
@@ -101,20 +101,19 @@ function verificar(Vvsn){
   let empresa = document.getElementById("empresa");
   let proximacompra = document.getElementById("proximacompra");
   let recargar = window.location.pathname;
+  console.log(this.vsn)
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor, complete todos los campos del formulario");
-    console.log(Vvsn);
+    console.log();
 
   }else{
     
     // save()
     console.log("3 Segundo esperado sin save()");
-    console.log(Vvsn)
-    $("#control").toggleClass("saving");
+    console.log()
     setTimeout(() => {
       console.log("Enviado");
-      $("#control").toggleClass("saving");
       console.log(recargar);
     }, 3000);
 
@@ -136,8 +135,9 @@ function enlaces(){
 
 
 window.onload= function(){
-  arranque(vsn); 
+  arranque(); 
   loading();
   enlaces();
+  console.log(vsn);
 };
 
