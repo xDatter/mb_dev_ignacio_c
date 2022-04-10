@@ -98,17 +98,18 @@ function verificar(){
   let email = document.getElementById("email");
   let empresa = document.getElementById("empresa");
   let proximacompra = document.getElementById("proximacompra");
+  let recargar = window.location.pathname;
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor, complete todos los campos del formulario")
-    console.log("Por favor, complete todos los campos del formulario")
-    console.log("----")
+
   }else{
-    let recargar = window.location.pathname;
+    
     // save()
     console.log("1 Segundo esperado");
     setTimeout(() => {
       console.log("Enviado");
+      console.log(recargar);
       // location.href=`https://publicsmartview.masterbase.com${recargar}`;
     }, 3000);
   }
