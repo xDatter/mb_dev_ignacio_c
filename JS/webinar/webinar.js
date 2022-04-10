@@ -1,4 +1,4 @@
-// v0.2022.04.10 1741
+// v0.2022.04.10 1742
 
 
 function testers(){
@@ -90,7 +90,7 @@ function arranque(){
   $("#guardar").click(function(event){
     event.preventDefault();
  });
-  // $("#guardar").click(verificar);
+  $("#guardar").click(verificar);
 }
 
 
@@ -109,7 +109,7 @@ function verificar(){
   }else{
     
     // save()
-    console.log("3 Segundo esperado");
+    console.log("3 Segundo esperado sin save()");
     setTimeout(() => {
       console.log("Enviado");
       console.log(recargar);
