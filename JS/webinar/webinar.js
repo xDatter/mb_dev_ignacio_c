@@ -1,4 +1,4 @@
-// v0.2022.04.08 2012
+// v0.2022.04.10 1709
 
 
 function testers(){
@@ -106,11 +106,11 @@ function verificar(){
   }else{
     
     // save()
-    console.log("1 Segundo esperado");
+    console.log("3 Segundo esperado");
     setTimeout(() => {
       console.log("Enviado");
       console.log(recargar);
-      // location.href=`https://publicsmartview.masterbase.com${recargar}`;
+      location.href=`https://publicsmartview.masterbase.com${recargar}`;
     }, 3000);
   }
 
