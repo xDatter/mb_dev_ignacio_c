@@ -101,12 +101,15 @@ function verificar(){
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor, complete todos los campos del formulario")
+    console.log("Por favor, complete todos los campos del formulario")
+    console.log("----")
   }else{
     let recargar = window.location.pathname;
-    save()
+    // save()
+    console.log("1 Segundo esperado");
     setTimeout(() => {
-      console.log("1 Segundo esperado")
-      location.href=`https://publicsmartview.masterbase.com${recargar}`;
+      console.log("Enviado");
+      // location.href=`https://publicsmartview.masterbase.com${recargar}`;
     }, 3000);
   }
 

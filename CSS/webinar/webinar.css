@@ -239,7 +239,7 @@ section
     max-width: 20px;
     margin: 0px 30px 10px;
 }
-.salvar
+.section1 main .marcoFormulario .salvar
 {
     background: #145;
     color: #fff;
@@ -247,7 +247,7 @@ section
     height: 3em;
     transition: .2s;
 }
-.salvar:hover
+.section1 main .marcoFormulario .salvar:hover
 {
     background: #256;
     text-shadow: #aaa 1px 1px 10px;
@@ -582,19 +582,7 @@ outline: red solid 3px;
         border: 1px solid #0008;
 
     }
-    .salvar
-{
-    background: #145;
-    color: #fff;
-    font-weight: bold;
-    height: 3em;
-    transition: .2s;
-}
-.salvar:hover
-{
-    background: #256;
-    text-shadow: #aaa 1px 1px 10px;
-}
+
     /* ---------------------------- */
     
     /* -----------Section 2----------------- */
@@ -690,19 +678,7 @@ outline: red solid 3px;
         top: 0vh;
         padding: 20px;
     }
-    .salvar
-{
-    background: #145;
-    color: #fff;
-    font-weight: bold;
-    height: 3em;
-    transition: .2s;
-}
-.salvar:hover
-{
-    background: #256;
-    text-shadow: #aaa 1px 1px 10px;
-}
+
 
     @keyframes enfasis
     {
