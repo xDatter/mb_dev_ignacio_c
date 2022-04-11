@@ -86,7 +86,7 @@ function arranque(){
     event.preventDefault();
   });
   $("#guardar").click(verificar);
-  $(".tituloCo").html("MasterBase<br>un lugar para aprender");
+  $(".tituloCo").html("MasterBase<br>un lugar para aprender"); //Aquí se puede modificar a gusto el slogan a utilizar
 }
 
 function verificar(){
@@ -101,7 +101,7 @@ function verificar(){
   // se debe cambiar el location.href del setTimeout ln 109 
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
-    console.log("Por favor complete el formulario");
+    alert("Por favor complete el formulario");
   }else{
     save()
     control.classList.toggle("saving");
