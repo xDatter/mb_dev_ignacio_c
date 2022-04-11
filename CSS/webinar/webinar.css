@@ -45,12 +45,10 @@
     background-size: cover;
     min-width: 0vw;
     max-width: 100vw;
+    width: 100vw;
     min-height: 100vh;
-    /* antes auto */
     max-height: fit-content; 
-    /* es es la imagen de fondo general, las lineas celestes */
     background: url("../../Files/images/web2.jpeg") no-repeat center center fixed;
-    /* background: url(" https://cdn2.hubspot.net/hubfs/37780/bg-footers5.jpg") no-repeat center center fixed; */
     background-size: cover;
     
 }
