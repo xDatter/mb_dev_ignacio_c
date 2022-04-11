@@ -1,10 +1,4 @@
-const vsn = "// v1.2022.4.10"
-
-function testers(){
-  console.log("holap");
-  $("#control").toggleClass("nolanding");
-  $(".cover").toggleClass("nolanding");    
-}
+const vsn = "// v1.2022.4.11"
 
 async function loading(){
   try {
@@ -19,7 +13,6 @@ async function loading(){
 
     let parrafoFinal= document.createDocumentFragment();
     let razonesFinal= document.createDocumentFragment();
-    // el detail es la funcion que esta en el ondemand ojo! importante
     let { data } = await functionOnDemand("detail", { pathname });
 
     docName.innerText = data.info.titulo;
@@ -83,13 +76,12 @@ async function save(){
   } catch (error) {
     console.log(error);
   }
-
 }
 
 function arranque(){
   $("#guardar").click(function(event){
     event.preventDefault();
- });
+  });
   $("#guardar").click(verificar);
 }
 
@@ -106,7 +98,7 @@ function verificar(){
   // se debe cambiar el location.href del setTimeout ln 114 
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
-    alert("Por favor complete el formulario");
+    console.log("Por favor complete el formulario");
   }else{
     save()
     control.classList.toggle("saving");
