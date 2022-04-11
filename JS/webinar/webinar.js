@@ -96,7 +96,7 @@ function verificar(){
   let empresa = document.getElementById("empresa");
   let proximacompra = document.getElementById("proximacompra");
   let control = document.getElementById("control");
-  let recargar = window.location.pathname; // pueden cambiar este valor por otro url para redireccionar
+  let redirigir = window.location.pathname; // pueden cambiar este valor por otro url para redireccionar
   // se debe cambiar el location.href del setTimeout ln 114 
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
@@ -105,7 +105,7 @@ function verificar(){
     save()
     control.classList.toggle("saving");
     setTimeout(() => {
-        location.href=`https://publicsmartview.masterbase.com${recargar}`;
+        location.href=`https://publicsmartview.masterbase.com${redirigir}`;
     }, 3500);
   }
 }
