@@ -60,6 +60,7 @@ section
 {
     min-width: 100%;
     min-height: 100vh;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -106,7 +107,7 @@ section
     width: 100%;
     max-width: 100%;
     min-height: 87vh;
-    max-height: 87vh;
+    max-height: fit-content;
     filter: opacity(1);
 }
 .section1 main .contenidoTitulo
