@@ -504,7 +504,7 @@ outline: red solid 3px;
         width: 100%;
         min-height: 18vh;
         max-height: fit-content;
-        padding: 50px;
+        padding: 10px;
         font-size: 40px;
     }
     @keyframes enfasis
@@ -677,7 +677,7 @@ outline: red solid 3px;
     {
         font-size: 25px;
         top: 0vh;
-        padding: 20px;
+        padding: 10px;
     }
 
 
