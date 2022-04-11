@@ -297,6 +297,7 @@ section
 .section2 main aside ul li img
 {
     position: absolute;
+    top: 5px;
 }
 
 .section2 main aside div:first-child  p
@@ -552,9 +553,8 @@ outline: red solid 3px;
         justify-content: space-evenly;
         min-height: fit-content;
         max-height: fit-content;
-        width: 100%;
+        width: 80%;
         border-radius: 0;
-        min-width: 90%;
         margin: 50px auto 30px;
         padding: 20px 1px 10px;
         transition: .5s;
@@ -562,7 +562,7 @@ outline: red solid 3px;
  
     .section1 main .marcoFormulario form
     {
-        width: 95%;
+        width: 80%;
         margin: 10px auto;
     
     }
