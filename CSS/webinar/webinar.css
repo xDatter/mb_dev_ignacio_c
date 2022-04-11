@@ -136,8 +136,8 @@ section
     justify-content: space-evenly;
     width: 35vw;
     min-width: 400px;
-    min-height: 75vh;
-    max-height: 100vh;    
+    min-height: fit-content;
+    max-height: fit-content;    
     margin: auto 8vw auto auto;
     overflow: hidden;
     background: #0005;
@@ -157,6 +157,7 @@ section
 }
 .section1 main .marcoFormulario form
 {
+    margin: 30px 1px;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -297,7 +298,7 @@ section
 .section2 main aside ul li img
 {
     position: absolute;
-    top: 5px;
+    top: 25px;
 }
 
 .section2 main aside div:first-child  p
@@ -612,6 +613,10 @@ outline: red solid 3px;
         line-height: 1.5em;
     }
 
+    .section2 main aside ul li img
+{
+    top: 5px;
+}
     .section2 main aside
     {
         position: relative;
