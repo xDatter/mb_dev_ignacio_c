@@ -717,6 +717,36 @@ outline: red solid 3px;
         }
     }
     
+    .section1 main .marcoFormulario
+    {
+        width: 100%;
+        min-width: 100%;
+        min-height: fit-content;
+        max-height: fit-content;    
+        margin: 5px auto;
+        overflow: hidden;
+        background: #0005;
+        border: 2px #0001 solid;
+        color: #fff;
+        border-radius: 0;
+        transition: 3s;
+    }
+
+    .section1 main .marcoFormulario form
+    {
+        margin: 30px auto;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .section1 main .marcoFormulario form div
+    {
+        width: 1px;
+        flex-grow: 1;
+    }
+
     .section2 main aside
     {
     padding: 5px;    
