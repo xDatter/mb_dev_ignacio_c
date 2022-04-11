@@ -57,7 +57,7 @@
 
 section
 {
-    min-width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     max-height: fit-content;
     display: flex;
@@ -74,7 +74,7 @@ section
 {
     display: flex;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     padding: 20px 0;
     background: #fff;
     min-height: 13vh;
@@ -160,7 +160,7 @@ section
 .section1 main .marcoFormulario form
 {
     margin: 20px auto;
-    width: 90%;
+    max-width: 90%;
     display: flex;
     flex-wrap: wrap;
 
@@ -557,14 +557,13 @@ outline: red solid 3px;
         max-height: fit-content;
         width: 80%;
         border-radius: 0;
-        margin: 50px auto 30px;
-        padding: 20px 1px 10px;
+        margin: 10px auto 20px;
         transition: .5s;
     }
  
     .section1 main .marcoFormulario form
     {
-        width: 80%;
+        max-width: 80%;
         margin: 10px auto;
     
     }
@@ -739,8 +738,8 @@ outline: red solid 3px;
 
     .section1 main .marcoFormulario form
     {
-        margin: 30px auto;
-        width: 95%;
+        margin: 10px auto;
+        max-width: 95%;
         display: flex;
         flex-wrap: wrap;
 
