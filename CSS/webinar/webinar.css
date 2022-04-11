@@ -158,7 +158,7 @@ section
 }
 .section1 main .marcoFormulario form
 {
-    margin: 30px 1px;
+    margin: 30px auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
