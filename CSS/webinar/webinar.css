@@ -145,6 +145,7 @@ section
     border: 2px #0001 solid;
     color: #fff;
     letter-spacing: 0.5px;
+    font-size: 14px;
     border-radius: 5px;
     transition: 3s;
 }
@@ -159,7 +160,7 @@ section
 }
 .section1 main .marcoFormulario form
 {
-    margin: 30px auto;
+    margin: 20px auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
