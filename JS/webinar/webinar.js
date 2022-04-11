@@ -1,4 +1,4 @@
-const vsn = "// v0.2022.04.10 1923"
+const vsn = "// v1.2022.4.10"
 
 function testers(){
   console.log("holap");
@@ -80,7 +80,6 @@ async function save(){
   try {
     let {data} = await functionOnDemand("save", {  data: values });
     console.log(data);
-    console.log(values);
   } catch (error) {
     console.log(error);
   }
@@ -104,7 +103,7 @@ function verificar(){
   let proximacompra = document.getElementById("proximacompra");
   let control = document.getElementById("control");
   let recargar = window.location.pathname; // pueden cambiar este valor por otro url para redireccionar
-  // se debe cambiar el location.href del setTimeout ln 114 
+  // se debe cambiar el location.href del setTimeout ln 113 
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor complete el formulario");
@@ -113,7 +112,7 @@ function verificar(){
     control.classList.toggle("saving");
     setTimeout(() => {
         location.href=`https://publicsmartview.masterbase.com${recargar}`;
-    }, 13500);
+    }, 3500);
   }
 
 }
