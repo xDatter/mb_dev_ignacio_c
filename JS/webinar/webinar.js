@@ -33,7 +33,7 @@ async function loading(){
 
     Object.entries(data.info.aprenda).forEach(item => {
       let nuevoLi = document.createElement('li');
-      nuevoLi.innerHTML = `<img src="https://cdn2.hubspot.net/hubfs/37780/check-5.png" alt=""> ${item[1].aprenda}` 
+      nuevoLi.innerHTML = `<img src="https://cdn2.hubspot.net/hubfs/37780/check-5.png" alt=""><p>${item[1].aprenda}</p>` 
       razonesFinal.append(nuevoLi);
     });
 
