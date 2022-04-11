@@ -1,4 +1,5 @@
 const vsn = "// v1.2022.4.11"
+// ---------async functions---------------
 
 async function loading(){
   try {
@@ -78,13 +79,14 @@ async function save(){
   }
 }
 
+// ---------functions---------------
+
 function arranque(){
   $("#guardar").click(function(event){
     event.preventDefault();
   });
   $("#guardar").click(verificar);
 }
-
 
 function verificar(){
   let nombre = document.getElementById("nombre");
@@ -106,7 +108,6 @@ function verificar(){
         location.href=`https://publicsmartview.masterbase.com${recargar}`;
     }, 3500);
   }
-
 }
 
 function enlaces(){
@@ -114,9 +115,9 @@ function enlaces(){
     window.open("https://masterbase.com"); 
     return false; 
   }); 
-
 }
 
+// ---------onload---------------
 
 window.onload= function(){
   arranque(); 
