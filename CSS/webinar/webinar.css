@@ -25,9 +25,13 @@
     {
         filter: brightness(100%) grayscale(0%);
     }
-    100%
+    50%
     {
         filter: brightness(110%) grayscale(50%);
+    }
+    100%
+    {
+        filter: brightness(100%) grayscale(0%);
     }
 }
 
