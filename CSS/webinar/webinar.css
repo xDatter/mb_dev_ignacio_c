@@ -284,8 +284,15 @@ section
     width: 100%;
     padding: 20px 50px;
     margin: 20px auto;
+    min-height: fit-content;
     max-height: fit-content;
 }
+.section2 main aside ul li p
+{
+    min-height: fit-content;
+    max-height: fit-content; 
+}
+
 .section2 main aside div:first-child  p
 {
     font-size: 40px;
