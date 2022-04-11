@@ -556,7 +556,7 @@ outline: red solid 3px;
         min-height: fit-content;
         max-height: fit-content;
         width: 80%;
-        border-radius: 0;
+        border-radius: 5px;
         margin: 10px auto 20px;
         transition: .5s;
     }
@@ -732,7 +732,7 @@ outline: red solid 3px;
         background: #0005;
         border: 2px #0001 solid;
         color: #fff;
-        border-radius: 0;
+        border-radius: 5px;
         transition: 3s;
     }
 
