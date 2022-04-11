@@ -42,7 +42,7 @@ async function loading(){
   let campos = document.getElementById("formDetail");
   let tElement = document.getElementById("titulo");
   let tName = tElement.innerText;
-  let urlRDS = window.location.pathname;
+  let urlToRDS = window.location.pathname;
 
   let urlInput = document.createElement('input');
   let nombreWebinarInput = document.createElement('input');
@@ -56,9 +56,9 @@ async function loading(){
   urlInput.setAttribute(`id`, `url`);
   nombreWebinarInput.setAttribute(`id`, `nombreWebinar`);
 
-  // Modificar esta parte cuando haya cambio de dominio o similar, hacer pruebas con un console.log(urlRDS);
-  // verificar igualmente la ln 114 de recarga
-  urlInput.setAttribute(`value`, `https://publicsmartview.masterbase.com${urlRDS}`);
+  // Modificar esta parte cuando haya cambio de dominio o similar, hacer pruebas con un console.log(urlToRDS);
+  // verificar igualmente la ln 109 de redirigir
+  urlInput.setAttribute(`value`, `https://publicsmartview.masterbase.com${urlToRDS}`);
   nombreWebinarInput.setAttribute(`value`, `${tName}`);
 
   fragCampos.append(urlInput);
@@ -86,6 +86,7 @@ function arranque(){
     event.preventDefault();
   });
   $("#guardar").click(verificar);
+  $(".tituloCo").html("MasterBase<br>un lugar para aprender");
 }
 
 function verificar(){
@@ -97,7 +98,7 @@ function verificar(){
   let proximacompra = document.getElementById("proximacompra");
   let control = document.getElementById("control");
   let redirigir = window.location.pathname; // pueden cambiar este valor por otro url para redireccionar
-  // se debe cambiar el location.href del setTimeout ln 114 
+  // se debe cambiar el location.href del setTimeout ln 109 
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     console.log("Por favor complete el formulario");
