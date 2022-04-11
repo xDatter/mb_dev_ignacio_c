@@ -103,7 +103,7 @@ function verificar(){
   let proximacompra = document.getElementById("proximacompra");
   let control = document.getElementById("control");
   let recargar = window.location.pathname; // pueden cambiar este valor por otro url para redireccionar
-  // se debe cambiar el location.href del setTimeout ln 113 
+  // se debe cambiar el location.href del setTimeout ln 114 
   
   if (!(email.value && nombre.value && apellido.value && pais.value && empresa.value && proximacompra.value)){
     alert("Por favor complete el formulario");
