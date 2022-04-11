@@ -291,6 +291,12 @@ section
 {
     min-height: fit-content;
     max-height: fit-content; 
+    padding-left: 20px;
+
+}
+.section2 main aside ul li img
+{
+    position: absolute;
 }
 
 .section2 main aside div:first-child  p
@@ -716,8 +722,7 @@ outline: red solid 3px;
         letter-spacing: 1px;
         width: 100%;
         padding: 0 10px;
-        height: 8vh;
-        max-height: 8vh;
+        max-height: fit-content;
         text-align: left;
     }
     .section2 main aside ul img
