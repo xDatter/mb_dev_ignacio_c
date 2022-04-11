@@ -514,26 +514,26 @@ outline: red solid 3px;
         }
         20%
         {
-            top: 8vh;
+            top: 6vh;
             opacity: 1;
             visibility: visible;
         }
         30%
         {
-            top: 9vh;
+            top: 7vh;
             opacity: 1;
             visibility: visible;
         }
     
         70%
         {
-            top: 9vh;
+            top: 7vh;
             opacity: 1;
             visibility: visible;
         }
         80%
         {
-            top: 8vh;
+            top: 6vh;
             opacity: 1;
             visibility: visible;
         }
