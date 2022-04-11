@@ -514,26 +514,26 @@ outline: red solid 3px;
         }
         20%
         {
-            top: 10vh;
+            top: 8vh;
             opacity: 1;
             visibility: visible;
         }
         30%
         {
-            top: 11vh;
+            top: 9vh;
             opacity: 1;
             visibility: visible;
         }
     
         70%
         {
-            top: 11vh;
+            top: 9vh;
             opacity: 1;
             visibility: visible;
         }
         80%
         {
-            top: 10vh;
+            top: 8vh;
             opacity: 1;
             visibility: visible;
         }
@@ -688,26 +688,26 @@ outline: red solid 3px;
         }
         20%
         {
-            top: 12vh;
+            top: 8vh;
             opacity: 1;
             visibility: visible;
         }
         30%
         {
-            top: 13vh;
+            top: 9vh;
             opacity: 1;
             visibility: visible;
         }
     
         70%
         {
-            top: 13vh;
+            top: 9vh;
             opacity: 1;
             visibility: visible;
         }
         80%
         {
-            top: 12vh;
+            top: 8vh;
             opacity: 1;
             visibility: visible;
         }
