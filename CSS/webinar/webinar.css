@@ -51,7 +51,8 @@
     width: 100vw;
     min-height: 100vh;
     max-height: fit-content; 
-    background: url("../../Files/images/web2.jpeg") no-repeat center center fixed;
+    /* imagen de fondo en general, conectividad */
+    background: url("https://xdatter.github.io/mb_dev_ignacio_c/Files/images/web2.jpeg") no-repeat center center fixed;
     background-size: cover;
     
 }
@@ -102,7 +103,8 @@ section
 }
 .section1 main
 {
-    background: url("../../Files/images/web3.jpeg") no-repeat center center;
+    /* imagen de fondo principal, persona con lentes */
+    background: url("https://xdatter.github.io/mb_dev_ignacio_c/Files/images/web3.jpeg") no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: space-evenly;
