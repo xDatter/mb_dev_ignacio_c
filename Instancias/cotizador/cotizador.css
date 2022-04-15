@@ -56,16 +56,20 @@ h1, .resultado
 }
 .campos, .registro
 {
-    flex-grow: 1;
-    border: 2px solid #fff;
+    border: 2px solid #fff7;
     border-radius: 10px;
-    flex-grow: 1;
-    width: 40%;
-    max-width: 45%;
+    width: 10%;
     max-height: fit-content;
     margin: 1px;
-    padding: 10px 30px;
-
+    padding: 10px 5px;
+}
+.campos
+{
+    flex-grow: 3;
+}
+.registro
+{
+    flex-grow: 3
 }
 .campos div, .registro div
 {
@@ -80,13 +84,18 @@ h1, .resultado
     padding: 20px;
     border-radius: 5px;
     margin: 5px;
-    background: #eee;
+    background: #dededecf;
     color:#500;
 
 }
-.campos input.precio
+.campos input.descrip
 {
     flex-grow: 5;
+    width: 1%;
+}
+.campos input.precio
+{
+    flex-grow: 2;
     width: 1%;
 }
 .campos input.cant
@@ -120,4 +129,22 @@ h1, .resultado
 {
     0%{filter:hue-rotate(0deg)}
     100%{filter: hue-rotate(360deg);}
+}
+
+@media only screen and (max-width: 1150px) {
+
+    *
+    {
+        font-size: 15px;
+    }
+    .contenedor1
+    {
+        width: 100%;
+        left: 0;
+    }
+    .registro div p
+    {
+    width: 100%;
+    padding: 19px;
+    }
 }

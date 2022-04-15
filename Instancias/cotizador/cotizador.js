@@ -8,12 +8,15 @@ function sumar(){
     let suma =0;
     let r1 = document.getElementById("r1");
     for(var cont = 1; cont < 7 ; cont++){
+        let descrip = (document.getElementById(`ds${cont}`)).value;
         let lorem = (document.getElementById(`lorem${cont}`));
         let valor = Number((document.getElementById(`pr${cont}`)).value);
         let cantidad = Number((document.getElementById(`ct${cont}`)).value);
         let calculo = valor * cantidad;
         suma+=calculo;
-        lorem.innerHTML = `$${calculo} CLP`
+        
+        lorem.innerHTML = `${descrip}, $${calculo} CLP`
+        
     }
     r1.innerHTML= `$ ${suma}  CLP`;
 }
