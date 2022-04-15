@@ -3,14 +3,121 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 *::selection
 {
-    display: none;
+    color: #ff5f00;
+    background: #7772;
 }
 
+#vistas
+{
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    left: calc( 50% - 100px);
+    opacity: 70%;
+}
 .control
 {
-    background: url();
+    background: url(/Files/kr10/b0414port1.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: fit-content;
+    min-width: 0;
+    max-width: 100vw;
+    width: 100%;
+}
+.contenedor1
+{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background: #000a;
+    border-radius: 10px;
+    min-height: 90vh;
+    max-height: fit-content;
+    width: 90%;
+    left: calc( 50% - 45%);
+    top: 5vh;
+}
+h1, .resultado
+{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+.campos, .registro
+{
+    flex-grow: 1;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    flex-grow: 1;
+    width: 40%;
+    max-width: 45%;
+    max-height: fit-content;
+    margin: 1px;
+    padding: 10px 30px;
+
+}
+.campos div, .registro div
+{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.campos input
+{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 5px;
+    background: #eee;
+    color:#500;
+
+}
+.campos input.precio
+{
+    flex-grow: 5;
+    width: 1%;
+}
+.campos input.cant
+{
+    flex-grow: 2;
+    width: 1%;
+}
+.registro div p
+{
+    width: 100%;
+    padding: 20.5px;
+    line-height: 23px;
+    border-radius: 5px;
+    margin: 5px;
+    color: #fff;
+    background: #0007;
+    border: 1px solid #fff;
+    transition: color 1s;
+    text-align: right;
+}
+.registro div p:hover
+{
+    background: #000;
+    text-shadow: #000 1px 1px 5px;
+    border: 1px solid #156;
+    color: #1cf;
+    animation: aqui linear infinite 2s;
+    transition: .2s;
+}
+@keyframes aqui
+{
+    0%{filter:hue-rotate(0deg)}
+    100%{filter: hue-rotate(360deg);}
 }
